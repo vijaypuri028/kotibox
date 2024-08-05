@@ -52,7 +52,7 @@
   }
   
   .dropdown-item:hover, .dropdown-item:focus {
-    background-color: #000000; /* Blue background on hover */
+    background-color: #000000; 
     color: #1f1d23; /* Dark text on hover */
   }
   
@@ -85,7 +85,7 @@
   
   /* Scrolled navbar */
   .navbar-scrolled {
-    background-color: #de5757 !important;
+    background-color: #ffffff !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
@@ -93,7 +93,7 @@
   .navbar-scrolled .navbar-brand,
   .navbar-scrolled .nav-link {
     color: #000000 !important; /* Change color when scrolled */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     
   }
   

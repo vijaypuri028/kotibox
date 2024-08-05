@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-tranprent fixed-top">
       <div className="container-fluid">
         <Link className="navbar-brand fs-1" to="#">KOTIBOX</Link>
         <button className="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
