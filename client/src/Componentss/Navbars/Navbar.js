@@ -22,6 +22,7 @@ export default function Navbar() {
   }, []);
 
   return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-tranprent fixed-top">
       <div className="container-fluid">
         <Link className="navbar-brand fs-1" to="#">KOTIBOX</Link>
@@ -40,24 +41,24 @@ export default function Navbar() {
               <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon'  icon={faCogs} /> Action 1</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 3</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon'  icon={faCogs} /> Action 2</Link>
+                    <Link className="dropdown-item text-danger pt-1 " to="#"><FontAwesomeIcon className='drop-icon'  icon={faCogs} /> Action 1</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 3</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon'  icon={faCogs} /> Action 2</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 5</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 4</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 6</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 5</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 4</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 6</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 9</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faCode} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 9</Link>
                   </div>
                    
                 </div>
@@ -70,24 +71,24 @@ export default function Navbar() {
               <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 2</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 1</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 3</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 2</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 1</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 3</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 5</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 4</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 6</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 5</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 4</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 6</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 9</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 9</Link>
                   </div>
                 </div>
               </div>
@@ -100,24 +101,24 @@ export default function Navbar() {
                 <div className="dropdown-container">
                     
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 2</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 1</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 3</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 2</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 1</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 3</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 5</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 4</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 6</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 5</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 4</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 6</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 9</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 9</Link>
                   </div>
                     
                 </div>
@@ -130,20 +131,20 @@ export default function Navbar() {
               <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action </Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> COMPANY </Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 3</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action </Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> COMPANY </Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 3</Link>
                   </div>
                     
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 5</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 4</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 6</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 5</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 4</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 6</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
                   </div>
                    
                 </div>
@@ -156,19 +157,19 @@ export default function Navbar() {
               <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action </Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> COMPANY </Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 3</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action </Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> COMPANY </Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 3</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 4</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 5</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 6</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 4</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 5</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 6</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
                   </div>
                 </div>
               </div>
@@ -180,19 +181,19 @@ export default function Navbar() {
               <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> COMPANY </Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action </Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 3</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> COMPANY </Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action </Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 3</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 4</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 5</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 6</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 4</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 5</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 6</Link>
                   </div>
                   <div className="dropdown-row">
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 8</Link>
-                    <Link className="dropdown-item text-light" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 8</Link>
+                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
                   </div>
                 </div>
               </div>
@@ -205,5 +206,6 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+    </>
   );
 }

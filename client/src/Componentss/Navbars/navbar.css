@@ -45,7 +45,10 @@
     background-color: #f8f9ff;
     padding: 10px;
     border-radius: 50%;
+    margin-top: 10px;
+
   }
+ 
   
   .dropdown-item .fa {
     margin-right: 0.5rem; /* Space between icon and text */

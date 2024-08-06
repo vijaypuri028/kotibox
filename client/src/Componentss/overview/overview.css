@@ -1,0 +1,72 @@
+/*－－－－－－－－－－ Profile －－－－－－－－－－*/
+.profile__img {
+    padding: 0 40px;
+}
+
+.overview {
+    background: rgb(40, 38, 38);
+    padding: 50px 0; /* Add some padding for spacing */
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 10px;
+   
+}
+
+
+.profile__img img {
+    border-radius: 60%;
+    margin: auto;
+    height: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.profile__text {
+    color: aliceblue;
+    margin-top: 20px; /* Add some margin to separate from image */
+}
+
+.profile__text h1 {
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.profile__text p {
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    font-size: 1.1rem; /* Adjust font size */
+    line-height: 1.5; /* Improve line height for readability */
+    margin: 0 auto; /* Center align */
+}
+
+.snslist {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.snslist__item {
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+.snslist__item a {
+    width: 50px; /* Increase size of icons */
+    height: 50px; /* Increase size of icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s; /* Add transform effect */
+    color: white; /* Set icon color to white */
+}
+
+.snslist__item a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Change background on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+@media screen and (max-width: 520px) {
+    .snslist {
+        justify-content: center;
+    }
+}

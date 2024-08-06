@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap");
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.industries-img {
+  padding: 0 10%;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(131, 131, 131, 0.7); */
+    transition: opacity 0.3s;
+    z-index: 0;
+    opacity: 0; /* Initially hidden */
+  }
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover::before {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  p {
+    transition: color 0.3s;
+  }
+}
+
+.card:hover p {
+  color: #fff; /* Change text color on hover */
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: transform 0.5s ease;
+}
+
+.circle:hover {
+  transform: scale(1.1); /* Scale up the background image on hover */
+}
+
+.grid-offer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-900 {
+  background-color: #1a1a1a;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.xl\:px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-indigo-600 {
+  color: #4f46e5;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.md\:text-5xl {
+  font-size: 3rem;
+}
+
+.xl\:text-6xl {
+  font-size: 4rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.service-card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, border-radius 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  border-radius: 15px;
+}
+
+.service-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s, bottom 0.3s;
+  opacity: 0;
+  bottom: -100%;
+}
+
+.service-card:hover .service-content {
+  opacity: 1;
+  bottom: 0;
+}

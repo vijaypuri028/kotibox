@@ -1,50 +1,194 @@
-.about-section {
-    display: flex;
-    flex-direction: row;
+/* General Styles */
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
 
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgb(29, 28, 28); /* Black transparent background */
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #fff; /* White text color */
-  }
+* {
+  box-sizing: border-box;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(29, 28, 28, 0.9);
+  color: #fff;
+  height: 550px;
+}
+
+.video-container {
+  flex: 1;
+  position: relative;
+}
+
+.upper-text {
+  color: rgb(255, 165, 0);
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.video {
+  width: 80%;
+  height: 380px;
+  border-radius: 10px;
+  border: 5px solid black;
+  align-items: center;
+}
+
+/* Text Container */
+.text-container {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.text-container h1 {
+  font-size: 2.5em;
+  color: rgb(255, 165, 0);
+}
+
+.text-container h2 {
+  font-size: 1.8em;
+  color: rgb(255, 165, 0);
+}
+
+.text-container p {
+  font-size: 1.1em;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Project Statistics */
+.sectiontitle {
+  margin: 30px 0 10px;
+  text-align: center;
+}
+
+.sectiontitle h2 {
+  font-size: 30px;
+  color: #222;
+}
+
+.headerLine {
+  width: 160px;
+  height: 2px;
+  display: inline-block;
+  background: #101F2E;
+}
+
+.projectFactsWrap {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 80%;
+ 
+}
+
+.projectFactsWrap .item {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+  color: #fff;
+  position: relative; /* Added for image positioning */
+ margin: 10px;
+
+}
+
+.projectFactsWrap .item i {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
   
-  .video-container {
-    flex: 1;
-    margin-right: 20px;
+}
+
+.projectFactsWrap .item p.number {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.projectFactsWrap .item:hover {
+  background: rgba(255, 165, 0, 0.9);
+  transform: scale(1.05);
+}
+
+/* Image in Counter */
+.projectFactsWrap .item .counter-image {
+  width: 50px; /* Set your desired image size */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position the image */
+  top: 10px; /* Adjust as needed */
+  left: 50%; /* Center the image */
+  transform: translateX(-50%); /* Centering fix */
+}
+
+/* About Me Image */
+.about-me-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-me-img img {
+  width: 100%;
+  height: auto;
+}
+
+.authorWindowWrapper {
+  display: none;
+  position: absolute;
+  left: 130px;
+  top: 0;
+}
+
+.about-me-img:hover .authorWindowWrapper {
+  display: block;
+}
+
+.authorWindow {
+  width: 250px;
+  background: #75439a;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .video-container,
   .text-container {
-    flex: 1;
-    margin-top: 150px;
+    margin: 0;
+    width: 100%;
   }
-  
-  .text-container h1 {
-    font-size: 2.5em;
-    color: rgb(255, 165, 0); /* Colorful heading color */
+
+  .projectFactsWrap {
+    flex-direction: column;
   }
-  
-  .text-container h2 {
-    font-size: 1.8em;
-    color: rgb(255, 165, 0); /* Colorful subheading color */
+
+  .projectFactsWrap .item {
+    margin: 10px 0;
   }
-  
-  .text-container p {
-    font-size: 1.2em;
-    color: #eee; /* Light gray text color */
-    line-height: 1.6;
+
+  footer {
+    justify-content: center;
+    margin-top: 20px;
   }
-  
-  @media (max-width: 768px) {
-    .about-section {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .video-container {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
-  
+}
