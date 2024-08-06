@@ -1,3 +1,4 @@
+/* src/hiredeveloper.css */
 .team-boxed {
     color: #313437;
     background-color: #eef4f7;
@@ -13,6 +14,15 @@
     margin-bottom: 40px;
     padding-top: 40px;
     color: inherit;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(255, 30, 30);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 767px) {
@@ -54,12 +64,13 @@
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .team-boxed .item .box:hover {
     box-shadow: 1 1 30px rgba(0, 0, 0, 0.2);
     border: 2px solid black;
+    transform: scale(1.05);
 }
 
 .team-boxed .item .name {
@@ -91,7 +102,6 @@
 
 .team-boxed .item img:hover {
     transform: scale(1.1);
-    
 }
 
 .team-boxed .social {
@@ -109,4 +119,19 @@
 
 .team-boxed .social a:hover {
     opacity: 1;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slick-prev.custom-arrow {
+    left: -50px; /* Adjust as needed */
+}
+
+.slick-next.custom-arrow {
+    right: -50px; /* Adjust as needed */
 }

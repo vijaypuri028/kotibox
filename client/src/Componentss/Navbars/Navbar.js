@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'; // Make sure to create and import this CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCogs, faCode, faInfoCircle, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faCogs, faCode, faInfoCircle,  } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   useEffect(() => {
@@ -201,6 +201,9 @@ export default function Navbar() {
 
             <li style={{fontSize:"20px"}} className="nav-item">
               <Link className="nav-link " aria-current="page" to="#"> Portfolio</Link>
+            </li>
+            <li style={{fontSize:"18px"}} className="nav-item btn btn-danger ms-4 ">get a free Quote
+              
             </li>
           </ul>
         </div>

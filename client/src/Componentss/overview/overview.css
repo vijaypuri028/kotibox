@@ -2,6 +2,14 @@
 .profile__img {
     padding: 0 40px;
 }
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
 
 .overview {
     background: rgb(40, 38, 38);

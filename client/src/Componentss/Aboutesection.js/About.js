@@ -57,7 +57,7 @@ export default function About() {
 
   return (
     <>
-    <div className="about-section mt-5 pt-5">
+    <div className="about-section ">
       <div className="video-container">
         <div className='upper-text ms-5 '>
           <h1 className='text-light' style={{fontSize:"50px"}} >We are</h1>
@@ -96,7 +96,8 @@ export default function About() {
     
 
           </div>
-          <div className="sectiontitle mt-5 ">
+          <div className=''>
+          <div className="sectiontitle   ">
             <h2 className='text-light'>Projects Statistics</h2>
             <span className="headerLine "></span>
           </div>
@@ -129,6 +130,7 @@ export default function About() {
                 <p>Award</p>
               </div>
             </div>
+          </div>
           </div>
 
           </>

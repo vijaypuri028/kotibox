@@ -5,7 +5,6 @@ import Main from './Componentss/Main section/Main';
 import About from './Componentss/Aboutesection.js/About';
 import Footer from './Componentss/footer/footer';
 import Services from './Componentss/services/Services';
-import Slider from './Componentss/slider/slider';
 import Industries from './Componentss/Industries/Industries';
 import Company from './Componentss/Company section/Company';
 import Client from './Componentss/Clientsection/Client';
@@ -28,7 +27,7 @@ function App() {
       <Services/>
       <Overview/>
       <Industries/>
-      <Slider/>
+     
       <Company/>
       <Client/>
       <Hiredeveloper/>
