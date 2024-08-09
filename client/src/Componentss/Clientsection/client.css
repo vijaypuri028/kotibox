@@ -103,12 +103,16 @@
 
     img {
       width: 150px;
+      height: 150px; /* Set a fixed height */
+      object-fit: cover; /* Ensures the image covers the element */
       border-radius: 50%;
       border: 8px solid #d1e9ff;
       cursor: pointer;
 
       &.active {
         max-width: 160px;
+        height: 160px; /* Adjust the height for active state */
+        object-fit: cover; /* Ensures the image covers the element */
         margin: 0 auto 24px;
         border: 0;
       }
@@ -171,6 +175,8 @@
 
   .client-single.active .client-img img {
     max-width: 100px;
+    height: 100px; /* Adjust the height for active state */
+    object-fit: cover; /* Ensures the image covers the element */
   }
 
   .testi-wrap {
@@ -190,6 +196,8 @@
 
   .client-single.active .client-img img {
     max-width: 80px;
+    height: 80px; /* Adjust the height for active state */
+    object-fit: cover; /* Ensures the image covers the element */
   }
 
   .testi-wrap {

@@ -1,27 +1,22 @@
 import React from 'react';
 import './overview.css';
-import { Link } from 'react-router-dom';
 
 function Overview() {
   return (
-    <div className='overview  mx-auto '>
-      <div className="profile__inner grid d-flex justify-content-between">
+    <div className='overview mx-auto'>
+      <div className="profile__inner d-flex justify-content-between align-items-center">
         <div className="profile__img">
-          <img className='ms-5' src="https://th.bing.com/th/id/OIP.L_SsZ-1aHhtJPAgFyvmb4gAAAA?w=468&h=532&rs=1&pid=ImgDetMain" alt="Profile" />
+          <img className='img-fluid' src='https://www.jploft.com/img/call_disccuss1.webp' alt="Profile" />
         </div>
-
-        <div className="profile__text text-center">
+        <div className="profile__text text-center ms-5">
           <h1>Still worried about technology partner for your business?</h1>
-          <p className='text-light w-75 text-center'>
+          <p className='text-light w-75 mx-auto'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam ipsam, molestias at nobis rem eaque
             in suscipit minima laudantium, qui exercitationem accusantium ducimus magnam voluptatibus quod, ad inventore?
             Ipsa.
           </p>
-
-          <ul className="snslist flex mt-5">
-            <li  className='btn btn-outline-light p-3'>Consult with our Tecnical Advisor</li>
-         
-        
+          <ul className="snslist d-flex justify-content-center mt-5">
+            <li className='btn btn-danger p-3'>Consult with our Technical Advisor</li>
           </ul>
         </div>
       </div>

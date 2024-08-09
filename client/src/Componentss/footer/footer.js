@@ -1,93 +1,155 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './footer.css'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Marquee from 'react-fast-marquee';
+import './footer.css';
+
+const MarqueeImages = () => {
+  return (
+    <Marquee speed={50} gradient={false}>
+      <img src="https://inkbotdesign.com/wp-content/uploads/2023/01/amazon-logo-design.png" alt="India" style={{ width: '100px', marginRight: '20px' }} />
+      <img src="https://inkbotdesign.com/wp-content/uploads/2018/04/new-google-logo-design.png" alt="USA" style={{ width: '100px', marginRight: '20px' }} />
+      <img src="https://inkbotdesign.com/wp-content/uploads/2018/03/facebook-logos-of-the-world.png" alt="India" style={{ width: '100px', marginRight: '20px' }} />
+      <img src="https://inkbotdesign.com/wp-content/uploads/2012/09/Dell-Logo-Design.png" alt="USA" style={{ width: '100px', marginRight: '20px' }} />
+
+    </Marquee>
+  );
+};
 
 export default function Footer() {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-   <footer>
-  <div className="content">
-    <div className="top">
-      <div className="logo-details">
-        <i className="fab fa-slack" />
-        <span className="logo_name">KOTIBOX</span>
-      </div>
-      <div className="media-icons">
-        <Link href="#"><i class="bi bi-facebook"></i></Link>
-        <Link href="#"><i class="bi bi-twitter"></i></Link>
-        <Link href="#"><i class="bi bi-instagram"></i></Link>
-        <Link href="#"><i class="bi bi-linkedin"></i></Link>
-        <Link href="#"><i class="bi bi-youtube"></i></Link>
-      </div>
+    <div style={{ marginTop: "100px" }} className='' >
+      <footer className={scrolled ? 'scrolled' : ''}>
+        <div className="content  ">
+          <div className="top">
+            <div className="logo-details">
+              <i className="fab fa-slack" />
+              <span className="logo_name">KOTIBOX</span>
+            </div>
+            <div className="media-icons">
+              <Link to="#"><i className="bi bi-facebook"></i></Link>
+              <Link to="#"><i className="bi bi-twitter"></i></Link>
+              <Link to="#"><i className="bi bi-instagram"></i></Link>
+              <Link to="#"><i className="bi bi-linkedin"></i></Link>
+              <Link to="#"><i className="bi bi-youtube"></i></Link>
+            </div>
+          </div>
+          <div className="footer-main-section">
+            <div className="footer-main">
+              <h1>Connect with Sales</h1>
+              <h2>Write us at <span style={{ marginLeft: "150px" }}>Chat with Us</span></h2>
+              <h3>
+                <Link to="mailto:sales@example.com">sales@example.com</Link>
+                <span style={{ marginLeft: "20px" }}>sales@example.com</span>
+              </h3>
+              <h4>Call us at</h4>
+              <h6>+91 8426809853</h6>
+              <hr />
+              <h1>Connect with HR</h1>
+              <h2>Write us at</h2>
+              <h3><Link to="mailto:hr@example.com">hr@example.com</Link></h3>
+              <h4>Call us at</h4>
+              <h6>+91 8426809853</h6>
+              <div className="icon">
+                <span><i className="bi bi-pc-display-horizontal"></i></span>
+                <span>KOTIBOX Global Technologies</span>
+              </div>
+            </div>
+            <div style={{ marginLeft: "100px" }} className=''>
+              <div className="footer-logo">
+                <div>
+                  <img src="https://th.bing.com/th/id/R.607b9f69862d76af04b474113c0c7ff5?rik=lfnOsbv7mhDNbQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fb%2fbc%2fFlag_of_India.png&ehk=Pk5lH0C%2fhstFahWfb15vLjtrJb3DslIU4%2fAQneo9IIM%3d&risl=&pid=ImgRaw&r=0" alt="India" />
+                  <span>India</span>
+                  <p>2nd Floor, B.L.Tower – 4th, Plot No.- 45-46, Gayatri Nagar, Maharani Farm, Durgapura, Jaipur - India</p>
+                </div>
+                <div>
+                  <img src="https://th.bing.com/th/id/OIP.bNM6BI7X9AotYV74-pufdgAAAA?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="USA" />
+                  <span>United States</span>
+                  <p>17330 Preston Road #200 D Dallas, Texas 75252, USA +1 214 272 0316</p>
+                </div>
+              </div>
+              <div style={{ width: "100%" }} className="marquee-section">
+                <MarqueeImages />
+              </div>
+
+            </div>
+          
+
+          </div>
+
+
+          <hr />
+          <div>
+
+
+
+
+
+
+
+          </div>
+          <hr className='text-light fs-1' />
+          <div className='fotter-list d-flex justify-content-between  text-center '>
+          <ul>
+              <h4>ABOUT</h4>
+
+            </ul>
+            <ul>
+              <h4>SERVICE</h4>
+
+            </ul>
+            <ul>
+              <h4> TECHNOLOGIES </h4>
+
+            </ul>
+            <ul>
+              <h4> INDUSTRIES </h4>
+
+            </ul>
+         
+            <ul>
+              <h4>PROTFOLIO </h4>
+
+            </ul>
+            <ul>
+              <h4>CONTACT</h4>
+
+            </ul>
+            <ul>
+              <h4>BLOG</h4>
+
+            </ul>
+          </div>
+
+
+
+        </div>
+        <div className="bottom-details">
+          <div className="bottom_text">
+            <span>Copyright © 2024 <Link to="#">KOTIBOX</Link> All rights reserved</span>
+            <span className="policy_terms">
+              <Link to="#">Privacy policy</Link>
+              <Link to="#">Terms &amp; conditions</Link>
+            </span>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div className="link-boxes">
-      <ul className="box">
-        <li className="link_name">Company</li>
-        <li><Link href="#">Home</Link></li>
-        <li><Link href="#">Contact us</Link></li>
-        <li><Link href="#">About us</Link></li>
-        <li><Link href="#">Get started</Link></li>
-        <li><Link href="#">Home</Link></li>
-        <li><Link href="#">Contact us</Link></li>
-        <li><Link href="#">About us</Link></li>
-        <li><Link href="#">Get started</Link></li>
-      </ul>
-      <ul className="box">
-        <li className="link_name">Services</li>
-        <li><Link href="#">App design</Link></li>
-        <li><Link href="#">Web design</Link></li>
-        <li><Link href="#">Logo design</Link></li>
-        <li><Link href="#">Banner design</Link></li>
-        <li><Link href="#">App design</Link></li>
-        <li><Link href="#">Web design</Link></li>
-        <li><Link href="#">Logo design</Link></li>
-        <li><Link href="#">Banner design</Link></li>
-      </ul>
-      <ul className="box">
-        <li className="link_name">Account</li>
-        <li><Link href="#">Profile</Link></li>
-        <li><Link href="#">My account</Link></li>
-        <li><Link href="#">Prefrences</Link></li>
-        <li><Link href="#">Purchase</Link></li>
-        <li><Link href="#">Profile</Link></li>
-        <li><Link href="#">My account</Link></li>
-        <li><Link href="#">Prefrences</Link></li>
-        <li><Link href="#">Purchase</Link></li>
-      </ul>
-      <ul className="box">
-        <li className="link_name">Technology</li>
-        <li><Link href="#">HTML &amp; CSS</Link></li>
-        <li><Link href="#">JavaScript</Link></li>
-        <li><Link href="#">Photography</Link></li>
-        <li><Link href="#">Photoshop</Link></li>
-        <li><Link href="#">HTML &amp; CSS</Link></li>
-        <li><Link href="#">JavaScript</Link></li>
-        <li><Link href="#">Photography</Link></li>
-        <li><Link href="#">Photoshop</Link></li>
-      </ul>
-      <ul className="box input-box">
-        <li className="link_name">Subscribe</li>
-        <li><input type="text" placeholder="Enter your email" /></li>
-        <li><input type="button" defaultValue="Subscribe" /></li>
-      </ul>
-    </div>
-  </div>
-  <div className="bottom-details">
-    <div className="bottom_text">
-      <span className="copyright_text">Copyright © 2024 <Link href="#">KOTIBOX</Link>All rights reserved</span>
-      <span className="policy_terms">
-        <Link href="#">Privacy policy</Link>
-        <Link href="#">Terms &amp; condition</Link>
-      </span>
-    </div>
-  </div>
-</footer>
-
-
-
-
-
-
-    </>
-  )
+  );
 }

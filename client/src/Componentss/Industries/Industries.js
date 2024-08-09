@@ -10,7 +10,6 @@ export default function Industries() {
 
     window.addEventListener('resize', handleResize);
 
-    // Cleanup function to remove the event listener
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -18,66 +17,50 @@ export default function Industries() {
 
   const services = [
     {
-      title: 'UI/UX Creative Design',
+      title: 'Education & E-learning',
       description: 'Crafting intuitive and visually appealing user experiences.',
       bgImage: 'https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
-      title: 'Visual Graphic Design',
+      title: 'Food & Restaurants',
       description: 'Creating stunning graphics that captivate and engage.',
       bgImage: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
-      title: 'Strategy & Digital Marketing',
+      title: 'Healthcare',
       description: 'Formulating strategies to elevate your brand presence.',
       bgImage: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
-      title: 'Effective Business Growth',
+      title: 'Tour & Travels',
       description: 'Helping your business reach new heights of success.',
       bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
-        title: 'Effective Business Growth',
+        title: 'Real Estate ',
         description: 'Helping your business reach new heights of success.',
         bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
-        title: 'Effective Business Growth',
+        title: 'Sports & Gaming',
         description: 'Helping your business reach new heights of success.',
         bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
-        title: 'Effective Business Growth',
+        title: 'Banking & Finance',
         description: 'Helping your business reach new heights of success.',
         bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
-        title: 'Effective Business Growth',
+        title: 'E-Commerce',
         description: 'Helping your business reach new heights of success.',
         bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
-        title: 'Effective Business Growth',
+        title: 'Media & Publication',
         description: 'Helping your business reach new heights of success.',
         bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
-      {
-        title: 'Effective Business Growth',
-        description: 'Helping your business reach new heights of success.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      },
-      {
-        title: 'Effective Business Growth',
-        description: 'Helping your business reach new heights of success.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      },
-      {
-        title: 'Effective Business Growth',
-        description: 'Helping your business reach new heights of success.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      },
-      
   ];
 
   return (

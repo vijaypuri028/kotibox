@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './main.css';
+import video from '../Kotibox img/Koti box video.mp4'
 
 export default function Main() {
   const [scrolled, setScrolled] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
+  const [result, setResult] = useState('');
   const textArray = ["Website Development", "App Development", "Software Development", "Digital Marketing"];
 
   useEffect(() => {
@@ -26,29 +28,53 @@ export default function Main() {
     return () => clearInterval(interval);
   }, [textArray.length]);
 
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "7dab4af5-b3ff-424f-bc0a-26fd9cea0c70");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      setTimeout(() => {
+        setResult("");
+      }, 5000);
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="main-container">
       <div className="video-container">
         <video className="background-video" autoPlay loop muted>
-          <source src="https://videos.pexels.com/video-files/5725960/5725960-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="video-overlay">
-          <div >
+          <div>
             <h1 style={{ position: "absolute", top: "30%", left: "10%", color: "white", fontSize: "2.5rem" }}>
               YOUR TRUSTED <br /> PARTNER FOR
             </h1>
-            
-            <div style={{fontSize:"3.5rem",color:"#e69500",fontFamily:"700"}} className="animated-text mt-2">{textArray[textIndex]}</div>
-            <div style={{marginTop:"100px", fontSize:"20px" }} className='btn btn-danger animated-text '>CONSULT OUR EXPERT</div>
+            <div style={{ fontSize: "3.5rem", color: "#e69500", fontFamily: "700" }} className="animated-text mt-2">{textArray[textIndex]}</div>
+            <div style={{ marginTop: "100px", fontSize: "20px" }} className='btn btn-danger animated-text '>CONSULT OUR EXPERT</div>
           </div>
-          
         </div>
       </div>
       <div className="form-container">
         <h2>Let’s build something</h2>
         <h2 style={{ color: "#FFA500" }}>great together!</h2>
-        <form>
+        <form onSubmit={onSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" required />
@@ -63,6 +89,7 @@ export default function Main() {
           </div>
           <button type="submit">Submit</button>
         </form>
+        <span>{result}</span>
       </div>
     </div>
   );

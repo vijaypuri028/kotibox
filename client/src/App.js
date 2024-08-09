@@ -11,6 +11,7 @@ import Client from './Componentss/Clientsection/Client';
 import Overview from '../src/Componentss/overview/Overview';
 import Blog from './Componentss/blog/blog';
 import Hiredeveloper from './Componentss/Hire developer/Hiredeveloper';
+import Button from './Componentss/button/Button';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Client/>
       <Hiredeveloper/>
       <Blog/>
+      <Button/>
      
       
     <Footer/>

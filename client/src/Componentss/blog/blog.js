@@ -38,15 +38,15 @@ function Blog() {
                 <h2 className="text-sky-800 text-lg font-semibold line-clamp-2 pt-2.5 h-[66px]">{post.title}</h2>
                 <p className="text-slate-700 font-normal line-clamp-2 text-light leading-6 pt-1 h-[52px]">{post.content}</p>
                 <div className="text-right pt-1">
-                  <button className="text-yellow-600 text-sm font-semibold button">Read More <i className="fa fa-arrow-right fa-beat" style={{ color: '#d29d2c' }}></i></button>
+                  <button style={{color:"white"}} className="text-yellow-600 text-sm font-semibold button">Read More <i className="fa fa-arrow-right fa-beat" style={{ color: '#d29d2c' }}></i></button>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        <div className="container pt-9 flex justify-center items-center text-center mt-5">
-          <button className="bg-sky-800 hover:bg-yellow-600 text-light rounded-full px-8 py-3 text-xl font-semibold button">Read Blogs</button>
-        </div>
+        
+          <button style={{width:"200px",position:"absolute",left:"85%"}} className='btn btn-danger mt-5 ' >View All Blog </button>
+        
       </div>
     </div>
   );

@@ -1,0 +1,176 @@
+
+.fixed-button1 {
+    position: fixed;
+    top: 68%;
+    left: -200px; /* Initially hide the button off the screen */
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: left 0.5s ease-in-out; /* Smooth transition for the sliding effect */
+  }
+  
+  .fixed-button1 button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  .fixed-button1 button:hover {
+    background-color: #ffffff;
+  }
+  
+  .fixed-button1:hover {
+    left: 0; /* Slide in when hovered */
+  }
+  
+  /* Add some stylish animation */
+  .fixed-button1 button::before {
+    content: ''; 
+    background: url("../Kotibox img/contact/call.png") no-repeat center center; 
+    background-size: 35px; 
+    position: absolute;
+    top: 0;
+    left: 180px; 
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    z-index: -1;
+    /* transform: skewX(-10deg); */
+    transition: left 0.5s ease-in-out;
+    font-size: 40px;
+    color: white;
+    
+}
+
+  
+  .fixed-button1:hover button::before {
+    left: 0; 
+  }
+  
+
+
+
+
+  .fixed-button2 {
+    position: fixed;
+    top: 60%;
+    left: -200px; /* Initially hide the button off the screen */
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: left 0.5s ease-in-out; /* Smooth transition for the sliding effect */
+  }
+  
+  .fixed-button2 button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  .fixed-button2 button:hover {
+    background-color: #ffffff;
+  }
+  
+  .fixed-button2:hover {
+    left: 0; /* Slide in when hovered */
+  }
+  
+  /* Add some stylish animation */
+  .fixed-button2 button::before {
+    content: ''; 
+    background: url("../Kotibox img/contact/mail.png") no-repeat center center; 
+    background-size: 50px; 
+    position: absolute;
+    top: 0;
+    left: 180px; 
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    z-index: -1;
+    /* transform: skewX(-10deg); */
+    transition: left 0.5s ease-in-out;
+    font-size: 40px;
+    color: white;
+    
+}
+  
+  .fixed-button2:hover button::before {
+    left: 0; 
+  }
+
+
+
+  
+  .fixed-button3 {
+    position: fixed;
+    top: 52%;
+    left: -200px; /* Initially hide the button off the screen */
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: left 0.5s ease-in-out; /* Smooth transition for the sliding effect */
+  }
+  
+  .fixed-button3 button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  .fixed-button3 button:hover {
+    background-color: #ffffff;
+  }
+  
+  .fixed-button3:hover {
+    left: 0; /* Slide in when hovered */
+  }
+  
+  /* Add some stylish animation */
+  .fixed-button3 button::before {
+    content: ''; 
+    background: url("../Kotibox img/contact/icons8-skype-48.png") no-repeat center center; 
+    background-size: 50px; 
+    position: absolute;
+    top: 0;
+    left: 180px; 
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    z-index: -1;
+    /* transform: skewX(-10deg); */
+    transition: left 0.5s ease-in-out;
+    font-size: 40px;
+    color: white;
+    
+}
+  
+  .fixed-button3:hover button::before {
+    left: 0; 
+  }
+  
+
+
+
+
+
+
+
+  

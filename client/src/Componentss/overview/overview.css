@@ -12,30 +12,36 @@ body {
   }
 
 .overview {
-    background: rgb(40, 38, 38);
+    background: rgb(43, 41, 41);
     padding: 50px 0; /* Add some padding for spacing */
     width: 80%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 10px;
+    box-shadow: 5px solid black;
    
 }
 
 
 .profile__img img {
-    border-radius: 60%;
-    margin: auto;
-    height: 350px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    /* border-radius: 60%; */
+    /* margin: auto; */
+    /* height: 450px; */
+    /* margin-right: 50px; */
+    /* width: 400px; */
+
+
+ 
+    
 }
 
 .profile__text {
     color: aliceblue;
-    margin-top: 20px; /* Add some margin to separate from image */
+    
 }
 
 .profile__text h1 {
     font-size: 2.5rem; /* Adjust font size */
-    margin-bottom: 20px; /* Add space below the heading */
+    margin-bottom: 10px; /* Add space below the heading */
 }
 
 .profile__text p {

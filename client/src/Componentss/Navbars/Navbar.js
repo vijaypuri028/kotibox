@@ -1,10 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './navbar.css'; // Make sure to create and import this CSS file
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCogs, faCode, faInfoCircle,  } from '@fortawesome/free-solid-svg-icons';
+import './navbar.css';
+
+
+import Android from '../Kotibox img/icon/icons8-android-os-48.png'
+import Java from '../Kotibox img/icon/icons8-java-48.png'
+import AngularJS from '../Kotibox img/icon/icons8-angularjs-144.png'
+import Wordpress from '../Kotibox img/icon/icons8-apple-48.png'
+import Blockchain from '../Kotibox img/icon/icons8-android-os-48.png'
+import DotNet from '../Kotibox img/icon/dote net.webp'
+import Fullstack from '../Kotibox img/icon/icons8-stack-48.png'
+import IOS from '../Kotibox img/icon/icons8-apple-48.png'
+import Laravel from '../Kotibox img/icon/icons8-laravel-64.png'
+import Magento from '../Kotibox img/icon/icons8-magento-100.png'
+import NodeJs from '../Kotibox img/icon/icons8-node-js-48.png'
+import react from '../Kotibox img/icon/react netive.png'
+import reactNative from '../Kotibox img/icon/react netive.png'
+import php from '../Kotibox img/icon/icons8-php-24.png'
+import python from '../Kotibox img/icon/icons8-python-48.png'
+
+
+
 
 export default function Navbar() {
+  const [captchaAnswer, setCaptchaAnswer] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('.navbar');
@@ -21,194 +43,283 @@ export default function Navbar() {
     };
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Validate the CAPTCHA
+    if (captchaAnswer !== '8') {
+      setErrorMessage('CAPTCHA is invalid.');
+      return;
+    }
+    setErrorMessage('');
+    // Proceed with form submission
+    console.log('Form submitted successfully!');
+    // You can add your form submission logic here
+  };
+  
+
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-tranprent fixed-top">
-      <div className="container-fluid">
-        <Link className="navbar-brand fs-1" to="#">KOTIBOX</Link>
-        <button className="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul className="navbar-nav mb-2 mb-lg-0">
-            <li style={{fontSize:"20px"}} className="nav-item">
-              <Link className="nav-link active  " aria-current="page" to="#"> About Us</Link>
-            </li>
-            <li style={{fontSize:"20px"}} className="nav-item dropdown ms-4">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
-                 Services
-              </Link>
-              <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger pt-1 " to="#"><FontAwesomeIcon className='drop-icon'  icon={faCogs} /> Action 1</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 3</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon'  icon={faCogs} /> Action 2</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 5</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 4</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 6</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 9</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 9</Link>
-                  </div>
-                   
-                </div>
-              </div>
-            </li>
-            <li style={{fontSize:"20px"}} className="nav-item dropdown ms-4">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
-              Our Services
-              </Link>
-              <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 2</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 1</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 3</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 5</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 4</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 6</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCogs} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCogs} /> Action 9</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 9</Link>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li style={{fontSize:"20px"}} className="nav-item dropdown ms-4">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
-              Industries
-              </Link>
-              <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                <div className="dropdown-container">
-                    
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 2</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 1</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 3</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 5</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 4</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 6</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 9</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faCode} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faCode} /> Action 9</Link>
-                  </div>
-                    
-                </div>
-              </div>
-            </li>
-            <li style={{fontSize:"20px"}} className="nav-item dropdown active ms-2">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
-                Solutions
-              </Link>
-              <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action </Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> COMPANY </Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 3</Link>
-                  </div>
-                    
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 5</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 4</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 6</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon className='drop-icon' icon={faInfoCircle} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
-                  </div>
-                   
-                </div>
-              </div>
-            </li>
-            <li style={{fontSize:"20px"}} className="nav-item dropdown active ms-2">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
-                Resources
-              </Link>
-              <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action </Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> COMPANY </Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 3</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 4</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 5</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 6</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li style={{fontSize:"20px"}} className="nav-item dropdown active ms-2">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
-                Contact us
-              </Link>
-              <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> COMPANY </Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action </Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 3</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 4</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 5</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 6</Link>
-                  </div>
-                  <div className="dropdown-row">
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 7</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon   className='drop-icon' icon={faInfoCircle} /> Action 8</Link>
-                    <Link className="dropdown-item text-danger" to="#"><FontAwesomeIcon  className='drop-icon'  icon={faInfoCircle} /> Action 9</Link>
-                  </div>
-                </div>
-              </div>
-            </li>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-tranprent fixed-top">
+        <div className="container-fluid">
+          <Link className="navbar-brand fs-1" to="#">KOTIBOX</Link>
+          <button className="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul className="navbar-nav mb-2 mb-lg-0">
+              <li style={{ fontSize: "20px" }} className="nav-item">
+                <Link className="nav-link active  " aria-current="page" to="#"> About Us</Link>
+              </li>
+              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                  Services
+                </Link>
+                <div className="dropdown-menu large-dropdown1 bg-dark" aria-labelledby="navbarDropdown">
+                  <h1 className='text-danger mt-5'>OUR SERVICES</h1>
+                  <div className="dropdown-container">
 
-            <li style={{fontSize:"20px"}} className="nav-item">
-              <Link className="nav-link " aria-current="page" to="#"> Portfolio</Link>
-            </li>
-            <li style={{fontSize:"18px"}} className="nav-item btn btn-danger ms-4 ">get a free Quote
-              
-            </li>
-          </ul>
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item text-light pt-1 " to="#"> <i style={{ fontSize: "28px" }} class="bi bi-pc-display-horizontal me-2 mt-5 "></i>Website Development</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i>Mobile App Development </Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Digital Marketing</Link>
+
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Artificial Intelligence</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> CRM Development</Link>
+
+                    </div>
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> ERP Software Development</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Game Development</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Custom Software Development</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Support & Solutions </Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Ecommerce Solutions</Link>
+
+                    </div>
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Blockchain</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Videography</Link>
+                      <Link className="dropdown-item text-light pt-1 " to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> UI & UX Design</Link>
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Web Design</Link>
+
+                      <Link className="dropdown-item text-light" to="#"><i style={{ fontSize: "28px" }} class="bi bi-phone me-2 "></i> Full stack </Link>
+
+                    </div>
+
+                    <div className="dropdown-row">
+                      <img className='dropdown-img-1' src='https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
+                      <li style={{ position: "absolute", top: "70%", left: "85%" }} className='btn btn-danger w-15'>Get A Free Consultation</li>
+                      <div style={{ position: "absolute", top: "20%", left: "65%" }} className='text-light w-25 '>
+                        <h1>OUR SERVICES</h1>
+                        <p>KOTIBOX provides an exceptional experience to businesses across industry verticals. Doesn't matter which industry you belong to, our 100+ tech experts with vast experience and knowledge of the latest technologies, and trends deliver world-class mobility solutions concerning your project requirements. </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className=' dropdown-box   mt-4 d-flex justify-content-around  '>
+                    <div>
+                      <h4>ENQUIRE US</h4>
+                      <h6>vijay@gmail.com</h6>
+                    </div>
+                    <div>
+                      <h4>GET IN TOUCH</h4>
+                      <h6>8426809853</h6>
+                    </div>
+                    <div>
+                      <h4>Contact Us</h4>
+                      <div className="media-icons ">
+                        <Link to="#"><i className="bi bi-facebook  "></i></Link>
+                        <Link to="#"><i className="bi bi-twitter "></i></Link>
+                        <Link to="#"><i className="bi bi-instagram "></i></Link>
+                        <Link to="#"><i className="bi bi-linkedin "></i></Link>
+                        <Link to="#"><i className="bi bi-youtube  "></i></Link>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+
+              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                  Industries
+                </Link>
+                <div className="dropdown-menu large-dropdown3 bg-dark" aria-labelledby="navbarDropdown">
+                  <div className="dropdown-container">
+                    <div className="dropdown-row">
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-book text-light "></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Education & E-learning</Link>
+                      </div>
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-amazon text-light "></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Food & Restaurants</Link>
+                      </div>
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-controller text-light"></i>
+
+                        <Link className="dropdown-item1 text-light" to="#"> Sports & Gaming</Link>
+                      </div>
+
+
+                    </div>
+                    <div className="dropdown-row">
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-airplane-engines text-light "></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Tour & Travels</Link>
+                      </div>
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-bank text-light"></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
+                      </div>
+
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-collection-play-fill text-light "></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Media & Publication</Link>
+                      </div>
+
+                    </div>
+                    <div className="dropdown-row">
+
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-hospital text-light "></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Healthcare</Link>
+                      </div>
+
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-house-door text-light"></i>
+                        <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
+                      </div>
+                      <div className='dropdown-item-icon '>
+                        <i style={{ fontSize: "40px" }} class="bi bi-briefcase text-light"></i>
+                        <Link className="dropdown-item1 text-light" to="#"> E-Commerce</Link>
+                      </div>
+
+                    </div>
+                    <div className="dropdown-row">
+                      <img className='dropdown-img-1 mt-4' src='https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
+                      <li style={{ position: "absolute", top: "80%", left: "80%" }} className='btn btn-danger w-15'>Get A Free Consultation</li>
+                      <div style={{ position: "absolute", top: "20%", left: "60%" }} className='text-light w-25 '>
+                        <h1>OUR SERVICES</h1>
+                        <p>KOTIBOX provides an exceptional experience to businesses across industry verticals. Doesn't matter which industry you belong to, our 100+ tech experts with vast experience and knowledge of the latest technologies, and trends deliver world-class mobility solutions concerning your project requirements. </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                  Hire Developer
+                </Link>
+                <div className="dropdown-menu large-dropdown4 bg-dark" aria-labelledby="navbarDropdown">
+
+                  <div className="dropdown-container">
+
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2  " to="#"> <img className='icon-img' src={Android} alt='' /> HIRE <br /> Android Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Java} alt='' /> HIRE <br /> JAVA Developer </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={AngularJS} alt='' /> HIRE <br /> AngularJS Developer </Link> <hr className='text-light' />
+
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Blockchain} alt='' /> HIRE <br />  Blockchain Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={DotNet} alt='' />HIRE <br /> Dot Net Developer</Link> <hr className='text-light' />
+
+                    </div>
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2" to="#"><img className='icon-img' src={Fullstack} alt='' /> HIRE <br /> Full Stack Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={IOS} alt='' /> HIRE <br /> IOS Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2" to="#"><img className='icon-img' src={Laravel} alt='' /> HIRE <br /> Laravel Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Magento} alt='' /> HIRE <br /> Magento Developer </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={NodeJs} alt='' /> HIRE <br /> NodeJs Developer</Link> <hr className='text-light' />
+
+                    </div>
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Wordpress} alt='' /> HIRE <br /> Wordpress Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={react} alt='' /> HIRE <br /> ReactJS Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2   " to="#"><img className='icon-img' src={reactNative} alt='' /> HIRE <br /> React Native Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={php} alt='' /> HIRE <br /> PHP Developer</Link> <hr className='text-light' />
+
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={python} alt='' /> HIRE <br />  Python Developer </Link> <hr className='text-light' />
+
+                    </div>
+
+
+                    <div className="dropdown-row">
+                      <img className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+
+
+              <li style={{ fontSize: "20px" }} className="nav-item">
+                <Link className="nav-link   " aria-current="page" to="#"> Contact Us </Link>
+              </li>
+
+              <li style={{ fontSize: "20px" }} className="nav-item me-2 ">
+                <Link className="nav-link " aria-current="page" to="#"> Portfolio</Link>
+              </li>
+
+              <li className="nav-item dropdown btn btn-danger ms-4">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                  Get A Free Quote
+                </Link>
+                <div className="dropdown-menu large-dropdown6 bg-dark" aria-labelledby="navbarDropdown">
+                  <div className="dropdown-container">
+                    <div className="dropdown-row">
+                      <div className="form-container">
+                        <h4>We respond promptly, typically within 30 minutes</h4>
+                        <form onSubmit={handleSubmit}>
+                          <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder='Enter Full Name' />
+                          </div>
+                          <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder='Enter Email Address' />
+                          </div>
+                          <div className="form-group">
+                            <label htmlFor="number">Phone Number</label>
+                            <input type="number" id="number" name="number" required placeholder='Enter Contact Number' />
+                          </div>
+                          <div className="form-group">
+                            <label htmlFor="message">Message</label>
+                            <textarea id="message" name="message" required placeholder='Enter Message'></textarea>
+                          </div>
+                          <div className="form-group">
+                            <input type="file" id="file" name="file" required />
+                          </div>
+                          <div className="form-group">
+                            <label htmlFor="captcha"> Are you human?* What is 5 + 3?</label>
+                            <input
+                              type="text"
+                              id="captcha"
+                              name="captcha"
+                              required
+                              value={captchaAnswer}
+                              onChange={(e) => setCaptchaAnswer(e.target.value)}
+                            />
+                            {errorMessage && <span className="text-danger">{errorMessage}</span>}
+                          </div>
+                          <button className='btn-danger' type="submit">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </>
   );
 }

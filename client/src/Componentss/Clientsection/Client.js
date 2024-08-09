@@ -88,8 +88,8 @@ export default function Client() {
                 <img src={testimonial.img} alt={testimonial.name} />
               </div>
               <div className="client-comment">
-                <h3 className='text-light mt-5'>{testimonial.text}</h3>
-                <span><i className="fa fa-quote-left"></i></span>
+                <h3 className='text-light '>{testimonial.text}</h3>
+                <span><i className="fa fa-quote-left  "></i></span>
               </div>
               <div className="client-info ">
                 <p>{testimonial.name}</p>

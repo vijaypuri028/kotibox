@@ -17,7 +17,7 @@ function Hiredeveloper() {
   };
 
   return (
-    <div className="team-boxed">
+    <div style={{backgroundColor:"black"}} className="team-boxed  ">
       <div className="container">
         <div className="intro">
           <h2 className="text-center">Hire Developer</h2>
@@ -27,8 +27,8 @@ function Hiredeveloper() {
         </div>
         <Slider {...settings}>
           <div className="row people d-flex justify-content-between ms-1">
-            <div className="col-md-6 col-lg-4 item">
-              <div className="box">
+            <div className="col-md-6 col-lg-4 item ">
+              <div style={{color:"white", backgroundColor:"#221f1d"}} className="box  ">
                 <img
                   className="rounded-circle"
                   src="https://www.jploft.com/img/node_js_hire.svg"
@@ -47,7 +47,7 @@ function Hiredeveloper() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 item">
-              <div className="box">
+              <div style={{color:"white", backgroundColor:"#221f1d"}} className="box ">
                 <img
                   className="rounded-circle"
                   src="https://www.jploft.com/img/flutter_hire.svg"
@@ -66,7 +66,7 @@ function Hiredeveloper() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 item">
-              <div className="box">
+              <div style={{color:"white", backgroundColor:"#221f1d"}} className="box ">
                 <img
                   className="rounded-circle"
                   src="https://www.jploft.com/img/ios_hire.svg"
@@ -87,7 +87,7 @@ function Hiredeveloper() {
           </div>
           <div className="row people  d-flex justify-content-between">
             <div className="col-md-6 col-lg-4 item">
-              <div className="box">
+              <div style={{color:"white", backgroundColor:"#221f1d"}} className="box  ">
                 <img
                   className="rounded-circle"
                   src="https://www.jploft.com/img/reactnative_hire.svg"
@@ -106,15 +106,17 @@ function Hiredeveloper() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 item">
-              <div className="box">
+              <div style={{color:"white", backgroundColor:"#221f1d"}} className="box ">
                 <img
                   className="rounded-circle"
                   src="https://th.bing.com/th/id/OIP.EDJ9xoErBbZqK2tExVoJfAHaHY?rs=1&pid=ImgDetMain"
                   alt="PYTHON DEVELOPER"
+                  style={{ width: '110px', height: '110px' }}
+                  
                 />
-                <h3 className="name">PYTHON DEVELOPER</h3>
+                <h3 className="name mt-5">PYTHON DEVELOPER</h3>
                 <p className="title">Developer - Blogger</p>
-                <p className="description">
+                <p className="description mt-5 ">
                   Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in
                 </p>
                 <div className="social">
@@ -125,15 +127,16 @@ function Hiredeveloper() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 item">
-              <div className="box">
+              <div style={{color:"white", backgroundColor:"#221f1d"}} className="box ">
                 <img
                   className="rounded-circle"
                   src="https://th.bing.com/th?id=OIP.FH2Sq5c4b0fgaE-sGQEqqwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
                   alt="JAVA DEVELOPER"
+                  style={{ width: '110px', height: '110px' }}
                 />
-                <h3 className="name">JAVA DEVELOPER</h3>
+                <h3 className="name mt-5">JAVA DEVELOPER</h3>
                 <p className="title">Developer - Blogger</p>
-                <p className="description">
+                <p className="description mt-5 ">
                   Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam
                 </p>
                 <div className="social">
@@ -151,25 +154,24 @@ function Hiredeveloper() {
 }
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
-      className={`${className} custom-arrow`}
-     
+     className={`${className} custom-arrow custom-next-arrow`}
       onClick={onClick}
     />
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
-      className={`${className} custom-arrow` }
-     
+     className={`${className} custom-arrow custom-prev-arrow`}
       onClick={onClick}
     />
   );
 }
+
 
 export default Hiredeveloper;

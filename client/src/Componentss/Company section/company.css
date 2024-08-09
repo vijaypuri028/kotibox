@@ -1,66 +1,83 @@
 .company-section {
-    padding: 2rem;
-    background-color: #1a1a1a;
-  }
-  
-  .company-section-text {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .company-section-text h1 {
-    color: rgb(255, 115, 0);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
+  padding: 2rem;
+  background-color: #1a1a1a;
+}
+
+.company-section-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.company-section-text h1 {
+  color: rgb(255, 115, 0);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.company-section-text p {
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 50px;
+}
+
+.company-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logo {
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.company-logo-container p {
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
   .company-section-text p {
-    color: rgb(255, 255, 255);
-    margin: 0 auto;
-    width: 80%;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    width: 60%;
   }
-  
-  .company-logos, .company-logo1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding:  50px;
+}
+
+@media (min-width: 1024px) {
+  .company-section-text h1 {
+    font-size: 3rem;
   }
-  
-  .company-logo, .company-logo1 img {
-    width: 80px;
-    height: auto;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
-    padding: 15px;
+
+  .company-section-text p {
+    width: 50%;
   }
-  
-  .company-logo:hover, .company-logo1 img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+  .company-logo {
+    width: 120px;
+    height: 120px;
   }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    .company-section-text p {
-      width: 60%;
-    }
+
+  .company-logo-container p {
+    width: 120px;
   }
-  
-  @media (min-width: 1024px) {
-    .company-section-text h1 {
-      font-size: 3rem;
-    }
-    
-    .company-section-text p {
-      width: 50%;
-    }
-  
-    .company-logo, .company-logo1 img {
-      width: 120px;
-    }
-  }
-  
+}
