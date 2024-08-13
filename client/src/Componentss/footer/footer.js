@@ -89,23 +89,14 @@ export default function Footer() {
               </div>
 
             </div>
-          
-
           </div>
-
-
           <hr />
           <div>
 
 
-
-
-
-
-
           </div>
           <hr className='text-light fs-1' />
-          <div className='fotter-list d-flex justify-content-between  text-center '>
+          <div className='fotter-list d-flex justify-content-between  text-center flex-wrap '>
           <ul>
               <h4>ABOUT</h4>
 

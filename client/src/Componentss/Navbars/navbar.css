@@ -39,6 +39,7 @@
     padding: 0.5rem 1rem;
     border-radius: 50px; /* Rounded background */
     align-items: center;
+
   }
 
   .dropdown-item1 {
@@ -52,6 +53,7 @@
     border-radius: 50px; /* Rounded background */
     align-items: center;
     text-decoration: none;
+    
   }
 
 
@@ -126,7 +128,7 @@
     justify-content: center;
     align-items: center;
     left: -500px;
-    height: 630px;
+    height: 700px;
 
   }
 
@@ -215,8 +217,8 @@
   }
 
   .icon-img{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
    margin-right: 20px;
 
   }

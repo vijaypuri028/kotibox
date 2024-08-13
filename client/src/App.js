@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Componentss/Navbars/Navbar';
 import Main from './Componentss/Main section/Main';
 import About from './Componentss/Aboutesection.js/About';
@@ -12,34 +12,35 @@ import Overview from '../src/Componentss/overview/Overview';
 import Blog from './Componentss/blog/blog';
 import Hiredeveloper from './Componentss/Hire developer/Hiredeveloper';
 import Button from './Componentss/button/Button';
-
+import Contact from './Componentss/Contact/Contact';
 
 function App() {
   return (
     <>
-    <Router>
-      <Routes>
-       <Route path='/' element={<Navbar/>} ></Route>
-       
-
-      </Routes>
-      <Main/>
-      <About/>
-      <Services/>
-      <Overview/>
-      <Industries/>
-     
-      <Company/>
-      <Client/>
-      <Hiredeveloper/>
-      <Blog/>
-      <Button/>
-     
-      
-    <Footer/>
-    </Router>
-
-    
+      <Router>
+        <Routes>
+          {/* Routes with Navbar and Footer */}
+          <Route path='/' element={
+            <>
+              <Navbar />
+              <Main />
+              <About />
+              <Services />
+              <Overview />
+              <Industries />
+              <Company />
+              <Client />
+              <Hiredeveloper />
+              <Blog />
+              <Button />
+              <Footer />
+            </>
+          } />
+          
+          {/* Contact Route - Only Navbar and Footer */}
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </Router>
     </>
   );
 }

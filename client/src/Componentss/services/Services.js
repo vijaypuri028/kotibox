@@ -2,6 +2,15 @@ import React from 'react'
 import { FaLaptop, FaMinus, FaCrop, FaCogs, FaHandHoldingUsd, FaQuidditch, FaNewspaper, FaSmile } from 'react-icons/fa'
 import './service.css'
 
+import Website from '../Kotibox img/service/Website.png'
+import Mobile  from '../Kotibox img/service/Mobile2.png'
+import Digital from '../Kotibox img/service/DM.png'
+import Fullstack from '../Kotibox img/icon/icons8-stack-48.png'
+import CRM from '../Kotibox img/service/CRM.png'
+import ERP from '../Kotibox img/service/CRM 1.png'
+import Game from '../Kotibox img/service/game3.png'
+import UI from '../Kotibox img/service/icons8-design-94.png'
+
 function Services() {
   return (
     <section id="service">
@@ -17,12 +26,7 @@ function Services() {
               </div>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br />Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
             </div>
-            {/* <div  className='single_service-btn mt-5 '>
-                <li  className='btn btn-dark '>more</li>
-                <li className='btn btn-dark'>more</li>
-                <li className='btn btn-dark'>more</li>
-                <li className='btn btn-dark'>more</li>
-                </div> */}
+      
           </div>
         </div>
 
@@ -31,7 +35,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
                 <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaLaptop />
+                  <img src={Website} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">Web development</h4>
@@ -54,7 +58,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaQuidditch />
+              <img src={Mobile} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">Mobile Development</h4>
@@ -76,7 +80,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaNewspaper />
+              <img src={UI} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">UI & UX Design</h4>
@@ -97,7 +101,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaCogs />
+              <img src={Digital} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">Digital Marketing</h4>
@@ -119,7 +123,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaCrop />
+              <img src={Website} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">eCommerce  Development</h4>
@@ -140,7 +144,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaSmile />
+              <img src={Fullstack} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">Fullstack Development</h4>
@@ -161,7 +165,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaCogs />
+              <img src={Game} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center ">Game Development</h4>
@@ -182,7 +186,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaSmile />
+              <img src={CRM} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center">CRM Development</h4>
@@ -207,7 +211,7 @@ function Services() {
             <div className="single_service hvr-curl-top-right">
               <div className="single_service-left">
               <div style={{marginLeft:"150px"}} className="icon ">
-                  <FaCogs />
+              <img src={ERP} alt='' />
                 </div>
               </div>
               <h4 className="single_service-heading text-center ">ERP Solutions  </h4>
