@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLaptop, FaMinus, FaCrop, FaCogs, FaHandHoldingUsd, FaQuidditch, FaNewspaper, FaSmile } from 'react-icons/fa'
+import {  FaMinus,  FaHandHoldingUsd} from 'react-icons/fa'
 import './service.css'
 
 import Website from '../Kotibox img/service/Website.png'

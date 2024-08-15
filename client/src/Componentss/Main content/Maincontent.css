@@ -1,0 +1,451 @@
+
+  
+  .marquee-img {
+    margin: 0 20px;
+    height: 50px; /* Adjust height for better visibility */
+  }
+  
+  .text {
+    padding: 20px 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .benefit-title {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: #413e66;
+  }
+  
+  .separator {
+    width: 2px;
+    background-color: #ccc;
+    height: 100%;
+    margin: 0 20px;
+  }
+  
+  .benefit-description {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #535074;
+  }
+  
+  .section-header h3 {
+    color: #413e66;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+  }
+  
+  .section-header p {
+    color: #535074;
+    font-size: 15px;
+    margin: auto;
+    padding-bottom: 60px;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .section-bg {
+    background: #f5f8fd;
+  }
+  
+  #services {
+    padding: 60px 0 40px 0;
+  }
+  
+  #services .box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    margin: 0 10px 40px 10px;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #services .box:hover {
+    transform: scale(1.1);
+  }
+  
+  #services .icon {
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    height: 60px;
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    text-align: center;
+    width: 60px;
+  }
+  
+  #services .icon .service-icon {
+    font-size: 36px;
+    line-height: 1;
+    color: #fd7200;
+  }
+  
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  #services .description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  
+  
+  @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+  
+  *,
+  html {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  }
+  
+  
+  .shape-box_half {
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .shape-box_half:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(53.5deg);
+    transform-origin: top left;
+    transition: transform .4s;
+    background: #023e8d;
+    z-index: 1;
+  }
+  .shape-box {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 400px; /* Set the box width to 600px */
+    height: 430px; /* Adjust this height as needed */
+    margin: 30px 10px;
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    /* Removed the percentage width to set a fixed width */
+  }
+  
+  .shape-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bg-black {
+    background-color: #000000;
+  }
+  
+  .shape-box_half figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 30px 30px;
+    transition: transform .4s;
+    transform: translateY(100%);
+    z-index: 3;
+  }
+  
+  .shape-box_half figcaption .show-cont {
+    position: absolute;
+    bottom: calc(100% + 30px);
+    left: 30px;
+    right: 30px;
+    transition: bottom .4s;
+  }
+  
+  .card-no {
+    font-size: 36px;
+    color: #f4f4f4;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .card-main-title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .card-content {
+    color: #ffffff;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 15px;
+  }
+  
+  .read-more-btn {
+    border: 2px solid #db3236;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s;
+    background: #db3236;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 25px;
+    text-decoration: none;
+  }
+  
+  .read-more-btn:hover {
+    background: transparent;
+    color: #db3236;
+  }
+  
+  .shape-box_half>.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fdd744;
+    opacity: 0;
+    transition: opacity .4s;
+  }
+  
+  .shape-box_half:hover:before {
+    transform: skewY(20deg);
+  }
+  
+  .shape-box_half:hover figcaption {
+    transform: translateY(0);
+  }
+  
+  .shape-box_half:hover figcaption .show-cont {
+    bottom: 100%;
+  }
+
+
+
+
+
+
+  
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 560px;
+  overflow: hidden;
+  background-color: #000;
+}
+.main {
+  margin: 0px auto;
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+.big-circle {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 5px solid #0e2483;
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  animation: Rotate 20s linear infinite;
+  -webkit-animation: Rotate 20s linear infinite;
+}
+.icon-block {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  background-image: linear-gradient(180deg, #80acff 0%, #627bf4 100%);
+  -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
+  box-shadow: 0 2px 4px 0 #3e5ada;
+  -webkit-box-shadow: 0 2px 4px 0 #3e5ada;
+}
+.icon-block img {
+  margin: 0px auto;
+  width: 86%;
+  animation: Rotate-reverse 20s linear infinite;
+  -webkit-animation: Rotate-reverse 20s linear infinite;
+}
+.icon-block:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.icon-block:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+}
+.icon-block:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+}
+.icon-block:nth-child(4) {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+/* circle content */
+.circle {
+  animation: circle-rotate 20s linear infinite;
+  -webkit-animation: circle-rotate 20s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  width: 75%;
+  height: 75%;
+  border: 3px solid #0051e8;
+  border-radius: 50%;
+}
+.circle .icon-block img {
+  animation: img-rotate 20s linear infinite;
+  -webkit-animation: img-rotate 20s linear infinite;
+}
+/* center logo */
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.center-logo img {
+  max-width: 200px;
+}
+
+/* keyframe animation */
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes Rotate-reverse {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes circle-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(405deg);
+  }
+}
+
+@-webkit-keyframes circle-rotate {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(405deg);
+  }
+}
+
+@keyframes img-rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(-405deg);
+  }
+}
+
+@-webkit-keyframes img-rotate {
+  from {
+    -webkit-transform: rotate(-45deg);
+  }
+  to {
+    -webkit-transform: rotate(-405deg);
+  }
+}
+
+  
+  
+ 
