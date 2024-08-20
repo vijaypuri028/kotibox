@@ -2,11 +2,12 @@
   
   .marquee-img {
     margin: 0 20px;
-    height: 50px; /* Adjust height for better visibility */
+    height: 50px; 
   }
   
   .text {
     padding: 20px 0;
+    background-color: #201e1e;
   }
   
   .text-center {
@@ -53,7 +54,7 @@
   
   .section-header p {
     color: #535074;
-    font-size: 15px;
+    font-size: 18px;
     margin: auto;
     padding-bottom: 60px;
     text-align: center;
@@ -132,12 +133,12 @@
   }
   
   
-  .shape-box_half {
+  .shape-box_half-1 {
     overflow: hidden;
     text-align: left;
   }
   
-  .shape-box_half:before {
+  .shape-box_half-1:before {
     content: '';
     position: absolute;
     top: 0;
@@ -150,7 +151,7 @@
     background: #023e8d;
     z-index: 1;
   }
-  .shape-box {
+  .shape-box-1 {
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -172,7 +173,7 @@
     background-color: #000000;
   }
   
-  .shape-box_half figcaption {
+  .shape-box_half-1 figcaption {
     position: absolute;
     left: 0;
     right: 0;
@@ -183,7 +184,7 @@
     z-index: 3;
   }
   
-  .shape-box_half figcaption .show-cont {
+  .shape-box_half-1 figcaption .show-cont-1 {
     position: absolute;
     bottom: calc(100% + 30px);
     left: 30px;
@@ -191,14 +192,14 @@
     transition: bottom .4s;
   }
   
-  .card-no {
+  .card-no-1 {
     font-size: 36px;
     color: #f4f4f4;
     padding: 0;
     margin: 10px 0;
   }
   
-  .card-main-title {
+  .card-main-title-1 {
     margin-top: 8px;
     font-weight: 700;
     font-size: 24px;
@@ -206,14 +207,14 @@
     color: #ffffff;
   }
   
-  .card-content {
+  .card-content-1 {
     color: #ffffff;
     margin-top: 20px;
     line-height: 22px;
     font-size: 15px;
   }
   
-  .read-more-btn {
+  .read-more-btn-1 {
     border: 2px solid #db3236;
     font-size: 14px;
     cursor: pointer;
@@ -231,12 +232,12 @@
     text-decoration: none;
   }
   
-  .read-more-btn:hover {
+  .read-more-btn-1:hover {
     background: transparent;
     color: #db3236;
   }
   
-  .shape-box_half>.after {
+  .shape-box_half-1>.after {
     position: absolute;
     top: 0;
     left: 0;
@@ -247,15 +248,15 @@
     transition: opacity .4s;
   }
   
-  .shape-box_half:hover:before {
+  .shape-box_half-1:hover:before {
     transform: skewY(20deg);
   }
   
-  .shape-box_half:hover figcaption {
+  .shape-box_half-1:hover figcaption {
     transform: translateY(0);
   }
   
-  .shape-box_half:hover figcaption .show-cont {
+  .shape-box_half-1:hover figcaption .show-cont {
     bottom: 100%;
   }
 
@@ -273,7 +274,7 @@
   -webkit-align-items: center;
   height: 560px;
   overflow: hidden;
-  background-color: #000;
+  background-color: #000000;
 }
 .main {
   margin: 0px auto;
@@ -445,6 +446,82 @@
     -webkit-transform: rotate(-405deg);
   }
 }
+
+
+.Circel-section{
+  background-color: #000000;
+}
+.v-shape {
+
+  margin: 20px 0;
+}
+
+.box1 {
+  width: 500px; 
+  height: 100px; 
+  background-color: #001b42; 
+  border: 2px solid #ffffff; 
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; 
+  /* font-weight: bold; */
+  text-align: center;
+  transition: transform 0.3s ease; 
+  transform: rotate(90deg);
+  
+}
+
+.box1:hover {
+  transform: scale(1.05); 
+}
+
+.box1.size-small {
+  width: 100px; 
+  height: 150px;
+  margin: 100px;
+  transform: rotate(90deg);
+
+  
+}
+.box1.size-small-1 {
+  width: 100px; 
+  height: 150px;
+  margin: 100px;
+  transform: rotate(-90deg);
+
+  
+}
+
+
+.box1 .h6 {
+  transform: rotate(-90deg);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.box1 .h5 {
+  transform: rotate(90deg);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+
+.box1::before {
+  content: '';
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent; 
+  border-bottom: 80px solid #e1cccc; 
+}
+
 
   
   

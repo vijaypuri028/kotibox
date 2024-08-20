@@ -34,7 +34,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div style={{ marginTop: "100px" }} className='' >
+    <div  className='' >
       <footer className={scrolled ? 'scrolled' : ''}>
         <div className="content  ">
           <div className="top">

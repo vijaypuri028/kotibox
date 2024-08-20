@@ -1,0 +1,157 @@
+
+
+/* Intro section */
+.intro-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 60px 0;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-image {
+  max-width: 45%;
+  height: auto;
+  border-radius: 15px;
+ 
+}
+
+.intro-text {
+  max-width: 50%;
+  padding-left: 40px;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+.action-button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #02419f;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 200;
+  transition: background-color 0.3s ease;
+  width: 300px;
+}
+
+.action-button:hover {
+  background-color: #000479;
+  transform: scale(1.02);
+    
+}
+
+/* Services section */
+.services-section {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.section-description {
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-item {
+  background-color: #fdfdfd;
+  border: 1px solid #e3e3e3;
+  border-radius: 15px;
+  width: 350px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+
+.card-text {
+  font-size: 1.05rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.card-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image,
+  .intro-text {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .card-container,
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-item,
+  .feature-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+}

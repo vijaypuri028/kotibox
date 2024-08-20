@@ -80,12 +80,37 @@ export default function Navbar() {
           </button>
           <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0">
-              <li style={{ fontSize: "20px" }} className="nav-item">
-                <Link className="nav-link active  " aria-current="page" to="#"> About Us</Link>
+
+            <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4"  >
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
+                  About
+                </Link>
+                <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
+                
+                  <div className="dropdown-container">
+
+
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2  " to="/CompanyAbout"> <img className='icon-img' src={Website} alt='' />Company</Link> <hr className='text-light' />
+                      {/* <Link className="dropdown-item2 " to="/Career"> <img className='icon-img' src={Mobile} alt='' />Career</Link> <hr className='text-light' /> */}
+                      {/* <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Our Team </Link> <hr className='text-light' /> */}
+
+                    
+
+                    </div>
+                   
+
+                    
+
+                  </div>
+
+                </div>
               </li>
 
-              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+
+
+              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4"  >
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Services
                 </Link>
                 <div className="dropdown-menu large-dropdown1 bg-dark" aria-labelledby="navbarDropdown">
@@ -116,7 +141,7 @@ export default function Navbar() {
                       <Link className="dropdown-item2   " to="/UI&UX"><img className='icon-img' src={UI} alt='' /> UI & UX Design</Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/webDevelopment"><img className='icon-img' src={Website} alt='' /> Web Design</Link> <hr className='text-light' />
 
-                      <Link className="dropdown-item2 " to="/webDevelopment"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
 
                     </div>
 
@@ -137,77 +162,85 @@ export default function Navbar() {
 
 
               <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Industries
                 </Link>
                 <div className="dropdown-menu large-dropdown3 bg-dark" aria-labelledby="navbarDropdown">
                   <div className="dropdown-container">
                     <div className="dropdown-row">
-                      <Link  to='/Educatin'>
-                        <div  className='dropdown-item-icon '>
-                          <i  style={{ fontSize: "40px" ,textDecoration:"non"}} class="bi bi-book text-light "></i>
-                          <Link  className="dropdown-item1 text-light" to="#"> Education & E-learning</Link>
+                      <Link to='/Education'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px", textDecoration: "non" }} class="bi bi-book text-light "></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Education & E-learning</Link>
                         </div>
                       </Link>
-                       
-                      <Link to='/AI'>
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-amazon text-light "></i>
-                        <Link className="dropdown-item1 text-light" to="#"> Food & Restaurants</Link>
-                      </div>
+
+                      <Link to='/Food'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-amazon text-light "></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Food & Restaurants</Link>
+                        </div>
                       </Link>
 
-                      <Link to='/AI'>
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-controller text-light"></i>
+                      <Link to='/Sports'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-controller text-light"></i>
 
-                        <Link className="dropdown-item1 text-light" to="#"> Sports & Gaming</Link>
-                      </div>
+                          <Link className="dropdown-item1 text-light" to="#"> Sports & Gaming</Link>
+                        </div>
                       </Link>
 
 
                     </div>
-                    <Link to='/AI'>
-                    <div className="dropdown-row">
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-airplane-engines text-light "></i>
-                        <Link className="dropdown-item1 text-light" to="#"> Tour & Travels</Link>
-                      </div>
-                      
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-bank text-light"></i>
-                        <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
-                      </div>
 
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-collection-play-fill text-light "></i>
-                        <Link className="dropdown-item1 text-light" to="#"> Media & Publication</Link>
-                      </div>
+                    <div className="dropdown-row">
+                      <Link to='/Tour'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-airplane-engines text-light "></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Tour & Travels</Link>
+                        </div>
+                      </Link>
+                      <Link to='/bankig'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-bank text-light"></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
+                        </div>
+                      </Link>
+                      <Link to='/Publication'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-collection-play-fill text-light "></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Media & Publication</Link>
+                        </div>
+                      </Link>
 
                     </div>
-                    </Link>
 
-                    <Link to='/AI'>
+
+
                     <div className="dropdown-row">
-
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-hospital text-light "></i>
-                        <Link className="dropdown-item1 text-light" to="#"> Healthcare</Link>
-                      </div>
-
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-house-door text-light"></i>
-                        <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
-                      </div>
-                      <div className='dropdown-item-icon '>
-                        <i style={{ fontSize: "40px" }} class="bi bi-briefcase text-light"></i>
-                        <Link className="dropdown-item1 text-light" to="#"> E-Commerce</Link>
-                      </div>
+                      <Link to='/Heathcare'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-hospital text-light "></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Healthcare</Link>
+                        </div>
+                      </Link>
+                      <Link to='/RealState'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-house-door text-light"></i>
+                          <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
+                        </div>
+                      </Link>
+                      <Link to='/ECommerceid'>
+                        <div className='dropdown-item-icon '>
+                          <i style={{ fontSize: "40px" }} class="bi bi-briefcase text-light"></i>
+                          <Link className="dropdown-item1 text-light" to="#"> E-Commerce</Link>
+                        </div>
+                      </Link>
 
                     </div>
-                    </Link>
-                     
-                  
+
+
+
                     <div className="dropdown-row">
                       <img className='dropdown-img-1 mt-4' src='https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
                       <li style={{ position: "absolute", top: "80%", left: "80%" }} className='btn btn-danger w-15'>Get A Free Consultation</li>
@@ -222,7 +255,7 @@ export default function Navbar() {
               </li>
 
               <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Hire Developer
                 </Link>
                 <div className="dropdown-menu large-dropdown4 bg-dark" aria-labelledby="navbarDropdown">
@@ -230,29 +263,29 @@ export default function Navbar() {
                   <div className="dropdown-container">
 
                     <div className="dropdown-row ">
-                      <Link className="dropdown-item2  " to="#"> <img className='icon-img' src={Android} alt='' /> HIRE <br /> Android Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Java} alt='' /> HIRE <br /> JAVA Developer </Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={AngularJS} alt='' /> HIRE <br /> AngularJS Developer </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2  " to="/Android"> <img className='icon-img' src={Android} alt='' /> HIRE <br /> Android Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/javaDeveloper"><img className='icon-img' src={Java} alt='' /> HIRE <br /> JAVA Developer </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Angulardeveloper"><img className='icon-img' src={AngularJS} alt='' /> HIRE <br /> AngularJS Developer </Link> <hr className='text-light' />
 
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Blockchain} alt='' /> HIRE <br />  Blockchain Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={DotNet} alt='' />HIRE <br /> Dot Net Developer</Link> <hr className='text-light' />
-
-                    </div>
-                    <div className="dropdown-row ">
-                      <Link className="dropdown-item2" to="#"><img className='icon-img' src={Fullstack} alt='' /> HIRE <br /> Full Stack Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={IOS} alt='' /> HIRE <br /> IOS Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2" to="#"><img className='icon-img' src={Laravel} alt='' /> HIRE <br /> Laravel Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Magento} alt='' /> HIRE <br /> Magento Developer </Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={NodeJs} alt='' /> HIRE <br /> NodeJs Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Blockchaindeveloper"><img className='icon-img' src={Blockchain} alt='' /> HIRE <br />  Blockchain Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Dotnetdeveloper"><img className='icon-img' src={DotNet} alt='' />HIRE <br /> Dot Net Developer</Link> <hr className='text-light' />
 
                     </div>
                     <div className="dropdown-row ">
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Wordpress} alt='' /> HIRE <br /> Wordpress Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={react} alt='' /> HIRE <br /> ReactJS Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2   " to="#"><img className='icon-img' src={reactNative} alt='' /> HIRE <br /> React Native Developer</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={php} alt='' /> HIRE <br /> PHP Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2" to="/Fullstackdeveloper"><img className='icon-img' src={Fullstack} alt='' /> HIRE <br /> Full Stack Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/IOSdeveloper"><img className='icon-img' src={IOS} alt='' /> HIRE <br /> IOS Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2" to="/Laraveldeveloper"><img className='icon-img' src={Laravel} alt='' /> HIRE <br /> Laravel Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Magentodeveloper"><img className='icon-img' src={Magento} alt='' /> HIRE <br /> Magento Developer </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/NodeJsdeveloper"><img className='icon-img' src={NodeJs} alt='' /> HIRE <br /> NodeJs Developer</Link> <hr className='text-light' />
 
-                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={python} alt='' /> HIRE <br />  Python Developer </Link> <hr className='text-light' />
+                    </div>
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2 " to="/wordpressdeveloper"><img className='icon-img' src={Wordpress} alt='' /> HIRE <br /> Wordpress Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Reactjsdeveloper"><img className='icon-img' src={react} alt='' /> HIRE <br /> ReactJS Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2   " to="/ReactNativedeveloper"><img className='icon-img' src={reactNative} alt='' /> HIRE <br /> React Native Developer</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Phpdeveloper"><img className='icon-img' src={php} alt='' /> HIRE <br /> PHP Developer</Link> <hr className='text-light' />
+
+                      <Link className="dropdown-item2 " to="/Pythondeveloper"><img className='icon-img' src={python} alt='' /> HIRE <br />  Python Developer </Link> <hr className='text-light' />
 
                     </div>
 
@@ -272,15 +305,15 @@ export default function Navbar() {
 
 
               <li style={{ fontSize: "20px" }} className="nav-item">
-                <Link className="nav-link   " aria-current="page" to="/contact"> Contact Us </Link>
+                <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
               <li style={{ fontSize: "20px" }} className="nav-item me-2 ">
-                <Link className="nav-link " aria-current="page" to="#"> Portfolio</Link>
+                <Link className="nav-link " aria-current="page" to="#" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Portfolio</Link>
               </li>
 
               <li className="nav-item dropdown btn btn-danger ms-4">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Get A Free Quote
                 </Link>
                 <div className="dropdown-menu large-dropdown6 bg-dark" aria-labelledby="navbarDropdown">

@@ -3,27 +3,20 @@ import './Webdevelopment.css';
 import Navbar from '../Navbars/Navbar';
 import Footer from '../footer/footer';
 import Blog from '../blog/blog';
-import Industries from '../Industries/Industries';
 import Button from '../button/Button';
 import Webservicemain from '../Webservicemain.js/Webservicemain';
 import imgSrc from "../Kotibox img/Main img/web.jpg"; 
 import MainContent from '../Main content/MainContent';
+import Marquee from '../Marquee/Marquee';
 
 export default function WebDevelopment() {
-  const mainText = { Text: "WEBSITE  DEVELOPMENT" }
-  const Secondtext = { Text: "Your Partner " }
-
-  
-
-  const clients = [
-    { src: "https://www.jploft.com/img/blazepod_logo.svg", alt: "Blazepod Logo" },
-    { src: "https://www.jploft.com/img/needsquite_logo.svg", alt: "Needsquite Logo" },
-    
-  ];
+  const mainText = "WEBSITE DEVELOPMENT";
+  const Secondtext = "Your Partner";
+  const textArray = ["laravel", "Codeelgniter", "wordpress", "Woo commerce" ,"Mangento"];
 
   const services = [
     { icon: "bi bi-0-square", title: "Custom Website Development", description: "We offer custom website design and development services to leverage our client business with a whole new brand identity on the web. Our team of web designers and developers is highly proficient in creating professional websites for your business." },
-    { icon: "bi bi-pc-display", title: "E-commerce Web developmet", description: "WordPress is the most preferred open source CMS for custom web development. It enables creating Blog, Magazine, E-Commerce and other web development projects. JPLoft has expertise in WordPress Development, thanks to our experienced team of WordPress" },
+    { icon: "bi bi-pc-display", title: "E-commerce Web development", description: "WordPress is the most preferred open source CMS for custom web development. It enables creating Blog, Magazine, E-Commerce and other web development projects. JPLoft has expertise in WordPress Development, thanks to our experienced team of WordPress" },
     { icon: "bi bi-pc-display", title: "ERP Development", description: "We at JPLoft create B2B and B2C websites for our clients’ eCommerce web development needs. Hire our highly proficient eCommerce web developers to create fully responsive eCommerce websites, accessible on different platforms like mobile, tablets, desktops and " },
     { icon: "bi bi-pc-display", title: "Web App Development", description: "If your business requires custom CMS or SaaS development needs, our web developers can build tailored CMS & SaaS web solutions as per your business requirements. Our web programmers have expertise in technologies like PHP, ASP.NET,  JAVA and Python." },
     { icon: "bi bi-pc-display", title: "Single Landing page website", description: "Our web application developers are competent to build apps on the web to empower your business. They have immense experience and technical expertise in creating web applications for real estate, travel, eCommerce and social  media industries." },
@@ -36,7 +29,7 @@ export default function WebDevelopment() {
       imgSrc: "https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Design",
       cardNo: "01",
-      title: "Custom ",
+      title: "Custom",
       description: "We provide the best eCommerce website with the help of our dedicated developers who provide the best CakePHP Website Development Services.",
       link: "/design"
     },
@@ -85,28 +78,31 @@ export default function WebDevelopment() {
   return (
     <>
       <Navbar />
-      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text}  />
+      <Webservicemain 
+        imgSrc={imgSrc} 
+        mainText={mainText} 
+        Secondtext={Secondtext} 
+        textArray={textArray} 
+      />
       <MainContent
-        heading1="Our Trusted Clients"
-        clients={clients}
-        benefitTitle="Website  Development Benefits"
+        benefitTitle="Website Development Benefits"
         benefitDescription="Kotibox is a top development company with Moodle solutions..."
         services={services}
-        whyChooseTitle="Why Choose Kotibox for Website  Development?"
-        whyChooseDescription="Because we provide reliable CakePHP development services for your business, keeping your requirements in mind. Here are a few key features that make us a perfect choice for you Because we provide reliable CakePHP development services for your business, keeping your requirements in mind. Here are a few key features that make us a perfect choice for you!!! "
+        whyChooseTitle="Why Choose Kotibox for Website Development?"
+        whyChooseDescription="Because we provide reliable CakePHP development services for your business, keeping your requirements in mind. Here are a few key features that make us a perfect choice for you!!!"
         shapeBoxes={shapeBoxes}
-
         heading2="KOTIBOX"
         subheading="WEBDEVELOPMENT"
         subheadingSize="2em"
         additionalText="Since 2010"
         additionalTextSize="1.5em"
-      
-        
+        circelhead="Web Development"
+        circelsub="CakePHP is an advanced PHP7-based rapid application development framework that makes the web application development process easier."
+        circeltext="As a prominent web development company across the world, JPLoft has highly experienced CakePHP developers that help you to create strong web apps. JPLoft builds websites that are more responsive and have elegant designs with extraordinary features. In this framework, you can improve your user interaction by developing a high-quality web app for your business."
       />
       <Button />
-      <Industries />
       <Blog />
+      <Marquee />
       <Footer />
     </>
   );

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Webservice.css'
 
-export default function Webservicemain({ imgSrc, mainText, Secondtext }) {
+export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray }) {
   const [scrolled, setScrolled] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [result, setResult] = useState('');
-  const textArray = ["Website Development", "App Development", "Software Development", "Digital Marketing"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +61,7 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext }) {
             <h1 className="main-text">
               {mainText} <br /> {Secondtext}
             </h1>
-            <div className="animated-text">{textArray[textIndex]}</div>
+             <div className="animated-text">{textArray[textIndex]}</div>
             <div className="consult-btn">CONSULT OUR EXPERT</div>
           </div>
         </div>
