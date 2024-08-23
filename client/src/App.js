@@ -1,4 +1,5 @@
 import './App.css';
+// import './index.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Componentss/Navbars/Navbar';
 import Main from './Componentss/Main section/Main';
@@ -55,7 +56,7 @@ import ReactNativedeveloper from './Componentss/Hire developer main section/Reac
 import Phpdeveloper from './Componentss/Hire developer main section/PHP developer/Phpdeveloper';
 import Pythondeveloper from './Componentss/Hire developer main section/python developer/Pythondeveloper';
 import CompanyAbout from './Componentss/About drop down/Company/CompanyAbout';
-// import Career from './Componentss/About drop down/Career/Career';
+import Career from './Componentss/About drop down/Career/Career';
 
 function App() {
   return (
@@ -128,7 +129,7 @@ function App() {
 
 
           <Route path='/CompanyAbout' element={<CompanyAbout/>} />
-          {/* <Route path='/Career' element={<Career/>} /> */}
+          <Route path='/Career' element={<Career/>} />
 
 
 

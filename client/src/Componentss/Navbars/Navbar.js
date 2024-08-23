@@ -92,7 +92,7 @@ export default function Navbar() {
 
                     <div className="dropdown-row ">
                       <Link className="dropdown-item2  " to="/CompanyAbout"> <img className='icon-img' src={Website} alt='' />Company</Link> <hr className='text-light' />
-                      {/* <Link className="dropdown-item2 " to="/Career"> <img className='icon-img' src={Mobile} alt='' />Career</Link> <hr className='text-light' /> */}
+                      <Link className="dropdown-item2 " to="/Career"> <img className='icon-img' src={Mobile} alt='' />Career</Link> <hr className='text-light' />
                       {/* <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Our Team </Link> <hr className='text-light' /> */}
 
                     

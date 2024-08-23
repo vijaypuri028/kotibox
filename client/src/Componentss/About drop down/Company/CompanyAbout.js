@@ -8,6 +8,7 @@ import Button from '../../button/Button';
 import Blog from '../../blog/blog'
 import Webservicemain from '../../Webservicemain.js/Webservicemain';
 import imgSrc from "../../Kotibox img/Main img/Game development.jpg";
+import { Link } from 'react-router-dom';
 
 function CompanyAbout() {
   const mainText = { Text: "WEBSITE DEVELOPMENT" }
@@ -203,16 +204,16 @@ function CompanyAbout() {
                   <div className="social">
                     <ul>
                       <li className="twitter">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <Link href="#"><i className="fab fa-twitter"></i></Link>
                       </li>
                       <li className="pinterest">
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <Link href="#"><i className="fab fa-pinterest"></i></Link>
                       </li>
                       <li className="instagram">
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <Link href="#"><i className="fab fa-instagram"></i></Link>
                       </li>
                       <li className="vimeo">
-                        <a href="#"><i className="fab fa-vimeo-v"></i></a>
+                        <Link href="#"><i className="fab fa-vimeo-v"></i></Link>
                       </li>
                     </ul>
                   </div>
@@ -220,7 +221,7 @@ function CompanyAbout() {
               </div>
               <div className="info">
                 <span className="message">
-                  <a href="#"><i className="fas fa-envelope-open"></i></a>
+                  <Link href="#"><i className="fas fa-envelope-open"></i></Link>
                 </span>
                 <h4>Lorem Ipsum</h4>
                 <span>Project Manager</span>
@@ -237,16 +238,16 @@ function CompanyAbout() {
                   <div className="social">
                     <ul>
                       <li className="twitter">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <Link href="#"><i className="fab fa-twitter"></i></Link>
                       </li>
                       <li className="pinterest">
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <Link href="#"><i className="fab fa-pinterest"></i></Link>
                       </li>
                       <li className="instagram">
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <Link href="#"><i className="fab fa-instagram"></i></Link>
                       </li>
                       <li className="vimeo">
-                        <a href="#"><i className="fab fa-vimeo-v"></i></a>
+                        <Link href="#"><i className="fab fa-vimeo-v"></i></Link>
                       </li>
                     </ul>
                   </div>
@@ -254,7 +255,7 @@ function CompanyAbout() {
               </div>
               <div className="info">
                 <span className="message">
-                  <a href="#"><i className="fas fa-envelope-open"></i></a>
+                  <Link href="#"><i className="fas fa-envelope-open"></i></Link>
                 </span>
                 <h4>Lorem Ipsum</h4>
                 <span>App Developer</span>
@@ -271,16 +272,16 @@ function CompanyAbout() {
                   <div className="social">
                     <ul>
                       <li className="twitter">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <Link href="#"><i className="fab fa-twitter"></i></Link>
                       </li>
                       <li className="pinterest">
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <Link href="#"><i className="fab fa-pinterest"></i></Link>
                       </li>
                       <li className="instagram">
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <Link href="#"><i className="fab fa-instagram"></i></Link>
                       </li>
                       <li className="vimeo">
-                        <a href="#"><i className="fab fa-vimeo-v"></i></a>
+                        <Link href="#"><i className="fab fa-vimeo-v"></i></Link>
                       </li>
                     </ul>
                   </div>
@@ -288,7 +289,7 @@ function CompanyAbout() {
               </div>
               <div className="info">
                 <span className="message">
-                  <a href="#"><i className="fas fa-envelope-open"></i></a>
+                  <Link href="#"><i className="fas fa-envelope-open"></i></Link>
                 </span>
                 <h4>Lorem Ipsum</h4>
                 <span>Web Designer</span>
@@ -305,16 +306,16 @@ function CompanyAbout() {
                   <div className="social">
                     <ul>
                       <li className="twitter">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <Link href="#"><i className="fab fa-twitter"></i></Link>
                       </li>
                       <li className="pinterest">
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <Link href="#"><i className="fab fa-pinterest"></i></Link>
                       </li>
                       <li className="instagram">
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <Link href="#"><i className="fab fa-instagram"></i></Link>
                       </li>
                       <li className="vimeo">
-                        <a href="#"><i className="fab fa-vimeo-v"></i></a>
+                        <Link href="#"><i className="fab fa-vimeo-v"></i></Link>
                       </li>
                     </ul>
                   </div>
@@ -322,7 +323,7 @@ function CompanyAbout() {
               </div>
               <div className="info">
                 <span className="message">
-                  <a href="#"><i className="fas fa-envelope-open"></i></a>
+                  <Link href="#"><i className="fas fa-envelope-open"></i></Link>
                 </span>
                 <h4>Lorem Ipsum</h4>
                 <span>Web Designer</span>
@@ -338,16 +339,16 @@ function CompanyAbout() {
                   <div className="social">
                     <ul>
                       <li className="twitter">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <Link href="#"><i className="fab fa-twitter"></i></Link>
                       </li>
                       <li className="pinterest">
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <Link href="#"><i className="fab fa-pinterest"></i></Link>
                       </li>
                       <li className="instagram">
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <Link href="#"><i className="fab fa-instagram"></i></Link>
                       </li>
                       <li className="vimeo">
-                        <a href="#"><i className="fab fa-vimeo-v"></i></a>
+                        <Link href="#"><i className="fab fa-vimeo-v"></i></Link>
                       </li>
                     </ul>
                   </div>
@@ -355,7 +356,7 @@ function CompanyAbout() {
               </div>
               <div className="info">
                 <span className="message">
-                  <a href="#"><i className="fas fa-envelope-open"></i></a>
+                  <Link href="#"><i className="fas fa-envelope-open"></i></Link>
                 </span>
                 <h4>Lorem Ipsum</h4>
                 <span>Web Designer</span>
@@ -371,16 +372,16 @@ function CompanyAbout() {
                   <div className="social">
                     <ul>
                       <li className="twitter">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <Link href="#"><i className="fab fa-twitter"></i></Link>
                       </li>
                       <li className="pinterest">
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <Link href="#"><i className="fab fa-pinterest"></i></Link>
                       </li>
                       <li className="instagram">
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <Link href="#"><i className="fab fa-instagram"></i></Link>
                       </li>
                       <li className="vimeo">
-                        <a href="#"><i className="fab fa-vimeo-v"></i></a>
+                        <Link href="#"><i className="fab fa-vimeo-v"></i></Link>
                       </li>
                     </ul>
                   </div>
@@ -388,7 +389,7 @@ function CompanyAbout() {
               </div>
               <div className="info">
                 <span className="message">
-                  <a href="#"><i className="fas fa-envelope-open"></i></a>
+                  <Link href="#"><i className="fas fa-envelope-open"></i></Link>
                 </span>
                 <h4>Lorem Ipsum</h4>
                 <span>Web Designer</span>
