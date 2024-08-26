@@ -9,11 +9,9 @@ function Overview() {
           <img className='img-fluid' src='https://www.jploft.com/img/call_disccuss1.webp' alt="Profile" />
         </div>
         <div className="profile__text text-center ms-5">
-          <h1>Still worried about technology partner for your business?</h1>
+          <h1>Are you still concerned about your  technology partner?</h1>
           <p className='text-light w-75 mx-auto'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam ipsam, molestias at nobis rem eaque
-            in suscipit minima laudantium, qui exercitationem accusantium ducimus magnam voluptatibus quod, ad inventore?
-            Ipsa.
+          Through the development of solutions for businesses, entrepreneurs, industry leaders, and governmental organizations, we bring the digital future closer to people.
           </p>
           <ul className="snslist d-flex justify-content-center mt-5">
             <li className='btn btn-danger p-3'>Consult with our Technical Advisor</li>

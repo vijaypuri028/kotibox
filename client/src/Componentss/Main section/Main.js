@@ -64,7 +64,7 @@ export default function Main() {
         <div className="video-overlay">
           <div>
             <h1 style={{ position: "absolute", top: "30%", left: "10%", color: "white", fontSize: "2.5rem" }}>
-              YOUR TRUSTED <br /> PARTNER FOR
+            YOUR TRUSTED  <br />  COLLABORATOR FOR 
             </h1>
             <div style={{ fontSize: "3.5rem", color: "#e69500", fontFamily: "700" }} className="animated-text mt-2">{textArray[textIndex]}</div>
             <div style={{ marginTop: "100px", fontSize: "20px" }} className='btn btn-danger animated-text '>CONSULT OUR EXPERT</div>

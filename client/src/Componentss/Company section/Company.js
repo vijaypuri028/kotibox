@@ -36,8 +36,8 @@ export default function Company() {
   return (
     <div className='company-section'>
       <div className='company-section-text'>
-        <h1>Get Services Built with the Latest Robust Technologies</h1>
-        <p>KOTIBOX uses cutting-edge technologies to develop unique solutions for your business. Our team’s deep expertise covers a vast range of technologies, making us stand above other companies.</p>
+        <h1>Delivering Trendy solutions with cutting-edge technology excites us.</h1>
+
       </div>
 
       <div className='Mobile App mt-4'>
