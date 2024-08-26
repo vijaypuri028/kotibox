@@ -57,6 +57,7 @@ import Phpdeveloper from './Componentss/Hire developer main section/PHP develope
 import Pythondeveloper from './Componentss/Hire developer main section/python developer/Pythondeveloper';
 import CompanyAbout from './Componentss/About drop down/Company/CompanyAbout';
 import Career from './Componentss/About drop down/Career/Career';
+import Portfolio from './Componentss/portfolio/Portfolio';
 
 function App() {
   return (
@@ -132,7 +133,7 @@ function App() {
           <Route path='/Career' element={<Career/>} />
 
 
-
+        <Route path='/Portfolio' element={<Portfolio/>} />
         
         </Routes>
        

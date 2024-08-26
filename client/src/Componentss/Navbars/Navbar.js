@@ -309,7 +309,7 @@ export default function Navbar() {
               </li>
 
               <li style={{ fontSize: "20px" }} className="nav-item me-2 ">
-                <Link className="nav-link " aria-current="page" to="#" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Portfolio</Link>
+                <Link className="nav-link " aria-current="page" to="/Portfolio" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Portfolio</Link>
               </li>
 
               <li className="nav-item dropdown btn btn-danger ms-4">
