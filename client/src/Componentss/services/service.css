@@ -1,141 +1,114 @@
 section {
-    /* padding: 60px 0; */
-    /* min-height: 100vh; */
-    background-color: #221f1d;
-}
-
-a,
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    outline: none;
-}
-
-a,
-a:active,
-a:focus {
-    color: #ffffff;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
-    -ms-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-duration: .2s;
-    -ms-transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    -webkit-transition-duration: .2s;
-    -o-transition-duration: .2s;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-img {
-max-width: 100%;
-height: auto;
-}
-.section_title {
-margin-bottom: 40px;
+  padding: 60px 0;
+  background-color: #221f1d;
 }
 
 .section_title h2 {
-color: #eb7622;
-font-size: 30px;
-font-weight: 700;
-letter-spacing: 1.8px;
-text-transform: uppercase;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+/* General Styles */
+.icon-arrow i {
+  /* position: ;  */
+  /* bottom: 20px; 
+  right: 20px;  */
+  font-size: 30px;
+  color: #dc3545;
+  transition: all 0.3s ease-in-out; 
+  cursor: pointer;
+  align-items: end; 
+  justify-content: end;
+  display: flex;
+  opacity: 1;
+  /* padding-top: 100px;  */
+
+
 }
 
-.brand_border .fa.fa-minus {
-color: #fff;
-font-size: 50px;
-height: 2px;
-background: #022892 none repeat scroll 0 0;
-width: 200px;
+.icon-arrow i:hover {
+  font-size: 35px; 
+  color: #ff6347;  
+  transform: translateY(-4px); 
 }
-.brand_border .fas.fa-handshake {
-font-size: 14px;
-color:#c01919;
-}
+
+
+
 
 
 .section_title p {
-color: #ffffff;
-font-size: 24px;
-line-height: 25px;
-padding: 14px 0;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.single_service-btn .btn {
-   margin: 5px;
-  
+.single_service {
+  background: #2c2a28;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  /* height: 700px; */
+
 }
 
-.choose_us .section_title {
-margin-top: 45px;
-}
-#service .single_service {
-padding: 32px;
-box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1);
-margin-bottom: 50px;
-border: 1px solid rgb(50, 47, 47);
-border-radius: 20px;
-height: 680px;
-}
-
-#service .single_service:hover{
-box-shadow: 10px 10px 15px rgba(24, 23, 23, 0.4);
-}
-
-#service .icon {
-
-border-radius: 5%;
-color: #d63b0b;
-font-size: 55px;
-line-height: 65px;
-overflow: hidden;
-text-align: center;
-text-decoration: none;
-width: 70px;
-}
-
-#service .single_service .single_service-left {
-padding-right: 25px;
+.single_service:hover {
+  transform: translateY(-10px);
 }
 
 .single_service-heading {
-font-size: 25px;
-font-weight: 700;
-text-transform: uppercase;
-color: #e95600;
+  color: #da3a00;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  
 }
 
 .single_service-body p {
-font-size: 18px;
-line-height: 25px;
+  color: #ffffff;
+  font-size: 1.01rem;
+  margin: 15px 0;
 }
 
-.single_service-left {
-display: table-cell;
-vertical-align: top;
+.single_service-btn .btn {
+  background: #333;
+  color: #fff;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
-.single_service-body {
-color: #ffffff;
-display: table-cell;
-vertical-align: top;
+
+.single_service-btn .btn:hover {
+  background: #8b8b8b;
 }
-.hvr-curl-top-right {
-display: inline-block;
-vertical-align: middle;
--webkit-transform: perspective(1px) translateZ(0);
-transform: perspective(1px) translateZ(0);
-box-shadow: 0 0 1px transparent;
-position: relative;
+
+.icon img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
 }
-#service .single_service:hover {
-background-color: #000000;
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .single_service-left {
+    margin: 0 auto;
+  }
+  
+  .single_service {
+    margin: 20px 0;
+  }
+  
+  .section_title h2 {
+    font-size: 2rem;
+  }
+
+  .section_title p {
+    font-size: 0.9rem;
+  }
+  
+  .single_service-btn .btn {
+    font-size: 0.9rem;
+  }
 }

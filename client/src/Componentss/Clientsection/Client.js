@@ -1,51 +1,16 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
 import './client.css';
-
-const testimonials = [
-  {
-    img: "https://tse3.mm.bing.net/th?id=OIP.h0hPZzAziPf3v-srHQTdWQHaHa&pid=Api&P=0&h=180",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    name: "Manjay Gupta"
-  },
-  {
-    img: "https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-Portrait-Photographer-in-Dublin-Ireland..jpg",
-    text: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.",
-    name: "Sarah Smith"
-  },
-  {
-    img: "https://tse4.mm.bing.net/th?id=OIP.BzMS3A4hVqzKe2jsV7rPFwHaJ4&pid=Api&P=0&h=180",
-    text: "Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    name: "John Doe"
-  },
-  {
-    img: "https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
-    name: "Emily Johnson"
-  },
-  {
-    img: "https://i.pinimg.com/originals/8b/96/25/8b96256ee406a5c929f8808984dbed59.jpg",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Nemo enim ipsam voluptatem quia.",
-    name: "Michael Brown"
-  },
-  {
-    img: "https://i.pinimg.com/originals/3e/37/a1/3e37a1bd45c70cb972bf95105ba4adc6.jpg",
-    text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.",
-    name: "Jessica White"
-  },
-  {
-    img: "https://tse1.mm.bing.net/th?id=OIP.auqpQeIbgN-Hwb09Aa49YQHaFj&pid=Api&P=0&h=180",
-    text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat.",
-    name: "David Wilson"
-  }
-];
+import img1 from '../Kotibox img/png img/man 2.jpg';
+import img2 from '../Kotibox img/png img/office 1.png';
+import img3 from '../Kotibox img/png img/young-beautiful-brunette-businesswoman-smiling-pointing-finger-side.png';
 
 export default function Client() {
   useEffect(() => {
     $(".client-single").on("click", function (event) {
       event.preventDefault();
       const active = $(this).hasClass("active");
-      const parent = $(this).parents(".testi-wrap");
+      const parent = $(this).closest(".testi-wrap");
 
       if (!active) {
         const activeBlock = parent.find(".client-single.active");
@@ -69,34 +34,112 @@ export default function Client() {
     });
   }, []);
 
+  const testimonials = [
+    {
+      img: img1,
+      rating: 5, 
+      text: "Great service!",
+      name: "John Doe",
+      
+    },
+    {
+      img: img2,
+      rating: 4, 
+      text: "Outstanding support  ",
+      name: "Jane Smith",
+     
+    },
+    {
+      img: img3,
+      rating: 5, 
+      text: "Highly recommend!",
+      name: "Michael Brown",
+     
+    },
+  ];
+
   return (
-    <section id="testimonial-area">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 offset-md-2">
-            <div className="section-heading text-center text-light">
-              <h5>Testimonial Design</h5>
-              <h2>A Word From Our Customers</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <section className="reviews">
+      <div className="reviews-title">
+        <p>Reviews</p>
+      </div>
+      <div className="reviews-row row-first">
+        {testimonials.map((testimonial, index) => (
+          <div className="reviews-card" key={index}>
+            <div className="img-container">
+              <img
+                className="card-img1"
+                src={testimonial.img}
+                alt={testimonial.name}
+                style={{
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '50%', // Makes the image round
+                  objectFit: 'cover',  // Ensures the image covers the circle
+                }}
+              />
+                <div className="card-rating">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <svg key={i} width="16" height="16" viewBox="0 0 16 16" fill="gold" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 12.627l-4.577 2.402 1.187-5.026L0 6.273l5.108-.442L8 1.027 9.892 5.831 15 6.273l-4.61 3.73 1.187 5.026L8 12.627z" />
+                  </svg>
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="testi-wrap mt-1">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className={`client-single ${index === 0 ? 'active position-1' : `inactive position-${index + 1}`}`} data-position={`position-${index + 1}`}>
-              <div className="client-img">
-                <img src={testimonial.img} alt={testimonial.name} />
+            
+            <div className="card-text">
+              <div className="card-title">
+                <p>“{testimonial.text}”</p>
               </div>
-              <div className="client-comment">
-                <h3 className='text-light '>{testimonial.text}</h3>
-                <span><i className="fa fa-quote-left  "></i></span>
-              </div>
-              <div className="client-info ">
+              <div className="card-author">
+                <svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
+                </svg>
                 <p>{testimonial.name}</p>
               </div>
+            
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+      <div className="reviews-row row-first">
+        {testimonials.map((testimonial, index) => (
+          <div className="reviews-card" key={index}>
+            <div className="img-container">
+              <img
+                className="card-img1"
+                src={testimonial.img}
+                alt={testimonial.name}
+                style={{
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '50%', // Makes the image round
+                  objectFit: 'cover',  // Ensures the image covers the circle
+                }}
+              />
+                <div className="card-rating">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <svg key={i} width="16" height="16" viewBox="0 0 16 16" fill="gold" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 12.627l-4.577 2.402 1.187-5.026L0 6.273l5.108-.442L8 1.027 9.892 5.831 15 6.273l-4.61 3.73 1.187 5.026L8 12.627z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            
+            <div className="card-text">
+              <div className="card-title">
+                <p>“{testimonial.text}”</p>
+              </div>
+              <div className="card-author">
+                <svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
+                </svg>
+                <p>{testimonial.name}</p>
+              </div>
+            
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

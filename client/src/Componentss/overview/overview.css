@@ -1,86 +1,152 @@
-/*－－－－－－－－－－ Profile －－－－－－－－－－*/
-.profile__img {
-    padding: 0 40px;
-}
-body {
-    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    color: #666;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-  }
-
+/* Overview Container */
 .overview {
     background: rgb(43, 41, 41);
-    padding: 50px 0; /* Add some padding for spacing */
+    padding: 50px 20px;
     width: 80%;
-    /* border: 1px solid white; */
     border-radius: 10px;
     box-shadow: 5px solid black;
-   
+    margin: 0 auto;
 }
 
-
+/* Profile Image */
 .profile__img img {
-    /* border-radius: 60%; */
-    /* margin: auto; */
-    /* height: 450px; */
-    /* margin-right: 50px; */
-    /* width: 400px; */
-
-
- 
-    
+    max-width: 100%;
+    border-radius: 10%;
+    height: 300px;
 }
 
+/* Profile Text */
 .profile__text {
     color: aliceblue;
-    
+    flex: 1;
+    text-align: center;
 }
 
 .profile__text h1 {
-    font-size: 2.5rem; /* Adjust font size */
-    margin-bottom: 10px; /* Add space below the heading */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .profile__text p {
-    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    font-size: 1.1rem; /* Adjust font size */
-    line-height: 1.5; /* Improve line height for readability */
-    margin: 0 auto; /* Center align */
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
+/* SNS List */
 .snslist {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    margin-top: 20px; /* Space above the icons */
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .snslist__item {
-    margin: 0 10px; /* Adjust margin for spacing */
+    margin: 0 10px;
 }
 
 .snslist__item a {
-    width: 50px; /* Increase size of icons */
-    height: 50px; /* Increase size of icons */
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    transition: background-color 0.3s, transform 0.3s; /* Add transform effect */
-    color: white; /* Set icon color to white */
+    transition: background-color 0.3s, transform 0.3s;
+    color: white;
 }
 
 .snslist__item a:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Change background on hover */
-    transform: scale(1.1); /* Slightly scale up on hover */
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
 }
 
-@media screen and (max-width: 520px) {
-    .snslist {
-        justify-content: center;
+/* Media Queries for Responsive Design */
+
+/* Extra Small devices (300px - 400px) */
+@media screen and (max-width: 400px) {
+    .profile__text h1 {
+        font-size: 1.5rem;
+    }
+    .profile__text p {
+        font-size: 0.9rem;
+    }
+    .overview {
+        width: 90%;
+        padding: 20px 10px;
+    }
+}
+
+/* Small devices (401px - 600px) */
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .profile__text h1 {
+        font-size: 1.8rem;
+    }
+    .profile__text p {
+        font-size: 1rem;
+    }
+    .overview {
+        padding: 30px 15px;
+    }
+}
+
+/* Medium devices (601px - 800px) */
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .profile__text h1 {
+        font-size: 2.0rem;
+    }
+    .profile__text p {
+        font-size: 1.05rem;
+    }
+    .overview {
+        padding: 40px 20px;
+    }
+}
+
+/* Large devices (801px - 1000px) */
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .profile__text h1 {
+        font-size: 2.3rem;
+    }
+    .profile__text p {
+        font-size: 1.1rem;
+    }
+    .overview {
+        padding: 50px 30px;
+    }
+}
+
+/* Extra Large devices (1001px - 1200px) */
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .profile__text h1 {
+        font-size: 2.5rem;
+    }
+    .profile__text p {
+        font-size: 1.2rem;
+    }
+    .overview {
+        padding: 60px 40px;
+    }
+}
+
+/* Super Large devices (above 1200px) */
+@media screen and (min-width: 1201px) {
+    .profile__text h1 {
+        font-size: 2.8rem;
+    }
+    .profile__text p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Flex-wrap Behavior for Smaller Screens */
+@media screen and (max-width: 800px) {
+    .profile__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile__img {
+        margin-bottom: 20px;
     }
 }

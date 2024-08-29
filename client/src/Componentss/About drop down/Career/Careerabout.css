@@ -135,4 +135,45 @@
   }
   
   
-  
+  /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .career-section {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .career-section {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .why-join-us {
+      padding: 30px 5%;
+  }
+
+  .card-image {
+      height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .career-section {
+      grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+
+  .why-join-us {
+      padding: 20px 5%;
+  }
+
+  .card-image {
+      height: 150px;
+  }
+
+  .card-title {
+      font-size: 16px;
+  }
+
+  .card-description {
+      font-size: 12px;
+  }
+}

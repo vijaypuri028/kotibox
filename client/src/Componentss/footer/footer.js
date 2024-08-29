@@ -34,9 +34,9 @@ export default function Footer() {
   }, []);
 
   return (
-    <div  className='' >
+    <div className='kotibox' style={{ marginTop: "100px" ,backgroundImage:"url('https://getwallpapers.com/wallpaper/full/c/1/6/6346.jpg')"}}  >
       <footer className={scrolled ? 'scrolled' : ''}>
-        <div className="content  ">
+        <div className=" container content  ">
           <div className="top">
             <div className="logo-details">
               <i className="fab fa-slack" />
@@ -56,7 +56,7 @@ export default function Footer() {
               <h2>Write us at <span style={{ marginLeft: "150px" }}>Chat with Us</span></h2>
               <h3>
                 <Link to="mailto:sales@example.com">sales@example.com</Link>
-                <span style={{ marginLeft: "20px" }}>sales@example.com</span>
+                <Link style={{ marginLeft: "20px" }}>sales@example.com</Link>
               </h3>
               <h4>Call us at</h4>
               <h6>+91 8426809853</h6>
@@ -71,20 +71,20 @@ export default function Footer() {
                 <span>KOTIBOX Global Technologies</span>
               </div>
             </div>
-            <div style={{ marginLeft: "100px" }} className=''>
+            <div  className='ms-5 mx-auto '>
               <div className="footer-logo">
-                <div>
-                  <img src="https://th.bing.com/th/id/R.607b9f69862d76af04b474113c0c7ff5?rik=lfnOsbv7mhDNbQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fb%2fbc%2fFlag_of_India.png&ehk=Pk5lH0C%2fhstFahWfb15vLjtrJb3DslIU4%2fAQneo9IIM%3d&risl=&pid=ImgRaw&r=0" alt="India" />
+                <div className='w-40'>
+                  <img  className='mx-auto' src="https://th.bing.com/th/id/R.607b9f69862d76af04b474113c0c7ff5?rik=lfnOsbv7mhDNbQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fb%2fbc%2fFlag_of_India.png&ehk=Pk5lH0C%2fhstFahWfb15vLjtrJb3DslIU4%2fAQneo9IIM%3d&risl=&pid=ImgRaw&r=0" alt="India" />
                   <span>India</span>
                   <p>2nd Floor, B.L.Tower – 4th, Plot No.- 45-46, Gayatri Nagar, Maharani Farm, Durgapura, Jaipur - India</p>
                 </div>
-                <div>
-                  <img src="https://th.bing.com/th/id/OIP.bNM6BI7X9AotYV74-pufdgAAAA?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="USA" />
+                <div className=' mx-5 w-40'>
+                  <img  className='mx-auto' src="https://th.bing.com/th/id/OIP.bNM6BI7X9AotYV74-pufdgAAAA?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="USA" />
                   <span>United States</span>
                   <p>17330 Preston Road #200 D Dallas, Texas 75252, USA +1 214 272 0316</p>
                 </div>
               </div>
-              <div style={{ width: "100%" }} className="marquee-section">
+              <div style={{ width: "100%" }} className="marquee-section mt-5">
                 <MarqueeImages />
               </div>
 
@@ -96,7 +96,7 @@ export default function Footer() {
 
           </div>
           <hr className='text-light fs-1' />
-          <div className='fotter-list d-flex justify-content-between  text-center flex-wrap '>
+          <div className='fotter-list d-flex justify-content-between  text-center flex-wrap mx-5'>
           <ul>
               <h4>ABOUT</h4>
 

@@ -157,9 +157,7 @@ function Career() {
 
       <section style={{backgroundColor:"white"}} className="career-reasons">
         <h1 style={{fontSize:"50px"}} className='text-center title'>Current Openings</h1>
-        <p style={{fontSize:"20px"}} className='text-center subtitle '>
-           We're hiring for the following positions, if you are interested in any and find yourself the best suit, please apply here.
-        </p>
+       
         <div className="career-section card-career-section  mx-auto mt-5 ">
           {cardData.map((card, index) => (
             <a key={index} className="card" href={card.link}>
@@ -176,9 +174,7 @@ function Career() {
 
       <section className="why-join-us">
             <h1 className='text-center text-light title'>Why Should You Join Us</h1>
-            <p className='text-center subtitle text-light '>
-              At JPLoft, you will find everything at a place needed to grow as a seasoned professional. From your skills, knowledge, experience to creativity, communication, work ethics & more.
-            </p>
+           
             <div className="career-section card-career-section mx-auto mt-5  ">
               {cardData1.map((card, index) => (
                 <div key={index} className="company-card bg-light ">

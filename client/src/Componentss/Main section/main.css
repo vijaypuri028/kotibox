@@ -1,3 +1,4 @@
+/* Main container styles */
 .main-container {
   position: relative;
   width: 100%;
@@ -35,7 +36,7 @@
 
 .animated-text {
   position: absolute;
-  top: 40%;
+  top: 46%;
   left: 10%;
   color: white;
   font-size: 2rem;
@@ -70,13 +71,27 @@ input, textarea {
 
 button {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
-  background-color: #FFA500;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+/* Media query for small screens */
+@media (max-width: 908px) {
+  .form-container {
+    display: none;
+  }
 
+  .video-overlay h1 {
+    font-size: 2rem;
+    top: 20%;
+  }
+
+  .animated-text {
+    font-size: 1.5rem;
+    top: 40%;
+  }
+}

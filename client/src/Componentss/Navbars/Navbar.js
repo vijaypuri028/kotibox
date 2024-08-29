@@ -304,15 +304,15 @@ export default function Navbar() {
 
 
 
-              <li style={{ fontSize: "20px" }} className="nav-item">
+              <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
                 <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
-              <li style={{ fontSize: "20px" }} className="nav-item me-2 ">
+              <li style={{ fontSize: "20px" }} className="nav-item me-2  ms-4 ">
                 <Link className="nav-link " aria-current="page" to="/Portfolio" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Portfolio</Link>
               </li>
 
-              <li className="nav-item dropdown btn btn-danger ms-4">
+              <li className="nav-item dropdown btn btn-danger ms-5">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Get A Free Quote
                 </Link>

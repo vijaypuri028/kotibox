@@ -103,4 +103,53 @@
       padding: 20px;
     }
   }
+  .map-container iframe {
+    width: 600px;
+    height: 650px;
+
+  }
+  @media (max-width: 768px) {
+    .map-container iframe {
+      width: 500px;
+      height: 650px;
   
+    }
+  }
+  @media (max-width: 600px) {
+    .map-container iframe {
+      width: 400px;
+      height: 500px;
+  
+    }
+  }
+  @media (max-width: 500px) {
+    .map-container iframe {
+      width: 350px;
+      height: 400px;
+  
+    }
+  }
+  @media (max-width: 400px) {
+    .map-container iframe {
+      width: 350px;
+      height: 450px;
+  
+    }
+  }
+  @media (max-width: 370px) {
+    .map-container iframe {
+      width: 200px;
+      height: 300px;
+  
+    }
+  }
+
+  @media (max-width: 400px) {
+    .map-container iframe {
+      width: 350px;
+      height: 450px;
+  
+    }
+  }
+
+

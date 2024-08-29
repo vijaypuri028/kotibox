@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
-body {
-  width: 100%;
-  background: #EEECEB;
-}
+
 
 footer {
-  background: #000;
+
   width: 100%;
   padding-top: 50px; /* Adjusted padding */
 }
@@ -220,7 +211,7 @@ footer .content .media-icons a:nth-child(5) {
 }
 
 .marquee-section {
-  background-color: #000000; /* Change the background color */
+  /* Change the background color */
   padding: 20px 0; /* Add padding */
   text-align: center; /* Center the images */
 }
@@ -410,4 +401,147 @@ footer .content .media-icons a:nth-child(5) {
   .footer-logo span {
     font-size: 8px;
   }
+}
+
+/* 1000px */
+@media (max-width: 1000px) {
+  .footer-main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .footer-main {
+    text-align: center;
+  }
+}
+
+/* 800px */
+@media (max-width: 800px) {
+  footer .content {
+    padding: 15px 20px;
+  }
+  .footer-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-logo span {
+    font-size: 20px;
+  }
+  .footer-main h1 {
+    font-size: 22px;
+  }
+  .footer-main h2, .footer-main h3 {
+    font-size: 18px;
+  }
+  .footer-main .icon span {
+    font-size: 20px;
+    padding-right: 15px;
+  }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+  footer .content .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-main h1 {
+    font-size: 20px;
+  }
+  .footer-main h2, .footer-main h3 {
+    font-size: 16px;
+  }
+  .footer-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-logo span {
+    font-size: 18px;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+}
+
+/* 400px */
+@media (max-width: 400px) {
+  .footer-main h1 {
+    font-size: 18px;
+  }
+  .footer-main h2, .footer-main h3 {
+    font-size: 14px;
+  }
+  .footer-logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-logo span {
+    font-size: 16px;
+  }
+  .content .top .logo-details {
+    font-size: 20px;
+  }
+  .content .top .media-icons a {
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+footer {
+  position: relative;
+ 
+  width: 100%;
+  padding-top: 50px; /* Adjusted padding */
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.pexels.com/photos/6065240/pexels-photo-6065240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1; /* Place it behind the content */
+}
+
+footer .content {
+  position: relative;
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px;
+  z-index: 1; /* Ensure content is above the background */
+}
+
+footer .content .footer-logo img {
+  position: relative;
+}
+
+footer .content .footer-logo img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  border-radius: 50%; /* Ensure overlay matches image's shape */
+  z-index: 1;
+}
+
+footer .content .footer-logo img {
+  position: relative;
+  z-index: 2; /* Ensure the image is above the overlay */
+}
+
+.kotibox{
+  background-image:url('https://getwallpapers.com/wallpaper/full/c/1/6/6346.jpg') ;
 }

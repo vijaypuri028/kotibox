@@ -107,19 +107,20 @@ h2 {
 
 .text-white {
   color: #fff;
-  font-size: 25px;
+  font-size: 24px;
 }
 
+/* Responsive text sizes */
 .text-4xl {
-  font-size: 2.25rem;
+  font-size: 6vw;
 }
 
 .md\:text-5xl {
-  font-size: 3rem;
+  font-size: 5vw;
 }
 
 .xl\:text-6xl {
-  font-size: 4rem;
+  font-size: 4vw;
 }
 
 .font-semibold {
@@ -144,7 +145,8 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .service-card:hover {
@@ -166,4 +168,41 @@ h2 {
 
 .service-card:hover .service-content {
   background: rgba(0, 0, 0, 0.8);
+}
+
+/* Media queries for fine-tuning text sizes */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 7vw;
+  }
+
+  .md\:text-5xl {
+    font-size: 6vw;
+  }
+
+  .xl\:text-6xl {
+    font-size: 5vw;
+  }
+
+  .text-lg {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-4xl {
+    font-size: 8vw;
+  }
+
+  .md\:text-5xl {
+    font-size: 7vw;
+  }
+
+  .xl\:text-6xl {
+    font-size: 6vw;
+  }
+
+  .text-lg {
+    font-size: 4vw;
+  }
 }

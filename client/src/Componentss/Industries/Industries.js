@@ -64,7 +64,7 @@ export default function Industries() {
   ];
 
   return (
-    <div className='industries'>
+    <div className='industries '>
       <section className="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
         <span className="text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
           Industries
@@ -86,13 +86,13 @@ export default function Industries() {
         <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug">
         Creating Truly Special For Diverse Industries
         </h1>
-        <div className='industries-img'>
+        <div className='industries-img  '>
           <div className="grid-offer text-left grid sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => (
               <div key={index} className="service-card" style={{ backgroundImage: `url(${service.bgImage})` }}>
                 <div className="service-content">
                   <h2 className="text-white text-2xl font-bold mb-2">{service.title}</h2>
-                  <p className="text-gray-300 text-light">{service.description}</p>
+                  <p style={{fontSize:"15px"}} className="text-gray-300 text-light">{service.description}</p>
                 </div>
               </div>
             ))}

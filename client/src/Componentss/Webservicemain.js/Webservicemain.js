@@ -98,7 +98,7 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button className='btn btn-danger' type="submit">Submit</button>
         </form>
         <span>{result}</span>
       </div>

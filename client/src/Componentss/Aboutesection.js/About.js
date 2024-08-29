@@ -60,11 +60,11 @@ export default function About() {
       <div className="about-section pt-5  ">
         <div className="video-container1">
           <div className='upper-text ms-5 '>
-            <h1 className='text-light' style={{ fontSize: "40px" }} >We are</h1>
-            <h1 style={{ fontSize: "45px" }} >KOTIBOX</h1>
+            {/* <h1 className='text-light' style={{ fontSize: "40px" }} >We are</h1> */}
+            {/* <h1 style={{ fontSize: "45px" }} >KOTIBOX</h1> */}
           </div>
           <iframe
-            className="video mx-auto ms-5 "
+            className="video mx-auto  "
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
