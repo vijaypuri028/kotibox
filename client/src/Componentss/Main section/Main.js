@@ -50,10 +50,10 @@ export default function Main() {
         </video>
         <div className="video-overlay">
           <div>
-            <h1 style={{ position: "absolute", top: "30%", left: "10%", color: "white", fontSize: "3.5rem" }}>
+            <h1 className='text-main-h1'>
               YOUR TRUSTED  <br />  COLLABORATOR FOR
             </h1>
-            <div style={{ fontSize: "2.5rem", color: "#e69500", fontFamily: "700" }} className="animated-text mt-2">
+            <div  className="animated-text text-main-div mt-2">
               {textArray[textIndex]}
             </div>
             <div style={{ marginTop: "100px", fontSize: "20px" }} className='btn btn-danger animated-text'>

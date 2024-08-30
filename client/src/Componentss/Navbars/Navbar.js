@@ -72,21 +72,21 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-tranprent fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark  bg-tranprent fixed-top ">
         <div className="container-fluid">
           <Link className="navbar-brand fs-1" to="/">KOTIBOX</Link>
-          <button className="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
+          <button style={{backgroundColor:"black"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul className="navbar-nav mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul className="navbar-nav mb-2 mb-lg-0">
 
-            <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4"  >
+              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   About
                 </Link>
                 <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-                
+
                   <div className="dropdown-container">
 
 
@@ -95,12 +95,12 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/Career"> <img className='icon-img' src={Mobile} alt='' />Career</Link> <hr className='text-light' />
                       {/* <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Our Team </Link> <hr className='text-light' /> */}
 
-                    
+
 
                     </div>
-                   
 
-                    
+
+
 
                   </div>
 

@@ -1,146 +1,51 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery';
-import './client.css';
-import img1 from '../Kotibox img/png img/man 2.jpg';
-import img2 from '../Kotibox img/png img/office 1.png';
-import img3 from '../Kotibox img/png img/young-beautiful-brunette-businesswoman-smiling-pointing-finger-side.png';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './client.css'; // Import your CSS file here
 
-export default function Client() {
-  useEffect(() => {
-    $(".client-single").on("click", function (event) {
-      event.preventDefault();
-      const active = $(this).hasClass("active");
-      const parent = $(this).closest(".testi-wrap");
-
-      if (!active) {
-        const activeBlock = parent.find(".client-single.active");
-        const currentPos = $(this).attr("data-position");
-        const newPos = activeBlock.attr("data-position");
-
-        activeBlock
-          .removeClass("active")
-          .removeClass(newPos)
-          .addClass("inactive")
-          .addClass(currentPos)
-          .attr("data-position", currentPos);
-
-        $(this)
-          .addClass("active")
-          .removeClass("inactive")
-          .removeClass(currentPos)
-          .addClass(newPos)
-          .attr("data-position", newPos);
-      }
-    });
-  }, []);
-
-  const testimonials = [
-    {
-      img: img1,
-      rating: 5, 
-      text: "Great service!",
-      name: "John Doe",
-      
-    },
-    {
-      img: img2,
-      rating: 4, 
-      text: "Outstanding support  ",
-      name: "Jane Smith",
-     
-    },
-    {
-      img: img3,
-      rating: 5, 
-      text: "Highly recommend!",
-      name: "Michael Brown",
-     
-    },
-  ];
-
+const Client = () => {
   return (
-    <section className="reviews">
-      <div className="reviews-title">
-        <p>Reviews</p>
-      </div>
-      <div className="reviews-row row-first">
-        {testimonials.map((testimonial, index) => (
-          <div className="reviews-card" key={index}>
-            <div className="img-container">
-              <img
-                className="card-img1"
-                src={testimonial.img}
-                alt={testimonial.name}
-                style={{
-                  width: '100px',
-                  height: '100px',
-                  borderRadius: '50%', // Makes the image round
-                  objectFit: 'cover',  // Ensures the image covers the circle
-                }}
-              />
-                <div className="card-rating">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg key={i} width="16" height="16" viewBox="0 0 16 16" fill="gold" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 12.627l-4.577 2.402 1.187-5.026L0 6.273l5.108-.442L8 1.027 9.892 5.831 15 6.273l-4.61 3.73 1.187 5.026L8 12.627z" />
-                  </svg>
-                ))}
+    <section className="testimonial text-center">
+      <div className="container">
+        <div className="heading white-heading">Words From Clients That Fuels Us!</div>
+        <p className='text-light'>We believe in empowering our relationships with clear communication.
+        And that's where the magic happens!</p>
+        <div id="testimonial4" className="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000" data-bs-duration="2000">
+          <div className="carousel-inner" role="listbox">
+            <div className="carousel-item active">
+              <div className="testimonial4_slide">
+                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-circle img-responsive" alt="Client 1" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <h4>Client 1</h4>
               </div>
             </div>
-            
-            <div className="card-text">
-              <div className="card-title">
-                <p>“{testimonial.text}”</p>
+            <div className="carousel-item">
+              <div className="testimonial4_slide">
+                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-circle img-responsive" alt="Client 2" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <h4>Client 2</h4>
               </div>
-              <div className="card-author">
-                <svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
-                </svg>
-                <p>{testimonial.name}</p>
+            </div>
+            <div className="carousel-item">
+              <div className="testimonial4_slide">
+                <img src="https://images.pexels.com/photos/27928257/pexels-photo-27928257/free-photo-of-portrait-of-a-young-woman-with-wavy-hair.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-circle img-responsive" alt="Client 3" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <h4>Client 3</h4>
               </div>
-            
             </div>
           </div>
-        ))}
-      </div>
-      <div className="reviews-row row-first">
-        {testimonials.map((testimonial, index) => (
-          <div className="reviews-card" key={index}>
-            <div className="img-container">
-              <img
-                className="card-img1"
-                src={testimonial.img}
-                alt={testimonial.name}
-                style={{
-                  width: '100px',
-                  height: '100px',
-                  borderRadius: '50%', // Makes the image round
-                  objectFit: 'cover',  // Ensures the image covers the circle
-                }}
-              />
-                <div className="card-rating">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg key={i} width="16" height="16" viewBox="0 0 16 16" fill="gold" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 12.627l-4.577 2.402 1.187-5.026L0 6.273l5.108-.442L8 1.027 9.892 5.831 15 6.273l-4.61 3.73 1.187 5.026L8 12.627z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-            
-            <div className="card-text">
-              <div className="card-title">
-                <p>“{testimonial.text}”</p>
-              </div>
-              <div className="card-author">
-                <svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
-                </svg>
-                <p>{testimonial.name}</p>
-              </div>
-            
-            </div>
-          </div>
-        ))}
+          <a className="carousel-control-prev" href="#testimonial4" role="button" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#testimonial4" role="button" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </a>
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default Client;

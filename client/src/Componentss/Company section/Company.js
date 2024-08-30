@@ -7,7 +7,7 @@ const companyLogos = [
   { src: 'https://www.jploft.com/img/technologies-ic16.svg', name: 'IONIC' },
   { src: 'https://www.jploft.com/img/technologies-ic17.svg', name: 'Flutter' },
   { src: 'https://www.jploft.com/img/technologies-ic18.svg', name: 'Xamarin' },
-  { src: 'https://www.jploft.com/img/technologies-ic4.svg', name: 'React native' },
+  { src: 'https://www.jploft.com/img/technologies-ic4.svg', name: ' React' },
 ];
 
 const companyLogo1 = [
@@ -28,7 +28,7 @@ const companyLogoimgs = [
   { src: 'https://www.jploft.com/img/technologies-ic10.svg', name: 'Java' },
   { src: 'https://www.jploft.com/img/technologies-ic13.svg', name: 'Node' },
   { src: 'https://www.jploft.com/img/technologies-ic11.svg', name: 'Python' },
-  { src: 'https://www.clipartkey.com/mpngs/m/286-2861496_laravel-6-logo-transparent-cartoons-laravel-6-logo.png', name: 'Laravel' },
+  { src: 'https://tse1.mm.bing.net/th?id=OIP.c8Hloo5nAd7ohLRohC2e-QHaHa&pid=Api&P=0&h=180', name: 'Laravel' },
   { src: 'https://www.jploft.com/img/technologies-ic9.svg', name: '. Net' },
 ];
 

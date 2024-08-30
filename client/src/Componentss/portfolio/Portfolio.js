@@ -57,27 +57,32 @@ export default function Portfolio() {
             </div>
 
             <section className="work section">
-                <h2 style={{fontSize:"30px"}} className="section__title text-light ">
-                    My Most <br />
-                    Recent Works
-                </h2>
-                <div className="work__container container grid text-light">
-                    {[...Array(6)].map((_, index) => (
-                        <article key={index} className="work__card">
-                            <Link to="#" target="_blank" className="work__link">
-                                <img src="https://images.unsplash.com/photo-1616865609199-abb1465abf5c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTI3NzQwNjN8&ixlib=rb-4.0.3&q=85" alt="Work 1" className="work__img" />
-                                <i className="ri-arrow-right-circle-line work__icon"></i>
-                            </Link>
-                            <h2 className="work__title">Creative Website</h2>
-                            <span className="work__subtitle">Website Design</span>
-                        </article>
-                    ))}
-                </div>
-            </section>
+    <h2 style={{ fontSize: "30px" }} className="section__title text-light">
+        My Most <br />
+        Recent Works
+    </h2>
+    <div className="work__container container grid text-light">
+        {[...Array(6)].map((_, index) => (
+            <article key={index} className="work__card">
+                <Link to="#" target="blank" className="work_link">
+                    <img
+                        src="https://images.unsplash.com/photo-1616865609199-abb1465abf5c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTI3NzQwNjN8&ixlib=rb-4.0.3&q=85"
+                        alt="Work 1"
+                        className="work__img"
+                    />
+                    <i className="ri-arrow-right-circle-line work__icon"></i>
+                </Link>
+                <h2 className="work__title">Creative Website</h2>
+                <span className="work__subtitle">Website Design</span>
+            </article>
+        ))}
+    </div>
+</section>
+
 
             <Button />
             <Blog/>
             <Footer />
-        </>
-    );
+        </>
+    );
 }

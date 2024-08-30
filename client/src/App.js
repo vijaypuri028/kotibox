@@ -8,7 +8,7 @@ import Footer from './Componentss/footer/footer';
 import Services from './Componentss/services/Services';
 import Industries from './Componentss/Industries/Industries';
 import Company from './Componentss/Company section/Company';
-// import Client from './Componentss/Clientsection/Client';
+import Client from './Componentss/Clientsection/Client';
 import Overview from '../src/Componentss/overview/Overview';
 import Blog from './Componentss/blog/blog';
 // import Hiredeveloper from './Componentss/Hire developer/Hiredeveloper';
@@ -37,7 +37,7 @@ import Heathcare from './Componentss/Main Industries/Heathcare/Hrathcare';
 
 import Food from './Componentss/Main Industries/Food/Food';
 import Tour from './Componentss/Main Industries/Tour/Tour';
-import Marquee from './Componentss/Marquee/Marquee';
+// import Marquee from './Componentss/Marquee/Marquee';
 
 import Fullstack from './Componentss/MainService contant/Fullstack/Fullstack';
 import Android from './Componentss/Hire developer main section/Androiddeveloper/Android';
@@ -74,11 +74,11 @@ function App() {
               <Overview />
               <Industries />
               <Company />
-              {/* <Client /> */}
+              <Client />
               {/* <Hiredeveloper /> */}
               <Blog />
               <Button />
-              <Marquee/>
+              {/* <Marquee/> */}
               <Footer />
             </>
           } />
