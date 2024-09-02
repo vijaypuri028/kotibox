@@ -47,7 +47,17 @@
   font-weight: 700;
   margin-top: 30px;
 }
-
+.main-text-1{
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.main-service-p{
+  font-size: 18px;
+  color: #fff;
+  width: 40%;
+  font-weight: 700;
+}
 .consult-btn {
  
   font-size: 20px;
@@ -62,10 +72,7 @@
   color: #e69500;
   font-size: 35px;
 }
-.main-text-1{
-  color: #fff;
-  font-size: 30px;
-}
+
 
 @media (max-width:900px){
   .animated-text-1{

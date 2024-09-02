@@ -44,7 +44,7 @@
   }
   
   .section-header h3 {
-    color: #413e66;
+    color: #000000;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -53,7 +53,7 @@
   }
   
   .section-header p {
-    color: #535074;
+    color: #000000;
     font-size: 18px;
     margin: auto;
     padding-bottom: 60px;
@@ -202,7 +202,7 @@
   .card-main-title-1 {
     margin-top: 8px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -382,10 +382,10 @@
 
 .section-services {
   padding-top: 110px;
-  padding-bottom: 120px;
   font-family: "Poppins", sans-serif;
   background-color: #211f24;
   color: #fff;
+  box-shadow: 2px #001b42;
 }
 
 .section-services .header-section {
@@ -448,7 +448,7 @@
 
 .section-services .single-service .part-1 {
   padding: 40px 40px 25px;
-  border-bottom: 2px solid #1d1e23;
+  border-bottom: 0.5px solid #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -466,13 +466,15 @@
 }
 
 .section-services .single-service .part-1 .title {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.8em;
   position: relative;
   z-index: 1;
   transition: color 0.3s ease;
+  color:  #fdfdfd;
+
 }
 
 .section-services .single-service .part-2 {
@@ -521,4 +523,41 @@
 
 .section-services .single-service:hover .part-2 a i.bi-arrow-right {
   transform: translateX(5px);
+}
+
+
+
+/* Overview Container */
+.overview {
+  background: rgb(43, 41, 41);
+  padding: 50px 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 5px solid black;
+  margin: 0 auto;
+}
+
+/* Profile Image */
+.profile__img img {
+  max-width: 100%;
+  border-radius: 10%;
+  height: 300px;
+}
+
+/* Profile Text */
+.profile__text {
+  color: aliceblue;
+  flex: 1;
+  text-align: center;
+}
+
+.profile__text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.profile__text p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

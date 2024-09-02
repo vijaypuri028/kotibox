@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Webservice.css'
 
-export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray }) {
+export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray,serviceButton }) {
   const [scrolled, setScrolled] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [result, setResult] = useState('');
@@ -59,10 +59,11 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
         <div className="image-overlay">
           <div>
             <h1 className="main-text-1 ">
-              {mainText} <br /> {Secondtext}
+              {mainText} 
             </h1>
+            <p className='main-service-p '> {Secondtext}</p>
              {/* <div className="animated-text-1">{textArray[textIndex]}</div> */}
-            <div className="consult-btn ">CONSULT OUR EXPERT</div>
+            <div className="consult-btn ">CONSULT With Expert</div>
           </div>
         </div>
       </div>

@@ -8,17 +8,10 @@ import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png
 import png2 from '../../Kotibox img/png img/office 2.png';
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
-
-
-
-
-
 export default function Education() {
   const mainText = { Text: "Using cutting-edge technology to promote " }
   const Secondtext = { Text: "innovation in e-learning and education" }
   const textArray = ["laravel", "Codeelgniter", "wordpress", "Woo commerce" ,"Mangento"];
-
-
 
   return (
    <>
@@ -36,26 +29,20 @@ export default function Education() {
    subHeading2="Get a Tailored Quote for the Development of eLearning Apps"
    introText2="Are you prepared to move forward? A thorough proposal that is customized to meet your needs will be given to you by our staff."
 
- 
-
    imgAlt1="Good advice from a beautiful woman"
    imgText1="Online Classroom Solution"
    Text1='Our services offer an environment for real-time and interactive education, delivering an immersive and engaging learning experience for students and teachers globally. Transform traditional classrooms into dynamic virtual classrooms that connect teachers and students from all over the world.'
 
-   
-
-  
    imgAlt2="Office environment"
    imgText2="Development of Educational Games"
     Text2='use our services to create instructional games while fusing enjoyment and learning. We create dynamic, gamified learning experiences for students. Our goal is to increase the accessibility, enjoyment, and memorability of learning for students studying a variety of subjects.'
 
-    // imgSrc3={jpg3}
    imgAlt3="E-Book Reading App"
    imgText3="E-Book Reading App"
     Text3='Use our eLearning platform development services to improve your educational experience. We create unique platforms that optimize learning materials, increase student participation, and expedite administrative procedures, all of which contribute to the improvement of the educational process for both students and academic institutions.'
 
 
-    // imgSrc4={jpg4}
+ 
    imgAlt4=""
    imgText4="Learning Management System (LMS)"
     Text4='Enhance the efficiency of your educational management by utilizing the help of our Learning Management System (LMS) implementation and personalization. We integrate powerful learning management systems and tailor their functions to the diverse requirements of schools.'

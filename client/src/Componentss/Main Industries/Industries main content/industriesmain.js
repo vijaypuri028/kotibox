@@ -1,6 +1,6 @@
 import React from 'react';
 import './Industrismain.css';
-import { Link } from 'react-router-dom';
+
 
 import Button from '../../button/Button';
 

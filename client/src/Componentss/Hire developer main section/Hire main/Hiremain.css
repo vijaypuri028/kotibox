@@ -446,11 +446,11 @@ border-radius: 30px;
   }
   
   .container .row {
-    margin-bottom: 100px; 
+    /* margin-bottom: 100px;  */
   }
 
   .blog_card {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -491,7 +491,7 @@ border-radius: 30px;
   }
   
   .container .row {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
   
