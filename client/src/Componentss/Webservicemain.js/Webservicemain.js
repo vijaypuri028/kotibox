@@ -58,16 +58,16 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
         <img className="background-image" src={imgSrc} alt="Background" />
         <div className="image-overlay">
           <div>
-            <h1 className="main-text">
+            <h1 className="main-text-1 ">
               {mainText} <br /> {Secondtext}
             </h1>
-             <div className="animated-text">{textArray[textIndex]}</div>
-            <div className="consult-btn">CONSULT OUR EXPERT</div>
+             {/* <div className="animated-text-1">{textArray[textIndex]}</div> */}
+            <div className="consult-btn ">CONSULT OUR EXPERT</div>
           </div>
         </div>
       </div>
       <div className="form-container mt-5">
-        <h2>Request a Callback</h2>
+        <h2 >Request a Callback</h2>
         <p className="response-time">We respond promptly, typically within 30 minutes</p>
         <form onSubmit={onSubmit}>
           <div className="form-group">

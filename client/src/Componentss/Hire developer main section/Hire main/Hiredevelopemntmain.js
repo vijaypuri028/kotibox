@@ -1,81 +1,67 @@
 import React from 'react';
 import { FaRegLightbulb, FaCode, FaMobileAlt } from 'react-icons/fa';
-import './Hiremain.css'
+import './Hiremain.css';
 
-export default function Hiredevelopmentmain() {
-
-  const notes = [
-    {
-      title: 'Card Title 1',
-      content: 'Our experienced team of Android developers is committed to developing custom solutions.',
-      image: 'https://images.unsplash.com/photo-1522152302542-71a8e5172aa1?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    },
-    {
-      title: 'Card Title 3',
-      content: 'Our experienced team of Android developers is committed to developing custom solutions.',
-      image: 'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    },
-    {
-      title: 'Card Title 4',
-      content: 'Our experienced team of Android developers is committed to developing custom solutions.',
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fG9mZmljZSUyMGVtcGxveWVlfGVufDB8fDB8fHww',
-    },
-  ];
+export default function Hiredevelopmentmain(props) {
+  const {
+    hireservicemain,
+    hireservicep,
+    hireservicemain1,
+    hireservicemain2,
+    hireservicemainpp,
+    title1,
+    title2,
+    title3,
+    title4,
+    title5,
+    title6
+  } = props;
 
   const blogData = [
     {
       icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: 'Here Comes The Blog Title.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident voluptatem.',
+      title: title1,
     },
     {
       icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: 'Here Comes The Blog Title.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident voluptatem.',
+      title: title2,
     },
     {
       icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: 'Here Comes The Blog Title.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident voluptatem.',
+      title: title3,
     },
     {
       icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: 'Here Comes The Blog Title.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident voluptatem.',
+      title: title4,
     },
     {
       icon: <FaCode size={50} color="#c59c35" />,
-      title: 'Here Comes The Blog Title.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident voluptatem.',
+      title: title5,
     },
     {
       icon: <FaMobileAlt size={50} color="#c59c35" />,
-      title: 'Here Comes The Blog Title.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident voluptatem.',
+      title: title6,
     },
   ];
 
   return (
     <>
-   
-
       <div className="feat bg-gray pt-5 pb-5">
         <div className="container">
           <div className="row">
             <div className="section-head col-sm-12">
               <h4><span>Why Choose</span> US ?</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s.
+                We consider your needs when providing dependable education software development services for your company. These are some of the main characteristics that make us the ideal option for you!
               </p>
             </div>
             {[
-              { title: "Focused Team", img: "https://www.jploft.com/img/focused-team.svg" },
-              { title: "Cost Efficient", img: "https://www.jploft.com/img/cost-effective.svg" },
-              { title: "Dedicated Workforce", img: "https://www.jploft.com/img/work-force.svg" },
-              { title: "Customized Solutions", img: "https://www.jploft.com/img/privacy-security.svg" },
-              { title: "Flexibility", img: "https://www.jploft.com/img/enterprices-solutions.svg" },
-              { title: "Privacy & Security", img: "https://www.jploft.com/img/enterprices-solutions.svg" },
+              { title: "Committed Programmers", text: "We are aware of your needs and assist you in finding the most qualified eLearning app developers to provide top-notch services.", img: "https://www.jploft.com/img/focused-team.svg" },
+              { title: "Support & Maintenance", text: "For any project centered on educational software development, we offer expert support & maintenance services.", img: "https://www.jploft.com/img/cost-effective.svg" },
+              { title: "On Time and within budget", text: "We realize the significance of your money and time. So, we believe in providing a high-quality job on time.", img: "https://www.jploft.com/img/work-force.svg" },
+              { title: "Individualized Creation", text: "With the assistance of our committed developers, who offer the best eLearning Development Services, we are able to offer the greatest education solution.", img: "https://www.jploft.com/img/privacy-security.svg" },
+              { title: "Excellent User Experience", text: "Since we recognize the value of your idea, we create websites and applications that are visually appealing, draw users in, and offer superior user", img: "https://www.jploft.com/img/enterprices-solutions.svg" },
+              { title: "Security", text: "We recognize that, as technology advances on a regular basis, organizations must also adapt. Thus, we are up to date with the newest technologies.", img: "https://www.jploft.com/img/enterprices-solutions.svg" },
             ].map((item, index) => (
               <div className="col-lg-4 col-sm-6" key={index}>
                 <div className="item1">
@@ -83,7 +69,7 @@ export default function Hiredevelopmentmain() {
                     <img src={item.img} alt={item.title} />
                   </span>
                   <h3>{item.title}</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                  <p>{item.text}</p>
                 </div>
               </div>
             ))}
@@ -99,36 +85,32 @@ export default function Hiredevelopmentmain() {
             className="intro-image"
           />
           <div className="intro-text">
-            <h2>Our Android app developers are here to turn your vision into a stunning, functional reality.</h2>
-            <p>
-              This is some placeholder text. You can replace it with your content.
-              It will be displayed next to the image on the left.
-            </p>
-            <button className="action-button">Click Me</button>
+            <h2>{hireservicemain}</h2>
+            <p>{hireservicep}</p>
+            <button className="action-button">GET A QUOTE</button>
           </div>
         </div>
       </div>
 
-      <div className=' ' style={{ backgroundColor: "white" }}>
-        <h1 className='text-center'>
-          Android App Development Services Our Developers Excel In
+      <div style={{ backgroundColor: "white", fontFamily: "600" }}>
+        <h1 className="text-center">
+          {hireservicemain1} <span style={{ color: "#ff6347" }}>{hireservicemain2}</span>
         </h1>
-        <p className='text-center '>
-          Access dedicated teams of Android developers, consultants, and engineers who can create customized solutions for your business, the market you want to target, and your brand's persona.
+        <p className="text-center">
+          {hireservicemainpp}
         </p>
 
         <div className="container" style={{ backgroundColor: "white" }}>
-          <hr className='mt-5 ' />
+          <hr className="mt-5" />
           <div className="row mt-5">
             {blogData.map((blog, index) => (
               <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
-                <div className="blog_card">
+                <div style={{ height: "250px" }} className="blog_card">
                   <div className="blog_card_icon text-center mt-3">
                     {blog.icon}
                   </div>
                   <div className="blog_card_content">
-                    <h3>{blog.title}</h3>
-                    <p>{blog.description}</p>
+                    <h3 className="text-center">{blog.title}</h3>
                   </div>
                 </div>
               </div>
@@ -136,32 +118,6 @@ export default function Hiredevelopmentmain() {
           </div>
         </div>
       </div>
-
-      <div className='container text-light'>
-        <h2 style={{ color: "orange" }}>Hire Android App Developers for Every Business </h2>
-        <p>Our experienced team of Android developers is committed to developing custom solutions suited to your business's specific needs. Whether you're a new business seeking to establish yourself or an established company looking to create something new, we have the experience to make your ideas come to life.</p>
-      </div>
-
-      <div className="card-container mt-5">
-        {notes.map((card, index) => (
-          <div
-            className="card-item"
-            key={index}
-            style={{ backgroundImage: `url(${card.image})` }}
-          >
-            <h3 className="card-title">{card.title}</h3>
-            <h3 className="card-content">{card.content}</h3>
-            <span className="card-more">Read More</span>
-          </div>
-        ))}
-      </div>
-
-      {/* <div className='container' style={{ marginTop: '150px' }}>
-        <h2 style={{ color: 'orange' }}>Our Android App Developers Expertise</h2>
-        <p className='text-light'>
-          Hire Android app developers who are skilled at creating custom mobile applications to increase your business's efficiency. Our developers have expertise in various domains, including Android app development, testing, maintenance, and support. We can create high-quality apps that align with your business goals.
-        </p>
-      </div> */}
     </>
   );
 }

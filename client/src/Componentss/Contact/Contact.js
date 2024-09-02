@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import Navbar from '../Navbars/Navbar';
 import Footer from '../footer/footer'; // Ensure correct case
 import './Contact.css';
-import Main from '../Main section/Main';
+import imgSrc from '../Kotibox img/Main img/pexels-goumbik-590037.jpg'
 import Button from '../button/Button';
+import Webservicemain from '../Webservicemain.js/Webservicemain';
 
 function Contact() {
+  const mainText = { Text: "Together, let's create something " }
+  const Secondtext = { Text: "fantastic!" }
+  const textArray = ["Custom AI Software Development", "AI Consulting Services", "Generative AI", "AI-as-a-Service (AIaaS)" ];
+
+  
   const [captchaAnswer, setCaptchaAnswer] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -25,19 +31,16 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <Main />
+      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text}  textArray={textArray}  />
 
       <section className="contact-section" aria-labelledby="contact-label">
         <div className="container">
           <div className="feature-content">
             <p className="section-subtitle">GET IN TOUCH</p>
             <h2 className="section-title text-light">
-              We make your spending stress-free for you to have the perfect control.
+            Question? assistance? Getting together? Tea? Get in touch with us right now!
             </h2>
-            <p className="section-text">
-              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus.
-            </p>
+          
           </div>
           <div className='d-flex justify-content-between flex-wrap'>
             <div className="map-container">
@@ -68,7 +71,7 @@ function Contact() {
                     <input type="email" id="email" name="email" required />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Project Out Line</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                   </div>
                   <div className="form-group">

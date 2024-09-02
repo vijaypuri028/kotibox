@@ -243,11 +243,7 @@ export default function Navbar() {
 
                     <div className="dropdown-row">
                       <img className='dropdown-img-1 mt-4' src='https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
-                      <li style={{ position: "absolute", top: "80%", left: "80%" }} className='btn btn-danger w-15'>Get A Free Consultation</li>
-                      <div style={{ position: "absolute", top: "20%", left: "60%" }} className='text-light w-25 '>
-                        <h1>OUR SERVICES</h1>
-                        <p>KOTIBOX provides an exceptional experience to businesses across industry verticals. Doesn't matter which industry you belong to, our 100+ tech experts with vast experience and knowledge of the latest technologies, and trends deliver world-class mobility solutions concerning your project requirements. </p>
-                      </div>
+                      
                     </div>
 
                   </div>
@@ -312,7 +308,7 @@ export default function Navbar() {
                 <Link className="nav-link " aria-current="page" to="/Portfolio" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Portfolio</Link>
               </li>
 
-              <li className="nav-item dropdown btn btn-danger ms-5">
+              <li className="nav-button nav-item  dropdown btn btn-danger ms-5">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Get A Free Quote
                 </Link>

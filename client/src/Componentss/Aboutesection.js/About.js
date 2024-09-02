@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
+import Aboutvideo from '../Kotibox img/About section.mp4'
 
 export default function About() {
   const aboutMeImgRef = useRef(null);
@@ -63,13 +64,10 @@ export default function About() {
             {/* <h1 className='text-light' style={{ fontSize: "40px" }} >We are</h1> */}
             {/* <h1 style={{ fontSize: "45px" }} >KOTIBOX</h1> */}
           </div>
-          <iframe
-            className="video mx-auto  "
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <video className="video" autoPlay loop muted>
+          <source src={Aboutvideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         </div>
 
         <div className="text-container py-5 pt-5 ">

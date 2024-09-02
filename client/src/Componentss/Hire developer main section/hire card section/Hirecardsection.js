@@ -25,66 +25,69 @@ export default function Hirecardsection({
                     <div className="intro-text">
                         <h2>{mainText1}</h2>
                         <p>{mainTextp}</p>
-                        <button className="action-button">Click Me</button>
+                        <button className="mx-auto action-button">Click Me</button>
                     </div>
                 </div>
             </div>
             <div className="hirecard-section text-center">
-                <h2 className='p-2 mt-5 text-light'>{sectionHeading}</h2>
-                <p className='p-2 text-light'>{sectionDescription}</p>
+                <h2 className="p-2 mt-5 text-light">{sectionHeading}</h2>
+                <p className="p-2 text-light">{sectionDescription}</p>
 
-                <div className="card-section mx-auto">
+                <div className="card-section mx-auto row">
                     {/* Card 1 */}
-                    <div className="hire-card">
-                        <img className='p-1 pb-3' src={imgSrc1} alt='Web Developer' />
+                    <div className="hire-card col-lg-3 col-md-6 col-sm-12">
+                        <img className="p-1 pb-3" src={imgSrc1} alt="Web Developer" />
                         <h3>{cardTitle1}</h3>
                         <p>{cardDescription1}</p>
                         <button>Hire Now</button>
                     </div>
                     {/* Card 2 */}
-                    <div className="hire-card">
-                        <img className='p-1 pb-3' src={imgSrc2} alt='UI/UX Designer' />
+                    <div className="hire-card col-lg-3 col-md-6 col-sm-12">
+                        <img className="p-1 pb-3" src={imgSrc2} alt="UI/UX Designer" />
                         <h3>{cardTitle2}</h3>
                         <p>{cardDescription2}</p>
                         <button>Hire Now</button>
                     </div>
                     {/* Card 3 */}
-                    <div className="hire-card">
-                        <img className='p-1 pb-3' src={imgSrc3} alt='Full Stack Developer' />
+                    <div className="hire-card col-lg-3 col-md-6 col-sm-12">
+                        <img className="p-1 pb-3" src={imgSrc3} alt="Full Stack Developer" />
                         <h3>{cardTitle3}</h3>
                         <p>{cardDescription3}</p>
                         <button>Hire Now</button>
                     </div>
                 </div>
 
-                <div className="other-sections pt-5 pb-5 ">
+                <div className="other-sections pt-5 pb-5">
                     <h2>Job Opportunities</h2>
-                    <p className="p-2 text-light">Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB</p>
+                    <p className="p-2 text-light">
+                        Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB. Expert in React, Node.js, and MongoDB.
+                    </p>
 
-                    <div className="job-options">
-                        <div className="job-option">
-                            <img className="job-img" src='http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg' alt="Part-Time Jobs" />
+                    <div className="job-options row">
+                        <div className="job-option col-lg-3 col-md-6 col-sm-12">
+                            <img className="job-img" src="http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg" alt="Part-Time Jobs" />
                             <h3>Part-Time Jobs</h3>
-                            <p>Flexible working hours and exciting projects Join our team and grow with us full-time.</p>
+                            <p>Flexible working hours and exciting projects. Join our team and grow with us full-time.</p>
                             <button>Apply Now</button>
                         </div>
 
-                        <div className="job-option">
-                            <img className="job-img" src='http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg' alt="Part-Time Jobs" />
+                        <div className="job-option col-lg-3 col-md-6 col-sm-12">
+                            <img className="job-img" src="http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg" alt="Part-Time Jobs" />
                             <h3>Part-Time Jobs</h3>
-                            <p>Flexible working hours and exciting projects Join our team and grow with us full-time.</p>
+                            <p>Flexible working hours and exciting projects. Join our team and grow with us full-time.</p>
                             <button>Apply Now</button>
                         </div>
 
-                        <div className="job-option">
-                            <img className="job-img" src='http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg' alt="Full-Time Jobs" />
+                        <div className="job-option col-lg-3 col-md-6 col-sm-12">
+                            <img className="job-img" src="http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg" alt="Hourly Jobs" />
                             <h3>Hourly Jobs</h3>
-                            <p>Join our team and grow with us full-time Join our team and grow with us full-time.</p>
+                            <p>Join our team and grow with us full-time. Join our team and grow with us full-time.</p>
                             <button>Apply Now</button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 }

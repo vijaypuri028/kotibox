@@ -282,43 +282,8 @@
   height: 600px;
   position: relative;
 }
-.big-circle {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border: 5px solid #0e2483;
-  border-radius: 50%;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  animation: Rotate 20s linear infinite;
-  -webkit-animation: Rotate 20s linear infinite;
-}
-.icon-block {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  border-radius: 50%;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  background-image: linear-gradient(180deg, #80acff 0%, #627bf4 100%);
-  -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
-  box-shadow: 0 2px 4px 0 #3e5ada;
-  -webkit-box-shadow: 0 2px 4px 0 #3e5ada;
-}
-.icon-block img {
-  margin: 0px auto;
-  width: 86%;
-  animation: Rotate-reverse 20s linear infinite;
-  -webkit-animation: Rotate-reverse 20s linear infinite;
-}
+
+
 .icon-block:first-child {
   top: 0;
   left: 50%;
@@ -343,116 +308,7 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
-/* circle content */
-.circle {
-  animation: circle-rotate 20s linear infinite;
-  -webkit-animation: circle-rotate 20s linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  width: 75%;
-  height: 75%;
-  border: 3px solid #0051e8;
-  border-radius: 50%;
-}
-.circle .icon-block img {
-  animation: img-rotate 20s linear infinite;
-  -webkit-animation: img-rotate 20s linear infinite;
-}
-/* center logo */
-.center-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-.center-logo img {
-  max-width: 200px;
-}
-
-/* keyframe animation */
-
-@keyframes Rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes Rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes Rotate-reverse {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@-webkit-keyframes Rotate-reverse {
-  from {
-    -webkit-transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-  }
-}
-
-@keyframes circle-rotate {
-  from {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(405deg);
-  }
-}
-
-@-webkit-keyframes circle-rotate {
-  from {
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  }
-  to {
-    -webkit-transform: translate(-50%, -50%) rotate(405deg);
-  }
-}
-
-@keyframes img-rotate {
-  from {
-    transform: rotate(-45deg);
-  }
-  to {
-    transform: rotate(-405deg);
-  }
-}
-
-@-webkit-keyframes img-rotate {
-  from {
-    -webkit-transform: rotate(-45deg);
-  }
-  to {
-    -webkit-transform: rotate(-405deg);
-  }
-}
-
-
-.Circel-section{
-  background-color: #000000;
-}
 .v-shape {
-
   margin: 20px 0;
 }
 
@@ -523,6 +379,146 @@
 }
 
 
-  
-  
- 
+
+.section-services {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  font-family: "Poppins", sans-serif;
+  background-color: #211f24;
+  color: #fff;
+}
+
+.section-services .header-section {
+  margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.section-services .header-section .title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 1px;
+  background-color: #f70037;
+  transition: width 0.3s ease;
+}
+
+.section-services .header-section .title:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 3px;
+  background-color: #f70037;
+  transition: width 0.3s ease;
+}
+
+.section-services .header-section .title span {
+  color: #f70037;
+}
+
+.section-services .header-section .description {
+  color: #6f6f71;
+}
+
+.section-services .single-service {
+  margin-top: 40px;
+  background-color: #24252a;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-services .single-service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-services .single-service .part-1 {
+  padding: 40px 40px 25px;
+  border-bottom: 2px solid #1d1e23;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-services .single-service .part-1 i {
+  margin-bottom: 25px;
+  font-size: 50px;
+  color: #f70037;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-services .single-service .part-1:hover i {
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.section-services .single-service .part-1 .title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.8em;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.section-services .single-service .part-2 {
+  padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.8em;
+  transition: color 0.3s ease;
+}
+
+.section-services .single-service .part-2 a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.section-services .single-service .part-2 a:hover {
+  color: #f70037;
+}
+
+.section-services .single-service .part-2 a i {
+  margin-right: 10px;
+  color: #f70037;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-services .single-service .part-2 a:hover i {
+  transform: translateX(5px);
+  color: #fff;
+}
+
+.section-services .single-service:hover .part-2 .description {
+  color: #fff;
+}
+
+.section-services .single-service:hover .part-1 .title {
+  color: #f70037;
+}
+
+.section-services .single-service:hover .part-2 a i.bi-arrow-right {
+  transform: translateX(5px);
+}

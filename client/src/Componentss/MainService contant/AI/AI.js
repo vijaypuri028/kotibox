@@ -80,26 +80,29 @@ export default function AI() {
     <Navbar/>
     <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text}  textArray={textArray}  />
     <MainContent
-        
-    
-        benefitTitle="Website  Development Benefits"
-        benefitDescription="Kotibox is a top development company with Moodle solutions..."
-        services={services}
-        whyChooseTitle="Why Choose Kotibox for Website  Development?"
-        whyChooseDescription="Because we provide reliable CakePHP development services for your business, keeping your requirements in mind. Here are a few key features that make us a perfect choice for you Because we provide reliable CakePHP development services for your business, keeping your requirements in mind. Here are a few key features that make us a perfect choice for you!!! "
-        shapeBoxes={shapeBoxes}
-
-        heading2="KOTIBOX"
-        subheading="WEBDEVELOPMENT"
-        subheadingSize="2em"
-        additionalText="Since 2010"
-        additionalTextSize="1.5em"
-
-        circelhead="Web Development"
-        circelsub="CakePHP is an advanced PHP7-based rapid application development framework that makes the web application development process easier."
-        circeltext="As a prominent web development company across the world, JPLoft has highly experienced CakePHP developers that help you to create strong web apps. JPLoft builds websites that are more responsive and have elegant designs with extraordinary features. In this framework, you can improve your user interaction by developing a high-quality web app for your business."
-
-      />
+   benefitTitle="Website  Development Benefits"
+   benefitDescription="Kotibox is a top development company with Moodle solutions..."
+   services={services}
+   whyChooseTitle="Why Choose Kotibox for Website  Development?"
+   whyChooseDescription="Because we provide reliable CakePHP development services for your business..."
+   shapeBoxes={shapeBoxes}
+   heading2="KOTIBOX"
+   subheading="WEBDEVELOPMENT"
+   subheadingSize="2em"
+   additionalText="Since 2010"
+   additionalTextSize="1.5em"
+   circelhead="Web Development"
+   circelsub="CakePHP is an advanced PHP7-based..."
+   circeltext="As a prominent web development company across the world..."
+   
+   Meanheading1="Web Development"
+   Meanheading2="Web Development"
+   Meanheading3="Web Development"
+   Meanheading4="Web Development"
+   Meanheading5="Web Development"
+   Meanheading6="Web Development"
+   
+/>
 
 
   

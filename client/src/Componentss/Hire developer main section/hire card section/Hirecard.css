@@ -1,160 +1,247 @@
+/* Base Styles */
 .hirecard-section {
-    padding: 40px;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1c1c1c, #343a40);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    width: 90%;
-  }
-  
-  .hire-card {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 25px;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #343a40);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.hire-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.hire-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  transform: skewX(-15deg);
+  z-index: 0;
+}
+
+.hire-card:hover:before {
+  left: 50%;
+  transform: skewX(15deg);
+}
+
+.hire-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hire-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+
+.hire-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.hire-card p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 1.1em;
+  z-index: 1;
+}
+
+.hire-card button {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  z-index: 1;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.hire-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.other-sections {
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.job-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.job-option {
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 15px;
+  padding: 25px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.job-option:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.job-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.job-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.job-option h3 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.job-option p {
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 1.1em;
+}
+
+.job-option button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.job-option button:hover {
+  background-color: #003b99;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hire-card, .job-option {
     width: 30%;
-    text-align: center;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    position: relative;
-    overflow: hidden;
   }
-  
-  .hire-card:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.15);
-    transition: all 0.4s ease;
-    transform: skewX(-15deg);
-    z-index: 0;
+  .intro-text h2{
+    font-size: 25px;
   }
-  
-  .hire-card:hover:before {
-    left: 50%;
-    transform: skewX(15deg);
+  .intro-text p{
+    font-size: 18px;
   }
-  
-  .hire-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1000px) {
+  .hire-card, .job-option {
+    width: 45%;
   }
-  
-  .hire-card img {
+}
+
+@media (max-width: 900px) {
+  .hire-card, .job-option {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hire-card, .job-option {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    z-index: 1;
+    margin-top: 20px;
   }
-  
-  .hire-card h3 {
-    margin-bottom: 15px;
-    color: #333;
-    font-size: 1.5em;
-    z-index: 1;
+
+  .card-section, .job-options {
+    justify-content: center;
   }
-  
-  .hire-card p {
-    margin-bottom: 20px;
-    color: #666;
-    font-size: 1.1em;
-    z-index: 1;
+  .intro-image{
+    display: none;
   }
-  
-  .hire-card button {
-    padding: 10px 25px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    z-index: 1;
-    transition: background-color 0.4s ease, transform 0.4s ease;
+  .intro-section button{
+    display: none;
   }
-  
-  .hire-card button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+ 
+}
+
+@media (max-width: 700px) {
+  .hire-card, .job-option {
+    width: 100%;
   }
-  
-  .other-sections {
-    margin-top: 50px;
-    text-align: center;
-    color: #fff;
+  .intro-text h2{
+    font-size: 20px;
   }
-  
-  .job-options {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  .intro-text p{
+    font-size: 15px;
   }
-  
-  .job-option {
-    background-color: #222;
-    border: 1px solid #444;
-    border-radius: 15px;
-    padding: 25px;
-    width: 30%;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    position: relative;
-    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .hire-card img, .job-img {
+    width: 150px;
+    height: 150px;
   }
-  
-  .job-option:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 500px) {
+  .hire-card img, .job-img {
+    width: 130px;
+    height: 130px;
   }
-  
-  .job-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+@media (max-width: 400px) {
+  .hire-card img, .job-img {
+    width: 110px;
+    height: 110px;
   }
-  
-  .job-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 300px) {
+  .hire-card img, .job-img {
+    width: 90px;
+    height: 90px;
   }
-  
-  .job-option h3 {
-    margin-bottom: 15px;
-    color: #fff;
-    font-size: 1.5em;
-  }
-  
-  .job-option p {
-    margin-bottom: 20px;
-    color: #ccc;
-    font-size: 1.1em;
-  }
-  
-  .job-option button {
-    padding: 10px 20px;
-    background-color:  #0056b3;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.4s ease, transform 0.4s ease;
-  }
-  
-  .job-option button:hover {
-    background-color:  #0056b3;
-    transform: scale(1.05);
-  }
-  
+}

@@ -80,6 +80,11 @@ button {
 }
 
 /* Media query for small screens */
+@media (max-width: 958px) {
+  .form-container {
+    display: none;
+  }
+}
 @media (max-width: 908px) {
   .form-container {
     display: none;

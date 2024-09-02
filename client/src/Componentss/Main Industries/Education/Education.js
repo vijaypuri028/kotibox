@@ -2,31 +2,20 @@ import React from 'react'
 import Navbar from '../../Navbars/Navbar'
 import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
-import Blog from '../../blog/blog'
-import Marquee from '../../Marquee/Marquee'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg"; 
-import Company from '../../Company section/Company'
-
 import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
 import png2 from '../../Kotibox img/png img/office 2.png';
+import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
-import jpg1 from '../../Kotibox img/Main img/pexels-athena-2582938.jpg'
-import jpg2 from '../../Kotibox img/Main img/pexels-format-380633-1029757.jpg'
-import jpg3 from '../../Kotibox img/Main img/pexels-goumbik-577210.jpg'
-import jpg4 from '../../Kotibox img/Main img/pexels-goumbik-590022.jpg'
-import jpg5 from '../../Kotibox img/Main img/pexels-monoar-rahman-22660-109371.jpg'
-import jpg6 from '../../Kotibox img/Main img/pexels-pixabay-4158.jpg'
-import jpg7 from '../../Kotibox img/Main img/pexels-sorjigrey-9956769.jpg'
-import jpg8 from '../../Kotibox img/Main img/pexels-format-380633-1029757.jpg'
 
 
 
 
 
 export default function Education() {
-  const mainText = { Text: "WEBSITE  DEVELOPMENT" }
-  const Secondtext = { Text: "Your Partner " }
+  const mainText = { Text: "Using cutting-edge technology to promote " }
+  const Secondtext = { Text: "innovation in e-learning and education" }
   const textArray = ["laravel", "Codeelgniter", "wordpress", "Woo commerce" ,"Mangento"];
 
 
@@ -36,59 +25,41 @@ export default function Education() {
    <Navbar/>
    <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text} textArray={textArray}  />
    <Industriesmain 
-   mainHeading="Tour Software Development Services" 
-   subHeading="Tour Software Development Services"
-   introText="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
-   buttonText="Learn More"
+   mainHeading="Solutions for Online Learning - Straight Out of the Future" 
+   subHeading="Utilize Our Education Software Development Services to Ensure Success"
+   introText="We do provide contemporary digital education options. Nonetheless, we always work to comprehend market trends in order to predict the needs of the global community. We're happy to inform you that we have everything taken care of."
+   buttonText="Let's Disscus"
 
-   subHeading1="Tour Software Development Services"
-   introText1="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
+   subHeading1="Utilize Our Education Software Development Services to Ensure Success"
+   introText1="Your e-learning process is modernized with Kotibox Global Technologies. We connect your present corporate and educational software, move to the cloud, rethink the UI/UX to make everything mobile-friendly, and incorporate AI to personalize and adjust learning. We'll also make sure we abide by data security and education regulations."
 
-   subHeading2="Tour Software Development Services"
-   introText2="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
+   subHeading2="Get a Tailored Quote for the Development of eLearning Apps"
+   introText2="Are you prepared to move forward? A thorough proposal that is customized to meet your needs will be given to you by our staff."
 
-   imgSrc1={jpg1}
+ 
+
    imgAlt1="Good advice from a beautiful woman"
-   imgText1="Tour App Image 1"
-   Text1='Build a custom restaurant app tailored to your business needs.'
+   imgText1="Online Classroom Solution"
+   Text1='Our services offer an environment for real-time and interactive education, delivering an immersive and engaging learning experience for students and teachers globally. Transform traditional classrooms into dynamic virtual classrooms that connect teachers and students from all over the world.'
 
    
 
-   imgSrc2={jpg2}
+  
    imgAlt2="Office environment"
-   imgText2="Tour App Image 2"
-    Text2='Build a custom restaurant app tailored to your business needs.'
+   imgText2="Development of Educational Games"
+    Text2='use our services to create instructional games while fusing enjoyment and learning. We create dynamic, gamified learning experiences for students. Our goal is to increase the accessibility, enjoyment, and memorability of learning for students studying a variety of subjects.'
 
-    imgSrc3={jpg3}
-   imgAlt3="Office environment"
-   imgText3="Tour App Image 2"
-    Text3='Build a custom restaurant app tailored to your business needs.'
+    // imgSrc3={jpg3}
+   imgAlt3="E-Book Reading App"
+   imgText3="E-Book Reading App"
+    Text3='Use our eLearning platform development services to improve your educational experience. We create unique platforms that optimize learning materials, increase student participation, and expedite administrative procedures, all of which contribute to the improvement of the educational process for both students and academic institutions.'
 
 
-    imgSrc4={jpg4}
-   imgAlt4="Office environment"
-   imgText4="Tour App Image 2"
-    Text4='Build a custom restaurant app tailored to your business needs.'
+    // imgSrc4={jpg4}
+   imgAlt4=""
+   imgText4="Learning Management System (LMS)"
+    Text4='Enhance the efficiency of your educational management by utilizing the help of our Learning Management System (LMS) implementation and personalization. We integrate powerful learning management systems and tailor their functions to the diverse requirements of schools.'
 
-    imgSrc5={jpg5}
-   imgAlt5="Office environment"
-   imgText5="Tour App Image 2"
-    Text5='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc6={jpg6}
-   imgAlt6="Office environment"
-   imgText6="Tour App Image 2"
-    Text6='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc7={jpg7}
-   imgAlt7="Office environment"
-   imgText7="Tour App Image 2"
-    Text7='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc8={jpg8}
-   imgAlt8="Office environment"
-   imgText8="Tour App Image 2"
-    Text8='Build a custom restaurant app tailored to your business needs.'
 
     imgSrc9={png1}
     imgSrc10={png2}
@@ -96,11 +67,26 @@ export default function Education() {
   
 
 
+  
+            <Hiredevelopemntmain
+                hireservicemain="Tailored Healthcare App Creation Services Tailored to Your Requirements"
+                hireservicep="With our solutions for developing mobile applications for healthcare, you may enhance your business objectives and generate substantial growth."
+                hireservicemain1="Solutions for Online Learning - "
+                hireservicemain2="Straight Out of the Future"
+                hireservicemainpp="At KotiboxTechnologies, our goal is to develop robust Android applications that take a different approach for our esteemed clients, enabling them to grow their enterprises to new heights.fulfill all of your needs."
+                title1="Education platforms that are scalable"
+                title2="Gamification of Education"
+                title3="Gamification of Education"
+                title4="Gamification of Education"
+                title5="Gamification of Education"
+                title6="Gamification of Education"
+                />
 
-   
-   <Company/>
-   <Blog/>
-   <Marquee/>
+
+
+  
+
+  
    <Footer />
    </>
   )

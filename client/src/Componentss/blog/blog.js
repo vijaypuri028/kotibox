@@ -45,8 +45,8 @@ function Blog() {
   return (
     <>
       <div className='text-center text-light pt-5  ' >
-        <h1>Latest Blogs</h1>
-        <p>Get the latest updates on development insights, technologies and trends Get the latest updates on development insights, technologies and trends.</p>
+        <h1>What's Up in the Tech World?</h1>
+        <p>Always keep abreast with the latest developments, theories, and news in contemporary tech.</p>
       </div>
       <div className="wrap mx-auto ">
         {[

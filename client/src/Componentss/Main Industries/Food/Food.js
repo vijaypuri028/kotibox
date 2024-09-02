@@ -11,20 +11,13 @@ import Marquee from '../../Marquee/Marquee'
 import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
 import png2 from '../../Kotibox img/png img/office 2.png';
 
-import jpg1 from '../../Kotibox img/Main img/pexels-athena-2582938.jpg'
-import jpg2 from '../../Kotibox img/Main img/pexels-format-380633-1029757.jpg'
-import jpg3 from '../../Kotibox img/Main img/pexels-goumbik-577210.jpg'
-import jpg4 from '../../Kotibox img/Main img/pexels-goumbik-590022.jpg'
-import jpg5 from '../../Kotibox img/Main img/pexels-monoar-rahman-22660-109371.jpg'
-import jpg6 from '../../Kotibox img/Main img/pexels-pixabay-4158.jpg'
-import jpg7 from '../../Kotibox img/Main img/pexels-sorjigrey-9956769.jpg'
-import jpg8 from '../../Kotibox img/Main img/pexels-format-380633-1029757.jpg'
 
 
+import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
 export default function Food() {
-  const mainText = { Text: "WEBSITE  DEVELOPMENT" }
-  const Secondtext = { Text: "Your Partner " }
+  const mainText = { Text: "Explore restaurant app development to take " }
+  const Secondtext = { Text: "your company to new technological heights" }
   const textArray = ["laravel", "Codeelgniter", "wordpress", "Woo commerce" ,"Mangento"];
 
 
@@ -35,59 +28,38 @@ export default function Food() {
    <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text} textArray={textArray}  />
    <Industriesmain 
    
-   mainHeading="Tour Software Development Services" 
+   mainHeading="Restaurant POS Software Development" 
    subHeading="Tour Software Development Services"
-   introText="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
+   introText="Billing and sales processes may be easily automated with our personalized POS systems. With its ability to track inventories, the restaurant POS software facilitates easy communication between servers, cooks, and even managers."
    buttonText="Learn More"
 
-   subHeading1="Tour Software Development Services"
-   introText1="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
+   subHeading1="Utilize Digital Restaurant Solutions to Transform the Dining Experience for Patrons"
+   introText1="The introduction of restaurant applications has simplified eating out. We may now get our favorite foods delivered right to our door. To build an online restaurant environment for customers, restaurant applications are utilized. After choosing their favorite dish, they may place an online order, pay for it, and receive it. Food can be delivered to your home, place of business, or anyplace you like. Our website's creation for restaurant services is focused on tailoring each application to your establishment's requirements."
 
    subHeading2="Tour Software Development Services"
    introText2="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
 
-   imgSrc1={jpg1}
+ 
    imgAlt1="Good advice from a beautiful woman"
-   imgText1="Tour App Image 1"
-   Text1='Build a custom restaurant app tailored to your business needs.'
+   imgText1="Development of Restaurant Web Portals"
+   Text1='Create a strong business identity and draw in customers with a restaurant app. By providing timely promotions and adding game features that increase client engagement and loyalty, you may stand out in a crowded industry.'
 
    
 
-   imgSrc2={jpg2}
+
    imgAlt2="Office environment"
-   imgText2="Tour App Image 2"
-    Text2='Build a custom restaurant app tailored to your business needs.'
+   imgText2="App Development for Restaurant Chains"
+    Text2='Make the most of the revenue from your chain restaurant by utilizing an application that is of the highest caliber, created by our skilled staff. With its customizable functionality and easy-to-use design, the restaurant chain app provides GPS instructions for each location and easy branch administration.'
 
-    imgSrc3={jpg3}
    imgAlt3="Office environment"
-   imgText3="Tour App Image 2"
-    Text3='Build a custom restaurant app tailored to your business needs.'
+   imgText3="Tailored Waiter Management Options"
+    Text3='Our specially created waiter management software improves the efficiency of front-of-house operations in your restaurant. As a specialized mobile restaurant app development company, we provide apps that help with order administration, task delegation, and customer support Coordination.'
 
 
-    imgSrc4={jpg4}
+  
    imgAlt4="Office environment"
-   imgText4="Tour App Image 2"
-    Text4='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc5={jpg5}
-   imgAlt5="Office environment"
-   imgText5="Tour App Image 2"
-    Text5='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc6={jpg6}
-   imgAlt6="Office environment"
-   imgText6="Tour App Image 2"
-    Text6='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc7={jpg7}
-   imgAlt7="Office environment"
-   imgText7="Tour App Image 2"
-    Text7='Build a custom restaurant app tailored to your business needs.'
-
-    imgSrc8={jpg8}
-   imgAlt8="Office environment"
-   imgText8="Tour App Image 2"
-    Text8='Build a custom restaurant app tailored to your business needs.'
+   imgText4="Restaurant Discounts App Development"
+    Text4='Take advantage of our offers on restaurant applications to increase client loyalty and attract new business. Being the top restaurant and food app development company in the sector, we create apps that enable eateries to provide consumers with enticing offers, rebates, and loyalty plans.'
 
     imgSrc9={png1}
     imgSrc10={png2}
@@ -96,7 +68,19 @@ export default function Food() {
   
 
 
-
+  <Hiredevelopemntmain
+                hireservicemain="Services for Developing Custom Restaurant Apps Tailored to Your Needs"
+                hireservicep="With our restaurant application development solutions, you may achieve your goals and grow your business to a great extent."
+                hireservicemain1="Solutions for Online Learning - "
+                hireservicemain2="Straight Out of the Future"
+                hireservicemainpp="At KotiboxTechnologies, our goal is to develop robust Android applications that take a different approach for our esteemed clients, enabling them to grow their enterprises to new heights.fulfill all of your needs."
+                title1="Education platforms that are scalable"
+                title2="Gamification of Education"
+                title3="Gamification of Education"
+                title4="Gamification of Education"
+                title5="Gamification of Education"
+                title6="Gamification of Education"
+                />
    
    <Company/>
    <Blog/>

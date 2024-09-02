@@ -34,78 +34,125 @@ function MainContent({
 }) {
   return (
     <>
-      <div className='Circel-section text-light text-center'>
-        <div>
-          <h1 className='pt-5'>{circelhead}</h1>
-          <h5 className='mt-4'>{circelsub}</h5>
+   
 
-          <div style={{ width: '80%', margin: '0 auto' }} className='d-flex justify-content-between mt-5'>
-           
-            <h5 className='w-50 mx-auto '>{circeltext}</h5>
+      <section className="section-services">
+      <div className="container">
+        <div className="row justify-content-center text-center">
+          <div className="col-md-10 col-lg-8">
+            <div className="header-section">
+              <h2 className="title">{circelhead}</h2>
+              <p >
+              {circelsub}
+              </p>
+              <p>{circeltext}</p>
+            </div>
           </div>
         </div>
-        <section className='main-container'>
-          <div className='v-shape'>
-            <div className='box1 size-small'>
-              <h6 className='h6'>Web Development</h6>
-            </div>
-            <div className='box1 size-small'>
-              <h6 className='h6'>Web Development</h6>
-            </div>
-            <div className='box1 size-small'>
-              <h6 className='h6'>Web Development</h6>
+        <div className="row">
+          {/* Start Single Service */}
+          <div className="col-md-6 col-lg-4">
+            <div className="single-service">
+              <div className="part-1">
+                <i className="fab fa-500px"></i>
+                <h3 className="title">Web Development</h3>
+              </div>
+              <div className="part-2">
+                <p className="description">
+                  Express delivery inno service effective logistics solution for delivery of small cargo delivery service.
+                </p>
+                <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5 "></i></Link>
+              </div>
             </div>
           </div>
+          {/* / End Single Service */}
 
-          <div className='main'>
-            <div className='big-circle'>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/web-dev-icon.png' alt='web design icon' />
+          {/* Start Single Service */}
+          <div className="col-md-6 col-lg-4">
+            <div className="single-service">
+              <div className="part-1">
+                <i className="fab fa-angellist"></i>
+                <h3 className="title">Web Development</h3>
               </div>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/game-design-icon.png' alt='game design icon' />
+              <div className="part-2">
+                <p className="description">
+                  Express delivery inno service effective logistics solution for delivery of small cargo delivery service.
+                </p>
+                <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
               </div>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/game-dev-icon.png' alt='game dev icon' />
-              </div>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/ui-ux-icon.png' alt='ui-ux icon' />
-              </div>
-            </div>
-            <div className='circle'>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/app-icon.png' alt='app icon' />
-              </div>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/blockchain-icon.png' alt='blockchain icon' />
-              </div>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/arvr-icon.png' alt='ar-vr icon' />
-              </div>
-              <div className='icon-block'>
-                <img src='https://www.yudiz.com/codepen/animated-portfolio/artificial-intelligence-icon.png' alt='artificial intelligence icon' />
-              </div>
-            </div>
-            <div className='center-logo text-center'>
-              <h1 style={{ fontSize: headingSize }} className='text-light'>{heading2}</h1>
-              <h2 style={{ fontSize: subheadingSize }} className='text-light'>{subheading}</h2>
-              <p style={{ fontSize: additionalTextSize }} className='text-light'>{additionalText}</p>
             </div>
           </div>
+          {/* / End Single Service */}
 
-          <div className='v-shape'>
-            <div className='box1 size-small-1'>
-              <h6 className='h5'>Web Development</h6>
-            </div>
-            <div className='box1 size-small-1'>
-              <h6 className='h5'>Web Development</h6>
-            </div>
-            <div className='box1 size-small-1'>
-              <h6 className='h5'>Web Development</h6>
+          {/* Start Single Service */}
+          <div className="col-md-6 col-lg-4">
+            <div className="single-service">
+              <div className="part-1">
+                <i className="fas fa-award"></i>
+                <h3 className="title">Web Development</h3>
+              </div>
+              <div className="part-2">
+                <p className="description">
+                  Express delivery inno service effective logistics solution for delivery of small cargo delivery service.
+                </p>
+                <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
+              </div>
             </div>
           </div>
-        </section>
+          {/* / End Single Service */}
+
+          {/* Start Single Service */}
+          <div className="col-md-6 col-lg-4">
+            <div className="single-service">
+              <div className="part-1">
+                <i className="fab fa-asymmetrik"></i>
+                <h3 className="title">Web Development</h3>
+              </div>
+              <div className="part-2">
+                <p className="description">
+                  Express delivery inno service effective logistics solution for delivery of small cargo delivery service.
+                </p>
+                <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
+              </div>
+            </div>
+          </div>
+          {/* / End Single Service */}
+
+          {/* Start Single Service */}
+          <div className="col-md-6 col-lg-4">
+            <div className="single-service">
+              <div className="part-1">
+                <i className="fas fa-broadcast-tower"></i>
+                <h3 className="title">Web Development</h3>
+              </div>
+              <div className="part-2">
+                <p className="description">
+                  Express delivery inno service effective logistics solution for delivery of small cargo delivery service.
+                </p>
+                <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
+              </div>
+            </div>
+          </div>
+          {/* / End Single Service */}
+
+          {/* Start Single Service */}
+          <div className="col-md-6 col-lg-4">
+            <div className="single-service">
+              <div className="part-1">
+                <i className="fab fa-canadian-maple-leaf"></i>
+                <h3 className="title">Web Development</h3>
+              </div>
+              <div className="part-2">
+                <p className="description">
+                  Express delivery inno service effective logistics solution for delivery of small cargo delivery service.
+                </p>
+                <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
       <div className='intro-section'>
         <div className='container intro-content'>

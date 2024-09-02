@@ -2,103 +2,85 @@ import React from 'react';
 import Navbar from '../../Navbars/Navbar';
 import Webservicemain from '../../Webservicemain.js/Webservicemain';
 import Industriesmain from '../Industries main content/industriesmain';
-import Company from '../../Company section/Company';
-import Blog from '../../blog/blog';
 import Footer from '../../footer/footer';
-import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg"; 
-import Marquee from '../../Marquee/Marquee';
+
+
+import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
 import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
 import png2 from '../../Kotibox img/png img/office 2.png';
 
-import jpg1 from '../../Kotibox img/Main img/pexels-athena-2582938.jpg'
-import jpg2 from '../../Kotibox img/Main img/pexels-format-380633-1029757.jpg'
-import jpg3 from '../../Kotibox img/Main img/pexels-goumbik-577210.jpg'
-import jpg4 from '../../Kotibox img/Main img/pexels-goumbik-590022.jpg'
-import jpg5 from '../../Kotibox img/Main img/pexels-monoar-rahman-22660-109371.jpg'
-import jpg6 from '../../Kotibox img/Main img/pexels-pixabay-4158.jpg'
-import jpg7 from '../../Kotibox img/Main img/pexels-sorjigrey-9956769.jpg'
-import jpg8 from '../../Kotibox img/Main img/pexels-format-380633-1029757.jpg'
+
+
 
 
 export default function Tour() {
-    const mainText = { Text: "WEBSITE DEVELOPMENT" };
-    const secondText = { Text: "Your Partner in Innovation" };
+    const mainText = { Text: "Take Your Travel and Hospitality Business to " }
+    const Secondtext = { Text: " New Heights with Our Tailored Travel Solutions" }
     const textArray = ["Laravel", "CodeIgniter", "WordPress", "WooCommerce", "Magento"];
-  
+
     return (
         <>
             <Navbar />
-            <Webservicemain 
-                imgSrc={imgSrc} 
-                mainText={mainText.Text} 
-                secondText={secondText.Text} 
-                textArray={textArray} 
+            <Webservicemain
+                mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray}
             />
-            <Industriesmain 
-                mainHeading="Tour Software Development Services" 
+            <Industriesmain
+                mainHeading="Services We Provide for Travel Software Development"
                 subHeading="Tour Software Development Services"
-                introText="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
-                buttonText="Learn More"
+                introText="Your travel agency can become more successful by implementing a corporate travel application and increasing return on investment. We provide an amazing user experience that makes people more attracted to and loyal to your company."
+                buttonText="Let's Dissucus"
 
-                subHeading1="Tour Software Development Services"
-                introText1="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
+                subHeading1="Feature-Rich Travel and Booking  Solutions: Boost the Travel Sector"
+                introText1="With a track record of success in targeted marketing and providing individualized services through native applications that can draw in new users and hold on to current ones, Kotibox offers top-notch services for developing travel apps. Our travel-focused app development team has the necessary knowledge and experience to build mobile applications especially for travel-related businesses."
 
-                subHeading2="Tour Software Development Services"
-                introText2="We are experts in developing customized restaurant apps tailored to your business's requirements. Our team can assist you in designing and implementing an application that will improve your customer experience."
+                subHeading2="Employ Travel App Developers to Provide Tourism Solutions That Are Future-Ready"
+                introText2="Use our skilled developers to create your travel application. Get in touch with us to find out how our knowledgeable staff can make your project a reality."
 
-                imgSrc1={jpg1}
+
                 imgAlt1="Good advice from a beautiful woman"
-                imgText1="Tour App Image 1"
-                Text1='Build a custom restaurant app tailored to your business needs.'
+                imgText1="Booking Solution for Vehicle Rentals"
+                Text1='We will develop an application to offer rental solutions that, among other things, will enhance your client experience by providing a range of payment choices and fee estimates. Additionally, you can let your users get real-time trip information.'
 
-                
 
-                imgSrc2={jpg2}
+
+
                 imgAlt2="Office environment"
-                imgText2="Tour App Image 2"
-                 Text2='Build a custom restaurant app tailored to your business needs.'
+                imgText2="Travel CRM  Development"
+                Text2='The time has come to create a complete travel management program that enables users to make reservations for lodging, airfare, and other forms of transportation. The program ought to facilitate booking and provide simple connectivity with payment systems.'
 
-                 imgSrc3={jpg3}
                 imgAlt3="Office environment"
-                imgText3="Tour App Image 2"
-                 Text3='Build a custom restaurant app tailored to your business needs.'
+                imgText3="Application for Booking Tickets
+"
+                Text3='Our solutions help agents with lead generation, tracking, scheduling, and messaging so they can focus on strengthening client connections and increasing sales. Obtain increased productivity and simpler procedures!'
 
 
-                 imgSrc4={jpg4}
+
                 imgAlt4="Office environment"
-                imgText4="Tour App Image 2"
-                 Text4='Build a custom restaurant app tailored to your business needs.'
+                imgText4="Development of Travel Guide Apps"
+                Text4='Make sure you can put an end to consumers annoyance by providing local landmarks, maps, transit choices, availability in real time, and more. Comprehensive business solutions must be provided to customers.'
 
-                 imgSrc5={jpg5}
-                imgAlt5="Office environment"
-                imgText5="Tour App Image 2"
-                 Text5='Build a custom restaurant app tailored to your business needs.'
 
-                 imgSrc6={jpg6}
-                imgAlt6="Office environment"
-                imgText6="Tour App Image 2"
-                 Text6='Build a custom restaurant app tailored to your business needs.'
-
-                 imgSrc7={jpg7}
-                imgAlt7="Office environment"
-                imgText7="Tour App Image 2"
-                 Text7='Build a custom restaurant app tailored to your business needs.'
-
-                 imgSrc8={jpg8}
-                imgAlt8="Office environment"
-                imgText8="Tour App Image 2"
-                 Text8='Build a custom restaurant app tailored to your business needs.'
-
-                 imgSrc9={png1}
-                 imgSrc10={png2}
+                imgSrc9={png1}
+                imgSrc10={png2}
 
 
 
             />
-            <Company />
-            <Blog />
-            <Marquee />
+            <Hiredevelopemntmain
+                hireservicemain="Now, talk about the software development needs you have for education."
+                hireservicep="possess particular requirements for development? Get in touch with us to go over your needs and see how we can modify our eLearning software to suit the specific objectives of your project."
+                hireservicemain1="Solutions for Online Learning - "
+                hireservicemain2="Straight Out of the Future"
+                hireservicemainpp="At KotiboxTechnologies, our goal is to develop robust Android applications that take a different approach for our esteemed clients, enabling them to grow their enterprises to new heights.fulfill all of your needs."
+                title1="Education platforms that are scalable"
+                title2="Gamification of Education"
+                title3="Gamification of Education"
+                title4="Gamification of Education"
+                title5="Gamification of Education"
+                title6="Gamification of Education"
+            />
+
             <Footer />
         </>
     );
