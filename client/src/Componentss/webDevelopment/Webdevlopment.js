@@ -2,12 +2,10 @@ import React from 'react';
 import './Webdevelopment.css';
 import Navbar from '../Navbars/Navbar';
 import Footer from '../footer/footer';
-import Blog from '../blog/blog';
 import Button from '../button/Button';
 import Webservicemain from '../Webservicemain.js/Webservicemain';
 import imgSrc from "../Kotibox img/Main img/web.jpg";
 import MainContent from '../Main content/MainContent';
-import Marquee from '../Marquee/Marquee';
 import { Link } from 'react-router-dom';
 
 import Img1 from '../Kotibox img/icon/icons8-java-48.png'
