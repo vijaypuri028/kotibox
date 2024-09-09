@@ -4,19 +4,16 @@ import Navbar from '../Navbars/Navbar';
 import Footer from '../footer/footer';
 import Button from '../button/Button';
 import Webservicemain from '../Webservicemain.js/Webservicemain';
-import imgSrc from "../Kotibox img/Main img/web.jpg";
+import imgSrc from "../Kotibox img/Main img/Web10.jpg";
 import MainContent from '../Main content/MainContent';
 import { Link } from 'react-router-dom';
 
-import Img1 from '../Kotibox img/icon/icons8-java-48.png'
-import Img2 from '../Kotibox img/icon/icons8-java-48.png'
-import Img3 from '../Kotibox img/icon/icons8-java-48.png'
-import Img4 from '../Kotibox img/icon/icons8-java-48.png'
-import Img5 from '../Kotibox img/icon/icons8-java-48.png'
-import Img6 from '../Kotibox img/icon/icons8-java-48.png'
-import Img7 from '../Kotibox img/icon/icons8-java-48.png'
-import Img8 from '../Kotibox img/icon/icons8-java-48.png'
-import Img9 from '../Kotibox img/icon/icons8-java-48.png'
+import Technologies1img from '../Kotibox img/icon/icons8-react-100.png'
+import Technologies2img from '../Kotibox img/icon/Js.png'
+import Technologies3img from '../Kotibox img/icon/Php.png'
+import Technologies4img from '../Kotibox img/icon/icons8-laravel-64.png'
+import Technologies5img from '../Kotibox img/icon/icons8-node-js-48.png'
+import Technologies6img from '../Kotibox img/icon/icons8-java-48.png'
 
 export default function WebDevelopment() {
   const mainText = "Website Development Company";
@@ -287,16 +284,81 @@ We are a full-service web development business that adds value to our clients' p
         Technologies8="WordPress Development"
         Technologies9="Ember js WebDevelopment"
 
-        Technologies1img={Img1}
-        Technologies2img={Img2}
-        Technologies3img={Img3}
-        Technologies4img={Img4}
-        Technologies5img={Img5}
-        Technologies6img={Img6}
-        Technologies7img={Img7}
-        Technologies8img={Img8}
-        Technologies9img={Img9}
+        Industriesheading="Customized Mobile Application Development for Various Industry Verticals"
+        Industriesp="Our renowned services are provided to a wide range of companies and sectors, including startups, large corporations, and small businesses. Prepare to explode with the assistance of our skilled mobile app developers—you can anticipate cutting-edge digital solutions that will propel your company to new heights."
+
+        sectionhead="Our Website Development Process"
+        sectionp=""
+        section1="Analyzing Requirements"
+        sectionp1="defining a roadmap and requirements, then creating a team structure."
+        section2="UI/UX Design"
+        sectionp2="combining profitable design to provide a flawless user experience for clients."
+        section3="Development Phase"
+        sectionp3="completing backend development and developing an agile development methodology' API."
+        section4="Testing Phase"
+        sectionp4="Your app is put through a battery of tests before to launch."
+        section5="Deployment & Support"
+        sectionp5="The website will be launched, and in the future, we'll offer assistance and maintenance."
       />
+
+      <section className='services section-bg' id='services'>
+        <div className='container'>
+          <header className='section-header'>
+            <h3>Technologies We Use</h3>
+            <p>Technologies We Use</p>
+          </header>
+          <div className='row'>
+            <div className='col-md-6 col-lg-4'>
+              <div className='box'>
+                <div className='icon' style={{ background: '#fff' }}>
+                  <img style={{ height: '50px', width: '50px' }} src={Technologies1img} alt="Kotlin" />
+                </div>
+                <h3 className='title'>React</h3>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-4'>
+              <div className='box'>
+                <div className='icon' style={{ background: '#fff' }}>
+                  <img style={{ height: '50px', width: '50px' }} src={Technologies2img} alt="Swift" />
+                </div>
+                <h3 className='title'>Java Script </h3>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-4'>
+              <div className='box'>
+                <div className='icon' style={{ background: '#fff' }}>
+                  <img style={{ height: '50px', width: '50px' }} src={Technologies3img} alt="Flutter" />
+                </div>
+                <h3 className='title'>PHP</h3>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-4'>
+              <div className='box'>
+                <div className='icon' style={{ background: '#fff' }}>
+                  <img style={{ height: '50px', width: '50px' }} src={Technologies4img} alt="Java" />
+                </div>
+                <h3 className='title'>laravel</h3>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-4'>
+              <div className='box'>
+                <div className='icon' style={{ background: '#fff' }}>
+                  <img style={{ height: '50px', width: '50px' }} src={Technologies5img} alt="React Native" />
+                </div>
+                <h3 className='title'>NodeJS</h3>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-4'>
+              <div className='box'>
+                <div className='icon' style={{ background: '#fff' }}>
+                  <img style={{ height: '50px', width: '50px' }} src={Technologies6img} alt="Technology Name" />
+                </div>
+                <h3 className='title'>Java</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Button />
       <Footer />
     </>

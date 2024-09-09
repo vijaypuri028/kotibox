@@ -47,6 +47,9 @@ export default function Magento() {
         Industriesheading="Hire magento  Developers for various Industries"
         Industriesp="Our skilled group of magento developers is dedicated to creating unique solutions that are tailored to the unique requirements of your company. We have the expertise to bring your ideas to life, whether you're a startup firm trying to make a name for itself or an established organization looking to innovate."
 
+
+         accordionheading="How Is the Magento Development Process at Kotibox Operational?"
+        accordionpra="To produce a development result that exceeds the client's expectations, collaboration throughout the process is essential. When a customer is prepared to engage an Magento developer, our team of professionals first concentrates on the development phase by"
       />
    
    

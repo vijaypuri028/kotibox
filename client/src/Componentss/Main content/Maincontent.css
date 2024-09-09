@@ -45,11 +45,12 @@
   
   .section-header h3 {
     color: #000000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     position: relative;
+    transition: color 0.3s ease;
   }
   
   .section-header p {
@@ -58,7 +59,7 @@
     margin: auto;
     padding-bottom: 60px;
     text-align: center;
-    width: 50%;
+    width: 70%;
   }
   
   .section-bg {
@@ -560,4 +561,70 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+
+
+}
+
+.card-item-5 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 22%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-item-5:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-content-wrapper {
+  padding: 20px;
+}
+
+.card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #e74c3c;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card-item:hover .card-icon {
+  transform: rotate(20deg);
+  color: #e74c3c;
+}
+
+.arrow-image {
+  height: 48px;
+  width: 48px;
+  margin: 0 10px;
+}
+
+.card-heading {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.card-description {
+  margin-top: 10px;
+  color: #555;
+}
+
+.cards-wrapper-text-1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }

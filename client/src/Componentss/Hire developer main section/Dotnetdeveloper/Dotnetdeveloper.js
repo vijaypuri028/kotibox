@@ -48,7 +48,10 @@ export default function Dotnetdeveloper() {
              In relation to Dot net , we have effectively provided  in a number of categories, including e-commerce, gaming, enterprise, restaurant ordering, utility, and many more, all at a reasonable cost.Kotiboxis a clear choice for developers with outstanding delivery and ethics when clients often look to Hire Dedicated Developers"
         Industriesheading="Hire Dot net  Developers for various Industries"
         Industriesp="Our skilled group of Dot net developers is dedicated to creating unique solutions that are tailored to the unique requirements of your company. We have the expertise to bring your ideas to life, whether you're a startup firm trying to make a name for itself or an established organization looking to innovate."
+        
 
+         accordionheading="How Is the Dotnet Development Process at Kotibox Operational?"
+        accordionpra="To produce a development result that exceeds the client's expectations, collaboration throughout the process is essential. When a customer is prepared to engage an Dotnet developer, our team of professionals first concentrates on the development phase by"
       />
    
     

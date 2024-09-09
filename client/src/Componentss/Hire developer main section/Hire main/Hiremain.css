@@ -490,15 +490,13 @@ border-radius: 30px;
     cursor: pointer;
   }
   
-  .container .row {
-    /* margin-bottom: 100px; */
-  }
+ 
 
   
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px; /* Adjust the gap between cards */
+    gap: 60px; /* Adjust the gap between cards */
     justify-content: center; /* Center the cards */
   }
   

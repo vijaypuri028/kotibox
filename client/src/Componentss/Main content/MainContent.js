@@ -2,6 +2,9 @@ import React from 'react';
 import './Maincontent.css';
 import { Link } from 'react-router-dom';
 import png from '../Kotibox img/png img/good-advice-from-beautiful-woman.png';
+import { FaHeartbeat, FaMusic, FaPaintBrush, FaCode } from 'react-icons/fa';
+import arrowImage from '../Kotibox img/icon/dote net.webp';
+
 
 import Education from '../Kotibox img/Idusteries/book.png';
 import ECommerce from '../Kotibox img/Idusteries/Eccomerce.png';
@@ -12,6 +15,8 @@ import Banking from '../Kotibox img/Idusteries/Banking.png';
 import RealEstate from '../Kotibox img/Idusteries/realstetate.png';
 import Media from '../Kotibox img/Idusteries/icons8-media-64.png';
 import Healthcare from '../Kotibox img/Idusteries/Heathcare.png';
+import Industries from '../Industries/Industries';
+
 
 function MainContent({
   services11,
@@ -38,7 +43,21 @@ function MainContent({
   Technologies9img,
   whyChooseTitle,
   whyChooseDescription,
-  shapeBoxes
+  shapeBoxes,
+  Industriesheading,
+  Industriesp,
+  sectionhead,
+  sectionp,
+  section1,
+  sectionp1,
+  section2,
+  sectionp2,
+  section3,
+  sectionp3,
+  section4,
+  sectionp4,
+  section5,
+  sectionp5,
 }) {
   return (
     <>
@@ -53,12 +72,15 @@ function MainContent({
         </div>
       </div>
 
+
+
+
       <section className='services section-bg' id='services'>
         <div className='container'>
           <header className='section-header'>
-            <h3>Our Services for Every Industry</h3>
+            <h3 className='w-55'>{Industriesheading}</h3>
             <p>
-              Proven by our years of experience, we are all about delivering excellence across industries—from foods and beverages to retail and beyond.
+              {Industriesp}
             </p>
           </header>
           <div className='row'>
@@ -138,6 +160,7 @@ function MainContent({
         </div>
       </section>
 
+
       <div className='bg-light'>
         <div className='overview'>
           <div className="profile__inner d-flex flex-wrap justify-content-between align-items-center">
@@ -152,90 +175,64 @@ function MainContent({
         </div>
       </div>
 
-      <section className='services section-bg' id='services'>
-        <div className='container'>
-          <header className='section-header'>
-            <h3>Technologies We Use</h3>
-            <p>{Technologiesp}</p>
-          </header>
-          <div className='row'>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies1img} alt={Technologies1} />
-                </div>
-                <h3 className='title'>{Technologies1}</h3>
-              </div>
+      <div style={{ paddingBottom: "70px",paddingTop:"60px" }} className='bg-light  '>
+        <h1 className='text-center pt-5  cards-wrapper-text-1 '>{sectionhead}</h1>
+        <p className='text-center'>{sectionp}</p>
+        <div className="cards-wrapper mx-auto ">
+
+          <div className="card-item-5 mt-5">
+            <div className="card-content-wrapper">
+              <FaHeartbeat className="card-icon" />
+              <h3 className="card-heading">{section1}</h3>
+              <p className="card-description">{sectionp1}</p>
             </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies2img} alt={Technologies2} />
-                </div>
-                <h3 className='title'>{Technologies2}</h3>
-              </div>
+          </div>
+
+          <img src={arrowImage} className="arrow-image" alt="arrow" />
+
+          <div className="card-item-5">
+            <div className="card-content-wrapper">
+              <FaMusic className="card-icon" />
+              <h3 className="card-heading">{section2}</h3>
+              <p className="card-description">{sectionp2}</p>
             </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies3img} alt={Technologies3} />
-                </div>
-                <h3 className='title'>{Technologies3}</h3>
-              </div>
+          </div>
+
+          <img src={arrowImage} className="arrow-image" alt="arrow" />
+
+          <div className="card-item-5">
+            <div className="card-content-wrapper">
+              <FaPaintBrush className="card-icon" />
+              <h3 className="card-heading">{section3}</h3>
+              <p className="card-description">{sectionp3}</p>
             </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies4img} alt={Technologies4} />
-                </div>
-                <h3 className='title'>{Technologies4}</h3>
-              </div>
+          </div>
+
+          <img src={arrowImage} className="arrow-image" alt="arrow" />
+
+          <div className="card-item-5">
+            <div className="card-content-wrapper">
+              <FaCode className="card-icon" />
+              <h3 className="card-heading">{section4}</h3>
+              <p className="card-description">{sectionp4}</p>
             </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies5img} alt={Technologies5} />
-                </div>
-                <h3 className='title'>{Technologies5}</h3>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies6img} alt={Technologies6} />
-                </div>
-                <h3 className='title'>{Technologies6}</h3>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies7img} alt={Technologies7} />
-                </div>
-                <h3 className='title'>{Technologies7}</h3>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies8img} alt={Technologies8} />
-                </div>
-                <h3 className='title'>{Technologies8}</h3>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4'>
-              <div className='box'>
-                <div className='icon' style={{ background: '#fff' }}>
-                  <img style={{ height: '50px', width: '50px' }} src={Technologies9img} alt={Technologies9} />
-                </div>
-                <h3 className='title'>{Technologies9}</h3>
-              </div>
+          </div>
+          <img src={arrowImage} className="arrow-image" alt="arrow" />
+
+          <div className="card-item-5">
+            <div className="card-content-wrapper">
+              <FaCode className="card-icon" />
+              <h3 className="card-heading">{section5}</h3>
+              <p className="card-description">{sectionp5}</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      
 
-      <div className='container box-wrapper'>
+
+
+      <div className='container box-wrapper '>
         <div className='container'>
           <h2 style={{ fontSize: '35px' }} className='text-light mt-5 text-center'>{whyChooseTitle}</h2>
           <p style={{ fontSize: '18px' }} className='text-light text-center'>{whyChooseDescription}</p>
@@ -248,7 +245,7 @@ function MainContent({
             <figcaption>
               <div className='show-cont-1'>
                 <h3 className='card-no-1'>{box.cardNo}</h3>
-                <h4 className='card-main-title-1'>{box.title} <br/>{box.title1}</h4>
+                <h4 className='card-main-title-1'>{box.title} <br />{box.title1}</h4>
               </div>
               <p className='card-content-1'>{box.description}</p>
               <Link to={box.link} className='read-more-btn-1'>Read More</Link>

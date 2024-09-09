@@ -48,6 +48,9 @@ export default function Blockchaindeveloper() {
         Industriesheading="Hire Block Chain Developers for various Industries"
         Industriesp="Our skilled group of Block Chaindevelopers is dedicated to creating unique solutions that are tailored to the unique requirements of your company. We have the expertise to bring your ideas to life, whether you're a startup firm trying to make a name for itself or an established organization looking to innovate."
 
+
+         accordionheading="How Is the Blockchain Development Process at Kotibox Operational?"
+        accordionpra="To produce a development result that exceeds the client's expectations, collaboration throughout the process is essential. When a customer is prepared to engage an Blockchain developer, our team of professionals first concentrates on the development phase by"
       />
 
 

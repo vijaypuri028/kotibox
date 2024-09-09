@@ -55,7 +55,7 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
   return (
     <div className="main-container">
       <div className="image-container">
-        <img className="background-image" src={imgSrc} alt="Background" />
+        <img style={{objectFit:"cover"}} className="background-image" src={imgSrc} alt="Background" />
         <div className="image-overlay">
           <div>
             <h1 className="main-text-1 ">

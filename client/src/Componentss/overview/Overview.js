@@ -1,12 +1,13 @@
 import React from 'react';
 import './overview.css';
+import Overviewimg from '../Kotibox img/png img/over view.png'
 
 function Overview() {
   return (
     <div className='overview mx-auto'>
       <div className="profile__inner d-flex flex-wrap justify-content-between align-items-center">
         <div className="profile__img">
-          <img className='img-fluid' src='https://www.jploft.com/img/call_disccuss1.webp' alt="Profile" />
+          <img className='img-fluid' src={Overviewimg} alt="Profile" />
         </div>
         <div className="profile__text ms-2  mt-4 mt-md-0">
           <h1>Are you still concerned about your technology partner?</h1>

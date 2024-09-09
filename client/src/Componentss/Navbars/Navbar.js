@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
-
 import Android from '../Kotibox img/icon/icons8-android-os-48.png'
 import Java from '../Kotibox img/icon/icons8-java-48.png'
 import AngularJS from '../Kotibox img/icon/icons8-angularjs-144.png'
@@ -24,13 +23,12 @@ import Mobile from '../Kotibox img/service/Mobile1.png'
 import Digital from '../Kotibox img/icon/icons8-marketing-64.png'
 import Artificial from '../Kotibox img/service/AI5.png'
 import CRM from '../Kotibox img/service/CRM.png'
-import ERP from '../Kotibox img/service/CRM 1.png'
+
 import Game from '../Kotibox img/service/game3.png'
 import Custom from '../Kotibox img/service/Custom.png'
-import Support from '../Kotibox img/service/icons8-design-94.png'
+
 import Ecommerce from '../Kotibox img/service/icons8-crm-64 (1).png'
-import Videography from '../Kotibox img/service/Video.png'
-import UI from '../Kotibox img/service/icons8-design-94.png'
+
 
 
 
@@ -124,25 +122,19 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Digital Marketing </Link> <hr className='text-light' />
 
                       <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Artificial Intelligence </Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> CRM Development</Link> <hr className='text-light' />
+                     
 
                     </div>
                     <div className="dropdown-row ">
-                      <Link className="dropdown-item2" to="/ERP"><img className='icon-img' src={ERP} alt='' /> ERP Software Development</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/Game"><img className='icon-img' src={Game} alt='' /> Game Development</Link> <hr className='text-light' />
+                    <Link className="dropdown-item2 " to="/Blockchain"><img className='icon-img' src={Blockchain} alt='' /> Blockchain</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Game"><img className='icon-img' src={Game} alt='' /> Saas Applinction</Link> <hr className='text-light' />
                       <Link className="dropdown-item2" to="/Custom"><img className='icon-img' src={Custom} alt='' /> Custom Software Development</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/Support"><img className='icon-img' src={Support} alt='' /> Support & Solutions </Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/Eccomerce"> <img className='icon-img' src={Ecommerce} alt='' /> Ecommerce Solutions</Link> <hr className='text-light' />
-
                     </div>
                     <div className="dropdown-row ">
-                      <Link className="dropdown-item2 " to="/Blockchain"><img className='icon-img' src={Blockchain} alt='' /> Blockchain</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/Video"><img className='icon-img' src={Videography} alt='' /> Videography </Link> <hr className='text-light' />
-                      <Link className="dropdown-item2   " to="/UI&UX"><img className='icon-img' src={UI} alt='' /> UI & UX Design</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/webDevelopment"><img className='icon-img' src={Website} alt='' /> Web Design</Link> <hr className='text-light' />
-
-                      <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
-
+                     
+                     <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
+                     <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> CRM Development</Link> <hr className='text-light' />
                     </div>
 
 
@@ -182,14 +174,7 @@ export default function Navbar() {
                         </div>
                       </Link>
 
-                      <Link to='/Sports'>
-                        <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-controller text-light"></i>
-
-                          <Link className="dropdown-item1 text-light" to="#"> Sports & Gaming</Link>
-                        </div>
-                      </Link>
-
+                     
 
                     </div>
 
@@ -206,12 +191,7 @@ export default function Navbar() {
                           <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
                         </div>
                       </Link>
-                      <Link to='/Publication'>
-                        <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-collection-play-fill text-light "></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Media & Publication</Link>
-                        </div>
-                      </Link>
+                    
 
                     </div>
 
@@ -230,12 +210,7 @@ export default function Navbar() {
                           <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
                         </div>
                       </Link>
-                      <Link to='/ECommerceid'>
-                        <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-briefcase text-light"></i>
-                          <Link className="dropdown-item1 text-light" to="#"> E-Commerce</Link>
-                        </div>
-                      </Link>
+                  
 
                     </div>
 

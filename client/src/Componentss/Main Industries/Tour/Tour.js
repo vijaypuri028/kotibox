@@ -15,8 +15,8 @@ import png2 from '../../Kotibox img/png img/office 2.png';
 
 
 export default function Tour() {
-    const mainText = { Text: "Take Your Travel and Hospitality Business to " }
-    const Secondtext = { Text: " New Heights with Our Tailored Travel Solutions" }
+    const mainText = { Text: "Tour & Travels App development Company " }
+    const Secondtext = { Text: " With a track record of success in targeted marketing and providing individualized services through native applications that can draw in new users and hold on to current ones, Kotibox offers top-notch services for developing travel apps. Our travel-focused app development team has the necessary knowledge and experience to build mobile applications especially for travel-related businesse" }
     const textArray = ["Laravel", "CodeIgniter", "WordPress", "WooCommerce", "Magento"];
 
     return (
@@ -79,6 +79,20 @@ export default function Tour() {
                 title4="Gamification of Education"
                 title5="Gamification of Education"
                 title6="Gamification of Education"
+
+                
+                sectionhead=" Steps to hiring  Kotibox E-Learning software developers"
+                sectionp="Hiring eLearning software developers from Kotibox is an easy and effective process made to fit the unique needs of your educational project. Our developers are dedicated to creating unique eLearning programs that raise standards and enhance student performance. The following is how to work with JPLoft's E-Learning software developers"
+                section1="First Consultation"
+                sectionp1="We begin with an introductory consultation to learn about the goals and specifications of your project. This makes it possible for us to tailor our services to your vision and objectives."
+                section2="Analysis of the Project"
+                sectionp2="Our specialists carefully assess the requirements of your project before submitting a comprehensive proposal. This contains an outline of the development process, a cost estimate, and a project timeframe."
+                section3="Team Selection"
+                sectionp3="We recommend an experienced team of software developers for eLearning based on the specifications of your project. To find out if they are the greatest fit for your needs, you may look through their experience, past projects, and profile"
+                section4="Develop & Updates"
+                sectionp4="Our developers adhere to the schedule and plan as they begin the development process. We make use of agile methodologies and provide frequent status reports and updates to make sure the project is moving forward as planned."
+                section5="Deployment & Assistance"
+                sectionp5="Prior to releasing the completed product, the group conducts thorough quality assurance and testing. When the project is finished, we start the eLearning program and continue to help and support it to ensure optimal results"
             />
 
             <Footer />

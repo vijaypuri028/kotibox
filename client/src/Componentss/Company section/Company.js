@@ -1,35 +1,51 @@
 import React from 'react';
 import './company.css';
+import IOS from '../Kotibox img/icon/icons8-apple-48.png'
+import Android from '../Kotibox img/icon/icons8-android-os-48.png'
+import IONIC from '../Kotibox img/icon/ionic.png'
+import Flutter from '../Kotibox img/icon/Flutter.png'
+import Xamarin from '../Kotibox img/icon/xamarin-logo.png'
+import Reactimg from '../Kotibox img/icon/react netive.png'
+import Swift from '../Kotibox img/icon/swift.png'
+import Java from '../Kotibox img/icon/icons8-java-48.png'
+import HTML5 from '../Kotibox img/icon/Html.png'
+import Css from '../Kotibox img/icon/Css.png'
+import JS from '../Kotibox img/icon/Js.png'
+import Angular from '../Kotibox img/icon/icons8-angularjs-144.png'
+import Nodejs from '../Kotibox img/icon/icons8-node-js-48.png'
+import Python from '../Kotibox img/icon/icons8-python-48.png'
+import Laravel from '../Kotibox img/icon/icons8-laravel-64.png'
+import DotNet from '../Kotibox img/icon/dote net.webp'
 
 const companyLogos = [
-  { src: 'https://www.jploft.com/img/technologies-ic14.svg', name: 'IOS' },
-  { src: ' https://www.jploft.com/img/technologies-ic15.svg', name: 'Android' },
-  { src: 'https://www.jploft.com/img/technologies-ic16.svg', name: 'IONIC' },
-  { src: 'https://www.jploft.com/img/technologies-ic17.svg', name: 'Flutter' },
-  { src: 'https://www.jploft.com/img/technologies-ic18.svg', name: 'Xamarin' },
-  { src: 'https://www.jploft.com/img/technologies-ic4.svg', name: ' React' },
+  { src: IOS, name: 'IOS' },
+  { src: Android , name: 'Android' },
+  { src: IONIC, name: 'IONIC' },
+  { src: Flutter, name: 'Flutter' },
+  { src: Xamarin, name: 'Xamarin' },
+  { src: Reactimg , name: ' React' },
 ];
 
 const companyLogo1 = [
   { src: 'https://www.jploft.com/img/technologies-ic19.svg', name: 'Cordova' },
-  { src: 'https://www.jploft.com/img/technologies-ic-swift.svg', name: 'Swift' },
-  { src: 'https://www.jploft.com/img/technologies-ic-java.svg', name: 'Java' },
+  { src: Swift, name: 'Swift' },
+  { src: Java, name: 'Java' },
 ];
 
 const companyLogoimg = [
-  { src: 'https://www.jploft.com/img/technologies-ic1.svg', name: 'HTML5' },
-  { src: 'https://www.jploft.com/img/technologies-ic2.svg', name: 'CSS' },
-  { src: 'https://www.jploft.com/img/technologies-ic4.svg', name: 'React ' },
-  { src: 'https://www.jploft.com/img/technologies-ic6.svg', name: 'NEXT.JS' },
-  { src: 'https://www.jploft.com/img/technologies-ic3.svg', name: 'Angular' },
+  { src: HTML5, name: 'HTML5' },
+  { src: Css, name: 'CSS' },
+  { src: Reactimg, name: 'React ' },
+  { src: JS, name: 'JS' },
+  { src: Angular, name: 'Angular' },
 ];
 
 const companyLogoimgs = [
-  { src: 'https://www.jploft.com/img/technologies-ic10.svg', name: 'Java' },
-  { src: 'https://www.jploft.com/img/technologies-ic13.svg', name: 'Node' },
-  { src: 'https://www.jploft.com/img/technologies-ic11.svg', name: 'Python' },
-  { src: 'https://tse1.mm.bing.net/th?id=OIP.c8Hloo5nAd7ohLRohC2e-QHaHa&pid=Api&P=0&h=180', name: 'Laravel' },
-  { src: 'https://www.jploft.com/img/technologies-ic9.svg', name: '. Net' },
+  { src: Java, name: 'Java' },
+  { src: Nodejs, name: 'Node' },
+  { src: Python, name: 'Python' },
+  { src: Laravel, name: 'Laravel' },
+  { src: DotNet, name: '. Net' },
 ];
 
 export default function Company() {
@@ -53,7 +69,7 @@ export default function Company() {
         <div className="company-logos">
           {companyLogo1.map((logo, index) => (
             <div key={index} className="company-logo-container">
-              <img src={logo.src} alt={`Company Logo ${index + 1}`} className="company-logo" />
+              <img style={{objectFit:"cover"}} src={logo.src} alt={`Company Logo ${index + 1}`} className="company-logo" />
               <p className='text-light text-center'>{logo.name}</p>
             </div>
           ))}

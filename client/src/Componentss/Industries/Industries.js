@@ -1,5 +1,14 @@
 import React, { useEffect } from 'react';
 import './Industries.css';
+import Education from '../Kotibox img/KotiIndustries/Education.jpg'
+import Food from '../Kotibox img/KotiIndustries/food.jpg'
+import Health from '../Kotibox img/KotiIndustries/Healthcare.jpg'
+import Tour from '../Kotibox img/KotiIndustries/Tour.jpg'
+import Real from '../Kotibox img/KotiIndustries/realestate.jpg'
+import Sports from '../Kotibox img/KotiIndustries/game.jpg'
+import Banking from '../Kotibox img/KotiIndustries/bank.jpg'
+import commerce from '../Kotibox img/KotiIndustries/E-coomerce.jpg'
+import Media from '../Kotibox img/KotiIndustries/Publication.jpg'
 
 export default function Industries() {
   useEffect(() => {
@@ -19,47 +28,47 @@ export default function Industries() {
     {
       title: 'Education & E-learning',
       description: 'creating future-oriented web solutions and mobile apps with intelligent learning. and tailoring these services to transform the business and academic sectors.',
-      bgImage: 'https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bgImage: Education,
     },
     {
       title: 'Food & Restaurants',
       description: 'Investigate restaurant app development to take your company to new technological heights, increasing sales and gratifying patrons while streamlining operations.',
-      bgImage: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bgImage: Food,
     },
     {
       title: 'Healthcare',
       description: 'Being a top provider of healthcare application development services, we take great pride in our developers ability to produce creative apps that meet the ever-changing needs of the modern health sector.',
-      bgImage: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bgImage: Health,
     },
     {
       title: 'Tour & Travels',
       description: 'Use our specialists intelligent logistics software solutions to streamline your logistics processes. Our end-to-end solutions go above and beyond expectations in lowering operational expenses, facilitating smooth operations, and enhancing customer service.',
-      bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bgImage: Tour,
     },
     {
         title: 'Real Estate ',
         description: 'The company specializes in creating cutting-edge mobile apps and web solutions for real estate, making the process of buying, selling, renting, and managing properties as simple as putting on pajamas.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bgImage: Real,
       },
       {
         title: 'Sports & Gaming',
         description: 'We are a top game development company that specializes in creating innovative online games for consoles, mobile devices, and PCs. Our talented development team works with a variety of game engines with expertise.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bgImage: Sports,
       },
       {
         title: 'Banking & Finance',
         description: 'Kotibox provides mobile banking app development services. Our experts create and build applications that allow customers to transfer funds, make payments, and make other financial transactions using mobile devices.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bgImage: Banking,
       },
       {
         title: 'E-Commerce',
         description: 'We are a scalable, user-friendly, and reliable e-commerce website development firm that can assist you in creating a variety of eCommerce solutions. We assist you in removing any obstacles posed by intricate sales procedures so that your clients may easily make purchases from you.',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bgImage: commerce,
       },
       {
         title: 'Media & Publication',
         description: 'Our expertise lies in creating stable streaming platforms, engaging content management systems, and superior live video solutions that meet the constantly evolving digital demands of viewers across the globe. ',
-        bgImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bgImage: Media,
       },
   ];
 

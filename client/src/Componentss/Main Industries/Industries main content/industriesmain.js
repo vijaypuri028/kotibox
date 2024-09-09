@@ -39,7 +39,7 @@ function Industriesmain({ mainHeading, subHeading1, subHeading2, introText1, int
   const Card = ({ image, title, text, link }) => (
     <div className="card-item" style={{height:"450px",width:"300px"}}>
       <div className="card-content">
-        <h5 className="card-title text-dark mb-2">{title}</h5>
+        <h5 style={{fontSize:"21px",fontWeight:"600"}} className="card-title text-dark mb-1">{title}</h5>
         <p className="card-text">{text}</p>
       </div>
     </div>
@@ -63,7 +63,7 @@ function Industriesmain({ mainHeading, subHeading1, subHeading2, introText1, int
         <p className="section-description mx-auto w-50">
           {introText}
         </p>
-        <div className="card-container mt-5">
+        <div  className="card-container mt-5">
           {cardsData.map((card, index) => (
             <Card
               key={index}
