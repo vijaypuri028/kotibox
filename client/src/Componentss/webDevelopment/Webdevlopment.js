@@ -7,7 +7,7 @@ import Webservicemain from '../Webservicemain.js/Webservicemain';
 import imgSrc from "../Kotibox img/Main img/Web10.jpg";
 import MainContent from '../Main content/MainContent';
 import { Link } from 'react-router-dom';
-
+import png1 from '../Kotibox img/png img/webpng.png'
 import Technologies1img from '../Kotibox img/icon/icons8-react-100.png'
 import Technologies2img from '../Kotibox img/icon/Js.png'
 import Technologies3img from '../Kotibox img/icon/Php.png'
@@ -252,6 +252,7 @@ export default function WebDevelopment() {
       </section>
 
       <MainContent
+       png={png1}
         benefitTitle="Website Development Benefits"
         benefitDescription="Kotibox is a top development company with Moodle solutions..."
         services={services}

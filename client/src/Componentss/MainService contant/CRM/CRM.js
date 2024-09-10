@@ -3,7 +3,7 @@ import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from '../../Kotibox img/Main img/CRM.jpg'
 import Footer from '../../footer/footer'
-
+import png1 from '../../Kotibox img/Main img/CRM.jpg'
 import MainContent from '../../Main content/MainContent'
 
 
@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom'
 export default function CRM() {
   const mainText = { Text: "CRM DEVELOPMENT COMPANY" }
   const Secondtext = { Text: "Large-scale corporations, start-ups, and entrepreneurs are among the companies for which we provide CRM development services. By offering solutions that improve client interactions, we hope to completely change your business. You may take advantage of affordable CRM development services and automate your customer relationship management by working with our knowledgeable CRM developers. " }
-  const textArray = ["CRM Consulting", "CRM Implementation", "Custam CRM Development", "CRM App" ];
+  const textArray = ["CRM Consulting", "CRM Implementation", "Custam CRM Development", "CRM App"];
 
 
 
@@ -84,16 +84,16 @@ export default function CRM() {
   ];
   return (
     <>
-    <Navbar/>
-    <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text}  textArray={textArray}  />
-    <section className="section-services">
+      <Navbar />
+      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
+      <section className="section-services">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-md-10 col-lg-8">
               <div className="header-section">
                 <h2 className="title">Our Services for Developing Custom CRMs</h2>
                 <p >
-                A good provider of CRM Development Services is essential for managing customer relationships and an effective data gatherer. Reputable CRM software collects data from all business communication channels; long-term benefits come from working with Kotibox CRM software development company. It is an economical method of compiling and arranging customer data.                </p>
+                  A good provider of CRM Development Services is essential for managing customer relationships and an effective data gatherer. Reputable CRM software collects data from all business communication channels; long-term benefits come from working with Kotibox CRM software development company. It is an economical method of compiling and arranging customer data.                </p>
 
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function CRM() {
                 </div>
                 <div className="part-2">
                   <p className="description">
-                  Proper preparation, in conjunction with a gradual development process and maintenance services, are essential components of CRM implementation. The bespoke CRM programming experts at Brainvire are equipped with the necessary skills to provide precise, high-quality CRM execution administrations. Through our customized CRM execution administrations, we address your business goals, improve execution, and elevate client commitment.</p>                  <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5 "></i></Link>
+                    Proper preparation, in conjunction with a gradual development process and maintenance services, are essential components of CRM implementation. The bespoke CRM programming experts at Brainvire are equipped with the necessary skills to provide precise, high-quality CRM execution administrations. Through our customized CRM execution administrations, we address your business goals, improve execution, and elevate client commitment.</p>                  <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5 "></i></Link>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function CRM() {
                 </div>
                 <div className="part-2">
                   <p className="description">
-                  We have years of experience providing excellent CRM solutions. You can acquire capable, moral, and effective CRM development solutions from us. In the unlikely event that you have any questions, speak with our executives. They can help you with counseling and setting up the creation of bespoke CRM software for your company. Our team of experts assists you in accordance with their understanding of the market's dynamic dimensions.                </p>
+                    We have years of experience providing excellent CRM solutions. You can acquire capable, moral, and effective CRM development solutions from us. In the unlikely event that you have any questions, speak with our executives. They can help you with counseling and setting up the creation of bespoke CRM software for your company. Our team of experts assists you in accordance with their understanding of the market's dynamic dimensions.                </p>
                   <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function CRM() {
                 <div className="part-2">
                   <p className="description">
 
-                  It is easier to associate frameworks with a variety of clients while using mobile CRM apps. Since universal access relies on the accuracy of their unique links to the board data, portable CRM clients are more likely to favor it. Because customers love portable CRM, these apps will continue to become more and more common. We put together personalized CRM mobile apps that connect you with time-pressed clients.             </p>
+                    It is easier to associate frameworks with a variety of clients while using mobile CRM apps. Since universal access relies on the accuracy of their unique links to the board data, portable CRM clients are more likely to favor it. Because customers love portable CRM, these apps will continue to become more and more common. We put together personalized CRM mobile apps that connect you with time-pressed clients.             </p>
                   <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
                 </div>
               </div>
@@ -157,6 +157,7 @@ export default function CRM() {
       </section>
 
       <MainContent
+        png={png1}
         benefitTitle="Website Development Benefits"
         benefitDescription="Kotibox is a top development company with Moodle solutions..."
         services={services}
@@ -266,11 +267,11 @@ We are a full-service web development business that adds value to our clients' p
         </div>
       </section>
 
-    
-    
- 
 
-     <Footer/>
+
+
+
+      <Footer />
     </>
 
   )

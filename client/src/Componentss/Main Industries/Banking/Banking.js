@@ -3,7 +3,7 @@ import Navbar from '../../Navbars/Navbar'
 import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg";
+import imgSrc from "../../Kotibox img/Main img/Banking.jpg";
 import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
 import png2 from '../../Kotibox img/png img/office 2.png';
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';

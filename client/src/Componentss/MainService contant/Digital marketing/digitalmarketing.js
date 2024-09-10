@@ -7,6 +7,7 @@ import MainContent from '../../Main content/MainContent'
 import Technologies1img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies2img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies3img from '../../Kotibox img/icon/icons8-java-48.png'
+import png1 from '../../Kotibox img/png img/DMpng.jpg'
 
 import { Link } from 'react-router-dom'
 
@@ -189,6 +190,7 @@ export default function Digitalmarketing() {
         </div>
       </section>
       <MainContent
+      png={png1}
         benefitTitle="Website Development Benefits"
         benefitDescription="Kotibox is a top development company with Moodle solutions..."
         services={services}

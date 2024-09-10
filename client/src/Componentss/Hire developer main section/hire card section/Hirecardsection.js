@@ -56,7 +56,7 @@ export default function Hirecardsection({
             </div>
 
             <div style={{ width: "80%" }} className="other-sections mx-auto pt-5 pb-5 ">
-                <h2 style={{ fontSize: "2.5rem", fontWeight: "700", textTransform: "uppercase" }} >{sectionHeading2}</h2>
+                <h2 style={{ fontSize: "2rem", fontWeight: "700", textTransform: "uppercase" }} >{sectionHeading2}</h2>
                 <p className="p-2 text-light">
                     {sectionpra}
                 </p>
@@ -234,111 +234,117 @@ export default function Hirecardsection({
 
 
             <div className='bg-light pb-5'>
-                <div className='container'>
-                    <h1 className='text-center'>{accordionheading} </h1>
-                    <p className='mx-auto w-75'>{accordionpra}
-                    </p>
-                    <div style={{ gap: "50px" }} className='d-flex justify-content-between mx-auto mt-5 pt-5 pb-5'>
-                        <div className='container'>
-                            <div className="accordion" id="accordionExample">
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Requirement Gathering
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>First, our knowledgeable staff concentrates on gathering from the client all the data needed to begin the development, including the company's philosophy, goal, and mission as well as product and service expertise.</strong>
-                                        </div>
-                                    </div>
-                                </div>
+  <div className='container'>
+    <h1 className='text-center'>{accordionheading}</h1>
+    <p className='mx-auto w-75 text-center'>{accordionpra}</p>
 
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Wireframing
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>The development team prepares a wireframe to aid in the well-organized development process by defining the choices of features and specifications.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Designing
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>The interactive user interface is currently being prepared by the UI/UX designers. It consists of a collection of different mock designs from which the client can select the preferred look.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Development
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>With close collaboration with the designers, the development team will now endeavor to produce a dependable application. Our group employs agile approaches in order to meet client expectations.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Testing
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>Your app is put through a battery of tests prior to launch.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            Quality Assurance
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>Our QA team ensures that the application meets the highest quality standards, running tests to ensure smooth performance.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="accordion-item">
-                                    <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                            Maintenance and Support
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSeven" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div className="accordion-body">
-                                            <strong>Our team continues to collaborate closely with the customer to offer support and maintenance after the application launch as the business evolves.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='Accordionimg-section'>
-                            <img style={{ height: '400px', width: '400px', objectFit: 'cover', borderRadius: '8px' }} src={Accordionimg} alt='Accordion Illustration' />
-                        </div>
-                    </div>
-                </div>
+    {/* Row for accordion and image */}
+    <div className='row align-items-center mt-5 pt-5 pb-5' style={{ gap: '50px' }}>
+      
+      {/* Accordion Section */}
+      <div className='col-12 col-md-7'>
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Requirement Gathering
+              </button>
+            </h2>
+            <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>First, our knowledgeable staff concentrates on gathering from the client all the data needed to begin the development, including the company's philosophy, goal, and mission as well as product and service expertise.</strong>
+              </div>
             </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Wireframing
+              </button>
+            </h2>
+            <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>The development team prepares a wireframe to aid in the well-organized development process by defining the choices of features and specifications.</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Designing
+              </button>
+            </h2>
+            <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>The interactive user interface is currently being prepared by the UI/UX designers. It consists of a collection of different mock designs from which the client can select the preferred look.</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Development
+              </button>
+            </h2>
+            <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>With close collaboration with the designers, the development team will now endeavor to produce a dependable application. Our group employs agile approaches in order to meet client expectations.</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Testing
+              </button>
+            </h2>
+            <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>Your app is put through a battery of tests prior to launch.</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Quality Assurance
+              </button>
+            </h2>
+            <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>Our QA team ensures that the application meets the highest quality standards, running tests to ensure smooth performance.</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Maintenance and Support
+              </button>
+            </h2>
+            <div id="collapseSeven" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>Our team continues to collaborate closely with the customer to offer support and maintenance after the application launch as the business evolves.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Image Section */}
+      <div className='col-12 col-md-4 text-center'>
+        <img style={{ height: '400px', width: '100%', objectFit: 'cover', borderRadius: '8px' }} src={Accordionimg} alt='Accordion Illustration' />
+      </div>
+    </div>
+  </div>
+</div>
+
 
         </>
     );

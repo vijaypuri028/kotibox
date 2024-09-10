@@ -3,6 +3,7 @@ import Navbar from '../../Navbars/Navbar';
 import Webservicemain from '../../Webservicemain.js/Webservicemain';
 import Industriesmain from '../Industries main content/industriesmain';
 import Footer from '../../footer/footer';
+import imgSrc from "../../Kotibox img/Main img/Tour.jpg";
 
 
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
@@ -23,7 +24,7 @@ export default function Tour() {
         <>
             <Navbar />
             <Webservicemain
-                mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray}
+               imgSrc={imgSrc}  mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray}
             />
             <Industriesmain
                 mainHeading="Services We Provide for Travel Software Development"

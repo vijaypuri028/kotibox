@@ -1,19 +1,10 @@
 import React from 'react';
-import { FaRegLightbulb, FaCode, FaMobileAlt, FaHeartbeat, FaMusic, FaPaintBrush } from 'react-icons/fa';
+import {  FaCode } from 'react-icons/fa';
 import './Hiremain.css';
-import arrowImage from '../../Kotibox img/icon/c.png';
+
 
 export default function Hiredevelopmentmain(props) {
   const {
-    hireservicemain1,
-    hireservicemain2,
-    hireservicemainpp,
-    title1,
-    title2,
-    title3,
-    title4,
-    title5,
-    title6,
     sectionhead,
     sectionp,
     section1,
@@ -28,32 +19,6 @@ export default function Hiredevelopmentmain(props) {
     sectionp5,
   } = props;
 
-  const blogData = [
-    {
-      icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: title1,
-    },
-    {
-      icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: title2,
-    },
-    {
-      icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: title3,
-    },
-    {
-      icon: <FaRegLightbulb size={50} color="#c59c35" />,
-      title: title4,
-    },
-    {
-      icon: <FaCode size={50} color="#c59c35" />,
-      title: title5,
-    },
-    {
-      icon: <FaMobileAlt size={50} color="#c59c35" />,
-      title: title6,
-    },
-  ];
 
   const featureData = [
     { title: "Committed Programmers", text: "We are aware of your needs and assist you in finding the most qualified eLearning app developers to provide top-notch services.", img: "https://www.jploft.com/img/focused-team.svg" },
@@ -68,38 +33,37 @@ export default function Hiredevelopmentmain(props) {
     <>
       <div style={{ paddingBottom: "70px", paddingTop: "60px" }} className='bg-light'>
         <h1 className='text-center pt-5 cards-wrapper-text-1'>{sectionhead}</h1>
-        <p className='mx-auto w-50'>{sectionp}</p>
+        <p style={{width:"80%"}} className='mx-auto text-center '>{sectionp}</p>
         <div className="cards-wrapper mx-auto">
 
           <div className="card-item-5 mt-5">
             <div className="card-content-wrapper">
-              <FaHeartbeat className="card-icon" />
+              <FaCode className="card-icon" />
               <h3 className="card-heading">{section1}</h3>
               <p className="card-description">{sectionp1}</p>
             </div>
           </div>
 
-          <i class="bi bi-arrow-return-right fs-1 arrow-image"></i>
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
-              <FaMusic className="card-icon" />
+              <FaCode className="card-icon" />
               <h3 className="card-heading">{section2}</h3>
               <p className="card-description">{sectionp2}</p>
             </div>
           </div>
 
-          <i class="bi bi-arrow-return-right fs-1 arrow-image"></i>
+          
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
-              <FaPaintBrush className="card-icon" />
+              <FaCode className="card-icon" />
               <h3 className="card-heading">{section3}</h3>
               <p className="card-description">{sectionp3}</p>
             </div>
           </div>
 
-          <i class="bi bi-arrow-return-right fs-1 arrow-image"></i>
+        
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
@@ -109,7 +73,7 @@ export default function Hiredevelopmentmain(props) {
             </div>
           </div>
 
-          <i class="bi bi-arrow-return-right fs-1 arrow-image"></i>
+        
 
           <div className="card-item-5">
             <div className="card-content-wrapper">

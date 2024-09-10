@@ -79,30 +79,9 @@ export default function Navbar() {
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
 
-              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
-                  About
-                </Link>
-                <div className="dropdown-menu large-dropdown bg-dark" aria-labelledby="navbarDropdown">
-
-                  <div className="dropdown-container">
-
-
-                    <div className="dropdown-row ">
-                      <Link className="dropdown-item2  " to="/CompanyAbout"> <img className='icon-img' src={Website} alt='' />Company</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/Career"> <img className='icon-img' src={Mobile} alt='' />Career</Link> <hr className='text-light' />
-                      {/* <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Our Team </Link> <hr className='text-light' /> */}
-
-
-
-                    </div>
-
-
-
-
-                  </div>
-
-                </div>
+              
+          <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
+                <Link className="nav-link   " aria-current="page" to="/CompanyAbout" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > About </Link>
               </li>
 
 
@@ -279,9 +258,7 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
-              <li style={{ fontSize: "20px" }} className="nav-item me-2  ms-4 ">
-                <Link className="nav-link " aria-current="page" to="/Portfolio" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Portfolio</Link>
-              </li>
+           
 
               <li className="nav-button nav-item  dropdown btn btn-danger ms-5">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >

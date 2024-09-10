@@ -6,7 +6,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from '../../Kotibox img/Main img/Blockchain.jpg'
 import MainContent from '../../Main content/MainContent'
 
-
+import png1 from '../../Kotibox img/png img/crm.png'
 import Technologies1img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies2img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies3img from '../../Kotibox img/icon/icons8-java-48.png'
@@ -201,6 +201,7 @@ export default function Blockchain() {
       </section>
 
       <MainContent
+        png={png1}
         benefitTitle="Website Development Benefits"
         benefitDescription="Kotibox is a top development company with Moodle solutions..."
         services={services}

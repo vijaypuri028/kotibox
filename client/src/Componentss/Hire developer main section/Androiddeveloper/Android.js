@@ -7,7 +7,7 @@ import imgSrc from "../../Kotibox img/Main img/Game development.jpg";
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
-import imgSrc5 from "../../Kotibox img/Main img/Eccomerce2.jpg";
+import imgSrc5 from "../../Kotibox img/png img/crm.png";
 import Hirecardsection from '../hire card section/Hirecardsection'
 
 

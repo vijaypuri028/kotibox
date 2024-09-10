@@ -1,11 +1,7 @@
 import React from 'react';
 import './Maincontent.css';
 import { Link } from 'react-router-dom';
-import png from '../Kotibox img/png img/good-advice-from-beautiful-woman.png';
-import { FaHeartbeat, FaMusic, FaPaintBrush, FaCode } from 'react-icons/fa';
-import arrowImage from '../Kotibox img/icon/dote net.webp';
-
-
+import { FaCode } from 'react-icons/fa';
 import Education from '../Kotibox img/Idusteries/book.png';
 import ECommerce from '../Kotibox img/Idusteries/Eccomerce.png';
 import Food from '../Kotibox img/Idusteries/food.png';
@@ -15,32 +11,13 @@ import Banking from '../Kotibox img/Idusteries/Banking.png';
 import RealEstate from '../Kotibox img/Idusteries/realstetate.png';
 import Media from '../Kotibox img/Idusteries/icons8-media-64.png';
 import Healthcare from '../Kotibox img/Idusteries/Heathcare.png';
-import Industries from '../Industries/Industries';
+
 
 
 function MainContent({
   services11,
   servicesp,
   Hiredevelopmentmain1,
-  Technologiesp,
-  Technologies1,
-  Technologies2,
-  Technologies3,
-  Technologies4,
-  Technologies5,
-  Technologies6,
-  Technologies7,
-  Technologies8,
-  Technologies9,
-  Technologies1img,
-  Technologies2img,
-  Technologies3img,
-  Technologies4img,
-  Technologies5img,
-  Technologies6img,
-  Technologies7img,
-  Technologies8img,
-  Technologies9img,
   whyChooseTitle,
   whyChooseDescription,
   shapeBoxes,
@@ -58,6 +35,7 @@ function MainContent({
   sectionp4,
   section5,
   sectionp5,
+  png
 }) {
   return (
     <>
@@ -175,40 +153,40 @@ function MainContent({
         </div>
       </div>
 
-      <div style={{ paddingBottom: "70px",paddingTop:"60px" }} className='bg-light  '>
-        <h1 className='text-center pt-5  cards-wrapper-text-1 '>{sectionhead}</h1>
+      <div style={{ paddingBottom: "70px", paddingTop: "60px" }} className='bg-light'>
+        <h1 className='text-center pt-5 cards-wrapper-text-1 '>{sectionhead}</h1>
         <p className='text-center'>{sectionp}</p>
-        <div className="cards-wrapper mx-auto ">
+        <div className="cards-wrapper mx-auto">
 
           <div className="card-item-5 mt-5">
             <div className="card-content-wrapper">
-              <FaHeartbeat className="card-icon" />
+              <FaCode className="card-icon" />
               <h3 className="card-heading">{section1}</h3>
               <p className="card-description">{sectionp1}</p>
             </div>
           </div>
 
-          <img src={arrowImage} className="arrow-image" alt="arrow" />
+          {/* <i class="bi bi-arrow-return-right fs-1 arrow-image"></i> */}
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
-              <FaMusic className="card-icon" />
+              <FaCode className="card-icon" />
               <h3 className="card-heading">{section2}</h3>
               <p className="card-description">{sectionp2}</p>
             </div>
           </div>
 
-          <img src={arrowImage} className="arrow-image" alt="arrow" />
+          {/* <i class="bi bi-arrow-return-right fs-1 arrow-image"></i> */}
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
-              <FaPaintBrush className="card-icon" />
+              <FaCode className="card-icon" />
               <h3 className="card-heading">{section3}</h3>
               <p className="card-description">{sectionp3}</p>
             </div>
           </div>
 
-          <img src={arrowImage} className="arrow-image" alt="arrow" />
+          {/* <i class="bi bi-arrow-return-right fs-1 arrow-image"></i> */}
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
@@ -217,7 +195,8 @@ function MainContent({
               <p className="card-description">{sectionp4}</p>
             </div>
           </div>
-          <img src={arrowImage} className="arrow-image" alt="arrow" />
+
+          {/* <i class="bi bi-arrow-return-right fs-1 arrow-image"></i> */}
 
           <div className="card-item-5">
             <div className="card-content-wrapper">
@@ -228,7 +207,7 @@ function MainContent({
           </div>
         </div>
       </div>
-      
+
 
 
 

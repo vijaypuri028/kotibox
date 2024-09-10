@@ -1,6 +1,6 @@
 import React from 'react';
 import './overview.css';
-import Overviewimg from '../Kotibox img/png img/over view.png'
+import Overviewimg from '../Kotibox img/png img/webpng.png'
 
 function Overview() {
   return (

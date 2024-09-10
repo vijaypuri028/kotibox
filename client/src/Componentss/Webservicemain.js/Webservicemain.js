@@ -1,22 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Webservice.css'
 
-export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray,serviceButton }) {
+export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray }) {
   const [scrolled, setScrolled] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [result, setResult] = useState('');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {

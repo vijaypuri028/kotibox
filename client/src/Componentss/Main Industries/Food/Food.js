@@ -4,7 +4,7 @@ import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
 import Blog from '../../blog/blog'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg"; 
+import imgSrc from "../../Kotibox img/Main img/Food.jpg"; 
 import Company from '../../Company section/Company'
 import Marquee from '../../Marquee/Marquee'
 
