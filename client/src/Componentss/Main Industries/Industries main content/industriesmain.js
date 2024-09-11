@@ -3,6 +3,7 @@ import './Industrismain.css';
 
 
 import Button from '../../button/Button';
+import { Link } from 'react-router-dom';
 
 function Industriesmain({ mainHeading, subHeading1, subHeading2, introText1, introText2,introText, buttonText, imgSrc1, imgAlt1, imgText1, Text1, imgSrc2, imgAlt2, imgText2, Text2, imgSrc3, imgAlt3, imgText3, Text3, imgSrc4, imgAlt4, imgText4, Text4,imgSrc5, imgAlt5, imgText5, Text5, imgSrc6, imgAlt6, imgText6, Text6, imgSrc7, imgAlt7, imgText7, Text7, imgSrc8, imgAlt8, imgText8, Text8, imgSrc9 , imgSrc10 }) {
   const cardsData = [
@@ -53,7 +54,7 @@ function Industriesmain({ mainHeading, subHeading1, subHeading2, introText1, int
           <div className="intro-text">
             <h2>{subHeading1}</h2>
             <p>{introText1}</p>
-            {/* <button className="action-button">{buttonText}</button> */}
+           
           </div>
         </div>
       </div>
@@ -80,7 +81,7 @@ function Industriesmain({ mainHeading, subHeading1, subHeading2, introText1, int
           <div className="intro-text">
             <h2>{subHeading2}</h2>
             <p>{introText2}</p>
-            <button className="action-button">{buttonText}</button>
+            <Link style={{textDecoration:"none"}} to='/contact'>  <button className="action-button">{buttonText}</button> </Link>
           </div>
           <img src={imgSrc10} alt={imgAlt2} className="intro-image" />
         </div>

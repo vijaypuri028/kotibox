@@ -1,18 +1,26 @@
 import React from 'react';
 import './button.css';
+import { Link } from 'react-router-dom';
 
 export default function Button() {
   return (
     <>
       <div className="fixed-button1">
-        <button>Contact this</button>
+        <button>
+          <Link to="https://wa.me/7851876946"> 7851876946</Link>
+        </button>
       </div>
       <div className="fixed-button2">
-        <button>WhatsApp</button>
+        <button>
+        <Link to="mailto:business@kotiboxglobaltech.com">E-mail</Link>
+        </button>
       </div>
       <div className="fixed-button3">
-        <button>Click Me</button>
+        <button>
+          <Link to="tel:7851876946"> 7851876946</Link>
+        </button>
       </div>
+
     </>
   );
 }

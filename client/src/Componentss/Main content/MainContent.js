@@ -45,7 +45,7 @@ function MainContent({
           <div className='intro-text'>
             <h2>{services11}</h2>
             <p>{servicesp}</p>
-            <button className='btn btn-danger'>{Hiredevelopmentmain1}</button>
+            <Link style={{textDecoration:"none"}} to='/contact'>  <button className='btn btn-danger'>{Hiredevelopmentmain1}</button> </Link>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@ function MainContent({
               <p style={{ fontSize: "18px" }}>Contact us to describe your project and obtain the best personalized product. Get in touch with us.</p>
             </div>
             <ul className="snslist1">
-              <li className='btn btn-danger mt-2'>Connect With Our Expert <i className="bi bi-arrow-right-circle"></i></li>
+            <Link style={{textDecoration:"none"}} to='/contact'><li className='btn btn-danger mt-2'>Connect With Our Expert <i className="bi bi-arrow-right-circle"></i></li> </Link>
             </ul>
           </div>
         </div>

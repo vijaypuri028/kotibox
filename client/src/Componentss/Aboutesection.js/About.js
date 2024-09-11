@@ -74,7 +74,7 @@ export default function About() {
           <h1>Kotibox Global Technologies</h1>
           <h2> A Leading IT Firm Providing Unique Development Solutions</h2>
           <p>
-            We provide a self-optimizing system and solution that gives your brand a dynamic vision since we believe in the rising demands of our customers. With no signs of slowing down, the market is currently developing into a broad array of technologies that include blockchain development, artificial intelligence, cryptocurrency development, and many more terms. Owebest Technologies assists our clients in converting their demand for quick company expansion into larger revenue and increased visibility.
+            We provide a self-optimizing system and solution that gives your brand a dynamic vision since we believe in the rising demands of our customers. With no signs of slowing down, the market is currently developing into a broad array of technologies that include blockchain development, artificial intelligence, cryptocurrency development, and many more terms. Kotibox Technologies assists our clients in converting their demand for quick company expansion into larger revenue and increased visibility.
           </p>
           <p>
           We are a company that does more than just development. With the help of the technological revolution, Kotibox Global Technologies comprehends your vision and builds a bride to fulfill the digital ends of your goal.

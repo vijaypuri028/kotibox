@@ -11,42 +11,66 @@ function Contact() {
   const Secondtext = { Text: "fantastic!" }
   const textArray = ["Custom AI Software Development", "AI Consulting Services", "Generative AI", "AI-as-a-Service (AIaaS)" ];
 
-  
   const [captchaAnswer, setCaptchaAnswer] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [result, setResult] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    
     // Validate the CAPTCHA
     if (captchaAnswer !== '8') {
       setErrorMessage('CAPTCHA is invalid.');
       return;
     }
     setErrorMessage('');
-    // Proceed with form submission
-    console.log('Form submitted successfully!');
-    // Add form submission logic here
+    
+    // Create form data
+    const formData = new FormData(e.target);
+    formData.append("access_key", "f9250c61-8870-405b-9aa2-db2e9a38a6d5");
+
+    // Submit the form
+    setResult("Sending....");
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        e.target.reset();
+        setTimeout(() => {
+          setResult('');
+        }, 5000);
+      } else {
+        setResult(data.message || "An error occurred.");
+      }
+    } catch (error) {
+      setResult("An error occurred while submitting the form.");
+    }
   };
 
   return (
     <>
       <Navbar />
-      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text}  textArray={textArray}  />
+      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
 
       <section className="contact-section" aria-labelledby="contact-label">
         <div className="container">
           <div className="feature-content">
             <p className="section-subtitle">GET IN TOUCH</p>
             <h2 className="section-title text-light">
-            Question? assistance? Getting together? Tea? Get in touch with us right now!
+              Question? Assistance? Getting together? Tea? Get in touch with us right now!
             </h2>
-          
           </div>
           <div className='d-flex justify-content-between flex-wrap'>
             <div className="map-container">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.972855293378!2d75.75927077451787!3d26.840815663178322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db59288ffa799%3A0x17c8a49856eb7797!2z4KSV4KWL4KSf4KWA4KSs4KWJ4KSV4KWN4KS4IOCkl-CljeCksuCli-CkrOCksiDgpJ_gpYfgpJXgpY3gpKjgpYvgpLLgpYngpJzgpL_gpLg!5e0!3m2!1shi!2sin!4v1723539187494!5m2!1shi!2sin" 
-              
                 style={{ border: 0 }} 
                 allowFullScreen 
                 loading="lazy" 
@@ -87,6 +111,7 @@ function Contact() {
                     {errorMessage && <p className="error-message">{errorMessage}</p>}
                   </div>
                   <button type="submit" className="contact-button">Submit</button>
+                  {result && <p className="result-message">{result}</p>}
                 </form>
               </div>
             </div>

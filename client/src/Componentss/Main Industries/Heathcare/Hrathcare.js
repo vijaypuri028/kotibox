@@ -74,7 +74,7 @@ export default function Heathcare() {
            
                 
                 sectionhead=" Steps to hiring  Kotibox E-Learning software developers"
-                sectionp="Hiring eLearning software developers from Kotibox is an easy and effective process made to fit the unique needs of your educational project. Our developers are dedicated to creating unique eLearning programs that raise standards and enhance student performance. The following is how to work with JPLoft's E-Learning software developers"
+                sectionp="Hiring eLearning software developers from Kotibox is an easy and effective process made to fit the unique needs of your educational project. Our developers are dedicated to creating unique eLearning programs that raise standards and enhance student performance. The following is how to work with Kotibox E-Learning software developers"
                 section1="First Consultation"
                 sectionp1="We begin with an introductory consultation to learn about the goals and specifications of your project. This makes it possible for us to tailor our services to your vision and objectives."
                 section2="Analysis of the Project"

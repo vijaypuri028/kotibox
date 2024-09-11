@@ -145,7 +145,7 @@
   /* Add some stylish animation */
   .fixed-button3 button::before {
     content: ''; 
-    background: url("../Kotibox img/contact/icons8-skype-48.png") no-repeat center center; 
+    background: url("../Kotibox img/contact/whatup.png") no-repeat center center; 
     background-size: 50px; 
     position: absolute;
     top: 0;

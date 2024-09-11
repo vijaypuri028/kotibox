@@ -39,7 +39,7 @@
   top: 46%;
   left: 10%;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .form-container {
@@ -96,7 +96,7 @@ button {
   }
 
   .animated-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     top: 40%;
   }
 }
@@ -105,7 +105,7 @@ button {
   top: 30%;
   left: 10%;
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
     
 }
 
@@ -115,14 +115,14 @@ button {
   top: 45%;
   left: 10%;
   color:#e69500 ;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
 
 }
 @media (max-width: 908px) {
   .text-main-div{
     position: absolute;
-    top: 40%;
-    left: 10%;
+  
     color:#e69500 ;
    
   
@@ -132,29 +132,30 @@ button {
     top: 30%;
     left: 10%;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
       
   }
   }
   @media (max-width: 500px) {
     .text-main-div{
       position: absolute;
-      top: 30%;
-      left: 10%;
-      color:#e69500 ;
      
+      color:#e69500 ;
+      font-size: 1.5rem;
     
     } 
     }
     @media (max-width: 400px) {
       .text-main-div{
         position: absolute;
-        top: 35%;
-        left: 10%;
         color:#e69500 ;
+        font-size: 1.2rem;
+        top: 30%;
        
       
       } 
       }
+
+      
 
       

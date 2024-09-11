@@ -4,7 +4,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain'
 
 import Footer from '../../footer/footer'
 
-import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg"; 
+import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 import Hirecardsection from '../hire card section/Hirecardsection'
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg"; 
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";

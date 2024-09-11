@@ -1,5 +1,3 @@
-
-
 /* Intro section */
 .intro-section {
   background-color: #ffffff;
@@ -19,7 +17,6 @@
   max-width: 45%;
   height: auto;
   border-radius: 15px;
- 
 }
 
 .intro-text {
@@ -28,7 +25,7 @@
 }
 
 .intro-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Use rem for better scaling */
   font-weight: 600;
   line-height: 1.2;
 }
@@ -56,7 +53,6 @@
 .action-button:hover {
   background-color: #000479;
   transform: scale(1.02);
-    
 }
 
 /* Services section */
@@ -67,7 +63,7 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Use rem for better scaling */
   font-weight: 600;
   line-height: 1.2;
 }
@@ -76,7 +72,6 @@
   font-size: 1.2rem;
   line-height: 1.8;
   margin-top: 15px;
-
 }
 
 .card-container {
@@ -85,7 +80,6 @@
   justify-content: center;
   gap: 10px;
   box-shadow: 2px black;
-  /* width: 90%; */
 }
 
 .card-item {
@@ -97,7 +91,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid black;
-
 }
 
 .card-item:hover {
@@ -105,35 +98,28 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.card-image {
-  width: 300px;
-  height: 200px;
-  margin: 0 auto 20px;
-  display: block;
-}
-
-
 .card-text {
   font-size: 1.05rem;
   color: #000000;
   margin-bottom: 10px;
 }
 
-.card-link {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.05rem;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.card-link:hover {
-  text-decoration: underline;
-}
-
-
 /* Responsive styling */
+@media (max-width: 1200px) {
+  .intro-text h2 {
+    font-size: 2rem; /* Reduce font size for medium screens */
+  }
+
+  .intro-text p {
+    font-size: 1.1rem; /* Slightly smaller text */
+  }
+
+  .action-button {
+    width: 250px;
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .intro-content {
     flex-direction: column;
@@ -146,6 +132,19 @@
     padding-left: 0;
   }
 
+  .intro-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-text p {
+    font-size: 1rem;
+  }
+
+  .action-button {
+    width: 220px;
+    font-size: 1rem;
+  }
+
   .card-container,
   .features-container {
     flex-direction: column;
@@ -156,5 +155,33 @@
   .feature-item {
     width: 100%;
     margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+
+  .action-button {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .card-item {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

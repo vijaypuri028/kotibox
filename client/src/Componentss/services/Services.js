@@ -10,6 +10,7 @@ import CRM from '../Kotibox img/service/CRM.png'
 import ERP from '../Kotibox img/service/CRM 1.png'
 import Game from '../Kotibox img/service/game3.png'
 import UI from '../Kotibox img/service/icons8-design-94.png'
+import { Link } from 'react-router-dom'
 
 function Services() {
   return (
@@ -24,7 +25,7 @@ function Services() {
                 <FaHandHoldingUsd />
                 <FaMinus aria-hidden="true" />
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br />Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+              
             </div>
 
           </div>
@@ -52,7 +53,7 @@ function Services() {
                 <li className='btn btn-dark'>Yii</li>
               </div>
               <div className='icon-arrow' >
-              <i   class="bi bi-arrow-right-circle-fill  text-danger mt-4 "></i>
+              <Link style={{textDecoration:"none"}} to='/webDevelopment'> <i   class="bi bi-arrow-right-circle-fill  text-danger mt-4 "></i> </Link>
               </div>
             </div>
           </div>
@@ -67,7 +68,7 @@ function Services() {
               <h4 className="single_service-heading text-center">Mobile Development</h4>
               <div className="single_service-body">
 
-                <p>Kotibox Global Technologies is globally known as one of the best mobile app development companies. We are committed to transforming your vision into exceptional mobile app development. Our team of experts works on the latest technologies to create innovative and user-friendly apps that cater to your unique business requirements. Our seamless solutions are designed to offer robust functionality and cutting-edge design. Owebest Technologies is your trusted partner in developing mobile applications that leave a lasting impact.  </p>
+                <p>Kotibox Global Technologies is globally known as one of the best mobile app development companies. We are committed to transforming your vision into exceptional mobile app development. Our team of experts works on the latest technologies to create innovative and user-friendly apps that cater to your unique business requirements. Our seamless solutions are designed to offer robust functionality and cutting-edge design. Kotibox Technologies is your trusted partner in developing mobile applications that leave a lasting impact.  </p>
               </div>
               <div className='single_service-btn mt-1 '>
                 <li className='btn btn-dark'>React native</li>
@@ -77,7 +78,7 @@ function Services() {
 
               </div>
               <div className='icon-arrow'>
-              <i  class="bi bi-arrow-right-circle-fill  text-danger  "></i>
+              <Link style={{textDecoration:"none"}} to='/MobileApp'>  <i  class="bi bi-arrow-right-circle-fill  text-danger  "></i> </Link>
               </div>
             </div>
             
@@ -103,7 +104,7 @@ function Services() {
 
               </div>
               <div className='icon-arrow' >
-              <i  class="bi bi-arrow-right-circle-fill  text-danger mt-1 "></i>
+              <i  class="bi bi-arrow-right-circle-fill  text-danger mt-1 "></i> 
               </div>
             </div>
           </div>
@@ -128,7 +129,7 @@ function Services() {
                 <li className='btn btn-dark'>Inbund Marketing</li>
               </div>
               <div className='icon-arrow' >
-              <i   class="bi bi-arrow-right-circle-fill  text-danger  "></i>
+              <Link style={{textDecoration:"none"}} to='/digitalmarketing'>   <i   class="bi bi-arrow-right-circle-fill  text-danger  "></i> </Link>
               </div>
             </div>
           </div>
@@ -151,7 +152,7 @@ function Services() {
                 <li className='btn btn-dark'>opencart</li>
               </div>
               <div className='icon-arrow' >
-              <i  class="bi bi-arrow-right-circle-fill  text-danger  "></i>
+              <Link style={{textDecoration:"none"}} to='/Eccomerce'> <i  class="bi bi-arrow-right-circle-fill  text-danger  "></i> </Link>
               </div>
             </div>
             
@@ -178,7 +179,7 @@ function Services() {
 
               </div>
               <div className='icon-arrow' >
-              <i  class="bi bi-arrow-right-circle-fill  text-danger mt-1 "></i>
+              <Link style={{textDecoration:"none"}} to='/Fullstack'>  <i  class="bi bi-arrow-right-circle-fill  text-danger mt-1 "></i> </Link>
               </div>
             </div>
           </div>
@@ -193,7 +194,7 @@ function Services() {
               <h4 className="single_service-heading text-center ">Game Development</h4>
               <div className="single_service-body">
 
-                <p>Reshape the learning experience by blending the knowledge with the latest technological inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground-breaking solutions. Unlock virtual worlds using JPLoft's innovation  inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground.Reshape the learning experience by blending the knowledge with the latest technological inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground-breaking solutions. Unlock virtual worlds using JPLoft's innovation  inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground.</p>
+                <p>Reshape the learning experience by blending the knowledge with the latest technological inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground-breaking solutions. Unlock virtual worlds using Kotibox innovation  inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground.Reshape the learning experience by blending the knowledge with the latest technological inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground-breaking solutions. Unlock virtual worlds using Kotibox innovation  inventions. Our developers are capable of bringing your ideas into fantastic game reality by crafting ground.</p>
               </div>
               <div className='single_service-btn mt-5 '>
                 <li className='btn btn-dark '>Unity Game</li>
@@ -226,7 +227,7 @@ function Services() {
                 <li className='btn btn-dark'>CRM App</li>
               </div>
               <div className='icon-arrow' >
-              <i  class="bi bi-arrow-right-circle-fill  text-danger "></i>
+              <Link style={{textDecoration:"none"}} to='/CRM'><i  class="bi bi-arrow-right-circle-fill  text-danger "></i> </Link>
               </div>
             </div>
           </div>

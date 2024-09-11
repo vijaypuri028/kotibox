@@ -10,6 +10,7 @@ import Banking from '../../Kotibox img/Idusteries/Banking.png';
 import RealEstate from '../../Kotibox img/Idusteries/realstetate.png';
 import Media from '../../Kotibox img/Idusteries/icons8-media-64.png';
 import Healthcare from '../../Kotibox img/Idusteries/Heathcare.png';
+import { Link } from 'react-router-dom';
 
 import Accordionimg from '../../Kotibox img/Main img/Process.jpg'
 
@@ -50,7 +51,7 @@ export default function Hirecardsection({
                     <div className="intro-text">
                         <h2>{mainText1}</h2>
                         <p>{mainTextp}</p>
-                        <button className="mx-auto action-button">Click Me</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'>  <button className="mx-auto action-button">Click Me</button> </Link>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ export default function Hirecardsection({
                         <img className="job-img" src="http://upcharnuskhe.com/wp-content/uploads/2016/04/bddnn-300x300.jpg" alt="Part-Time Jobs" />
                         <h3>Hourly Hiring</h3>
                         <p></p>
-                        <button className='mx-auto'>HIRE NOW </button>
+                        <Link style={{textDecoration:"none"}} to='/contact'>  <button className='mx-auto'>HIRE NOW </button> </Link>
                     </div>
 
                     <div className="job-option col-lg-3 col-md-6 col-sm-12">
@@ -75,7 +76,7 @@ export default function Hirecardsection({
                             Dedicated Resource
                         </h3>
                         <p></p>
-                        <button className='mx-auto'>HIRE NOW</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'> <button className='mx-auto'>HIRE NOW</button></Link>
                     </div>
 
                     <div className="job-option col-lg-3 col-md-6 col-sm-12">
@@ -83,7 +84,7 @@ export default function Hirecardsection({
                         <h3>Dedicated Team
                             Hiring</h3>
                         <p></p>
-                        <button className='mx-auto'>HIRE NOW</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'> <button className='mx-auto'>HIRE NOW</button> </Link>
                     </div>
                 </div>
             </div>
@@ -99,21 +100,21 @@ export default function Hirecardsection({
                         <img className="p-1 pb-3" src={imgSrc1} alt="Web Developer" />
                         <h3>{cardTitle1}</h3>
                         <p>{cardDescription1}</p>
-                        <button className='mx-auto'>Hire Now</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'> <button className='mx-auto'>Hire Now</button> </Link>
                     </div>
 
                     <div className="hire-card col-lg-3 col-md-6 col-sm-12">
                         <img className="p-1 pb-3" src={imgSrc2} alt="UI/UX Designer" />
                         <h3>{cardTitle2}</h3>
                         <p>{cardDescription2}</p>
-                        <button className='mx-auto'>Hire Now</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'>  <button className='mx-auto'>Hire Now</button> </Link>
                     </div>
 
                     <div className="hire-card col-lg-3 col-md-6 col-sm-12">
                         <img className="p-1 pb-3" src={imgSrc3} alt="Full Stack Developer" />
                         <h3>{cardTitle3}</h3>
                         <p>{cardDescription3}</p>
-                        <button className='mx-auto'>Hire Now</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'>  <button className='mx-auto'>Hire Now</button> </Link>
                     </div>
 
                 </div>
@@ -124,21 +125,21 @@ export default function Hirecardsection({
                         <img className="p-1 pb-3" src={imgSrc1} alt="Web Developer" />
                         <h3>{cardTitle4}</h3>
                         <p>{cardDescription4}</p>
-                        <button className='mx-auto'>Hire Now</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'> <button className='mx-auto'>Hire Now</button> </Link>
                     </div>
                     {/* Card 2 */}
                     <div className="hire-card col-lg-3 col-md-6 col-sm-12">
                         <img className="p-1 pb-3" src={imgSrc2} alt="UI/UX Designer" />
                         <h3>{cardTitle5}</h3>
                         <p>{cardDescription5}</p>
-                        <button className='mx-auto'>Hire Now</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'> <button className='mx-auto'>Hire Now</button> </Link>
                     </div>
 
                     <div className="hire-card col-lg-3 col-md-6 col-sm-12">
                         <img className="p-1 pb-3" src={imgSrc3} alt="Full Stack Developer" />
                         <h3>{cardTitle6}</h3>
                         <p>{cardDescription6}</p>
-                        <button className='mx-auto'>Hire Now</button>
+                        <Link style={{textDecoration:"none"}} to='/contact'>   <button className='mx-auto'>Hire Now</button> </Link>
                     </div>
 
                 </div>

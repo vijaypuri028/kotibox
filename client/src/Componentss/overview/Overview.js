@@ -1,5 +1,6 @@
 import React from 'react';
 import './overview.css';
+import { Link } from 'react-router-dom';
 import Overviewimg from '../Kotibox img/png img/webpng.png'
 
 function Overview() {
@@ -15,7 +16,7 @@ function Overview() {
             Through the development of solutions for businesses, entrepreneurs, industry leaders, and governmental organizations, we bring the digital future closer to people.
           </p>
           <ul className="snslist">
-            <li  className='btn btn-danger mt-2 '>Connect With Our Expert</li>
+          <Link style={{textDecoration:"none"}} to='/contact'>  <li  className='btn btn-danger mt-2 '>Connect With Our Expert</li> </Link>
           </ul>
         </div>
       </div>

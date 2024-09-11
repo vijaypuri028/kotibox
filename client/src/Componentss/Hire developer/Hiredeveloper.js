@@ -31,7 +31,7 @@ function Hiredeveloper() {
               <div style={{ color: "white", backgroundColor: "#221f1d" }} className="box  ">
                 <img
                   className="rounded-circle"
-                  src="https://www.jploft.com/img/node_js_hire.svg"
+                  src="https://www.Kotibox.com/img/node_js_hire.svg"
                   alt="NODE DEVELOPER"
                 />
                 <h3 className="name">NODE DEVELOPER</h3>
@@ -50,7 +50,7 @@ function Hiredeveloper() {
               <div style={{ color: "white", backgroundColor: "#221f1d" }} className="box ">
                 <img
                   className="rounded-circle"
-                  src="https://www.jploft.com/img/flutter_hire.svg"
+                  src="https://www.Kotibox.com/img/flutter_hire.svg"
                   alt="HIRE FLUTTER DEVELOPER"
                 />
                 <h3 className="name"> FLUTTER DEVELOPER</h3>
@@ -69,7 +69,7 @@ function Hiredeveloper() {
               <div style={{ color: "white", backgroundColor: "#221f1d" }} className="box ">
                 <img
                   className="rounded-circle"
-                  src="https://www.jploft.com/img/ios_hire.svg"
+                  src="https://www.Kotibox.com/img/ios_hire.svg"
                   alt="HIRE IOS DEVELOPER"
                 />
                 <h3 className="name"> IOS DEVELOPER</h3>
@@ -90,7 +90,7 @@ function Hiredeveloper() {
               <div style={{ color: "white", backgroundColor: "#221f1d" }} className="box  ">
                 <img
                   className="rounded-circle"
-                  src="https://www.jploft.com/img/reactnative_hire.svg"
+                  src="https://www.Kotibox.com/img/reactnative_hire.svg"
                   alt="REACT DEVELOPER"
                 />
                 <h3 className="name">REACT JS DEVELOPER</h3>

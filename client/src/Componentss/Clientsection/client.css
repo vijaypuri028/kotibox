@@ -215,3 +215,36 @@
   width: 35px;
   height: 35px;
 }
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem; 
+  }
+  
+  .heading span {
+    font-size: 1rem; 
+  }
+  
+  .testimonial4_slide p {
+    font-size: 1rem; 
+  }
+  
+  .testimonial4_slide h4 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial4_control_button .carousel-control {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 1.5rem; 
+  }
+
+  .testimonial4_slide {
+    width: 90%; 
+  }
+}

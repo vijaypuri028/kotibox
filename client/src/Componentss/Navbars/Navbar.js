@@ -26,7 +26,7 @@ import CRM from '../Kotibox img/service/CRM.png'
 
 import Game from '../Kotibox img/service/game3.png'
 import Custom from '../Kotibox img/service/Custom.png'
-
+import logo from '../Kotibox img/png img/Logo.png'
 import Ecommerce from '../Kotibox img/service/icons8-crm-64 (1).png'
 
 
@@ -72,7 +72,7 @@ export default function Navbar() {
     <>
       <nav class="navbar navbar-expand-lg navbar-dark  bg-tranprent fixed-top ">
         <div className="container-fluid">
-          <Link className="navbar-brand fs-1" to="/">KOTIBOX</Link>
+          <Link className="navbar-brand fs-1" to="/"><img className='logo-kotibox' src={logo} alt=''/></Link>
           <button style={{backgroundColor:"black"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

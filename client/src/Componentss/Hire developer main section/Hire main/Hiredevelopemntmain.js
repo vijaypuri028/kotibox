@@ -21,12 +21,12 @@ export default function Hiredevelopmentmain(props) {
 
 
   const featureData = [
-    { title: "Committed Programmers", text: "We are aware of your needs and assist you in finding the most qualified eLearning app developers to provide top-notch services.", img: "https://www.jploft.com/img/focused-team.svg" },
-    { title: "Support & Maintenance", text: "For any project centered on educational software development, we offer expert support & maintenance services.", img: "https://www.jploft.com/img/cost-effective.svg" },
-    { title: "On Time and within budget", text: "We realize the significance of your money and time. So, we believe in providing a high-quality job on time.", img: "https://www.jploft.com/img/work-force.svg" },
-    { title: "Individualized Creation", text: "With the assistance of our committed developers, who offer the best eLearning Development Services, we are able to offer the greatest education solution.", img: "https://www.jploft.com/img/privacy-security.svg" },
-    { title: "Excellent User Experience", text: "Since we recognize the value of your idea, we create websites and applications that are visually appealing, draw users in, and offer superior user experience.", img: "https://www.jploft.com/img/enterprices-solutions.svg" },
-    { title: "Security", text: "We recognize that, as technology advances on a regular basis, organizations must also adapt. Thus, we are up to date with the newest technologies.", img: "https://www.jploft.com/img/enterprices-solutions.svg" },
+    { title: "Committed Programmers", text: "We are aware of your needs and assist you in finding the most qualified eLearning app developers to provide top-notch services.", img: "https://www.Kotibox.com/img/focused-team.svg" },
+    { title: "Support & Maintenance", text: "For any project centered on educational software development, we offer expert support & maintenance services.", img: "https://www.Kotibox.com/img/cost-effective.svg" },
+    { title: "On Time and within budget", text: "We realize the significance of your money and time. So, we believe in providing a high-quality job on time.", img: "https://www.Kotibox.com/img/work-force.svg" },
+    { title: "Individualized Creation", text: "With the assistance of our committed developers, who offer the best eLearning Development Services, we are able to offer the greatest education solution.", img: "https://www.Kotibox.com/img/privacy-security.svg" },
+    { title: "Excellent User Experience", text: "Since we recognize the value of your idea, we create websites and applications that are visually appealing, draw users in, and offer superior user experience.", img: "https://www.Kotibox.com/img/enterprices-solutions.svg" },
+    { title: "Security", text: "We recognize that, as technology advances on a regular basis, organizations must also adapt. Thus, we are up to date with the newest technologies.", img: "https://www.Kotibox.com/img/enterprices-solutions.svg" },
   ];
 
   return (

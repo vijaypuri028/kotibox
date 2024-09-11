@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg"; 
+import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 import Footer from '../../footer/footer';
 import Marquee from '../../Marquee/Marquee';
 import Blog from '../../blog/blog'

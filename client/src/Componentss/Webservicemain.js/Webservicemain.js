@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Webservice.css'
+import { Link } from 'react-router-dom';
 
 export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray }) {
   const [scrolled, setScrolled] = useState(false);
@@ -52,7 +53,7 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
             </h1>
             <p className='main-service-p '> {Secondtext}</p>
              {/* <div className="animated-text-1">{textArray[textIndex]}</div> */}
-            <div className="consult-btn ">CONSULT With Expert</div>
+             <Link style={{textDecoration:"none"}} to='/contact'> <div className="consult-btn ">CONSULT With Expert</div> </Link>
           </div>
         </div>
       </div>

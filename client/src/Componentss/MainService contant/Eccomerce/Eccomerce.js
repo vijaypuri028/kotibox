@@ -11,17 +11,18 @@ import Technologies4img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies5img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies6img from '../../Kotibox img/icon/icons8-java-48.png'
 import { Link } from 'react-router-dom'
+import png1 from '../../Kotibox img/png img/Fullstack.jpg'
 
 export default function Eccomerce() {
   const mainText = { Text: " E-COMMERCE  DEVELOPMENT" }
   const Secondtext = { Text: "We are a scalable, user-friendly, and reliable e-commerce website development firm that can assist you in creating a variety of eCommerce solutions. We assist you in removing any obstacles posed by intricate sales procedures so that your clients may easily make purchases from you. We are a group of skilled e-commerce developers who stay current with emerging trends and technology in the industry. " }
-  const textArray = ["Woo Commerce", "magento", "Shopify", "opencart" ];
+  const textArray = ["Woo Commerce", "magento", "Shopify", "opencart"];
 
 
   const services = [
     { icon: "bi bi-0-square", title: "Custom Website Development", description: "We offer custom website design and development services to leverage our client business with a whole new brand identity on the web. Our team of web designers and developers is highly proficient in creating professional websites for your business." },
-    { icon: "bi bi-pc-display", title: "E-commerce Web developmet", description: "WordPress is the most preferred open source CMS for custom web development. It enables creating Blog, Magazine, E-Commerce and other web development projects. JPLoft has expertise in WordPress Development, thanks to our experienced team of WordPress" },
-    { icon: "bi bi-pc-display", title: "ERP Development", description: "We at JPLoft create B2B and B2C websites for our clients’ eCommerce web development needs. Hire our highly proficient eCommerce web developers to create fully responsive eCommerce websites, accessible on different platforms like mobile, tablets, desktops and " },
+    { icon: "bi bi-pc-display", title: "E-commerce Web developmet", description: "WordPress is the most preferred open source CMS for custom web development. It enables creating Blog, Magazine, E-Commerce and other web development projects. Kotibox has expertise in WordPress Development, thanks to our experienced team of WordPress" },
+    { icon: "bi bi-pc-display", title: "ERP Development", description: "We at Kotibox create B2B and B2C websites for our clients’ eCommerce web development needs. Hire our highly proficient eCommerce web developers to create fully responsive eCommerce websites, accessible on different platforms like mobile, tablets, desktops and " },
     { icon: "bi bi-pc-display", title: "Web App Development", description: "If your business requires custom CMS or SaaS development needs, our web developers can build tailored CMS & SaaS web solutions as per your business requirements. Our web programmers have expertise in technologies like PHP, ASP.NET,  JAVA and Python." },
     { icon: "bi bi-pc-display", title: "Single Landing page website", description: "Our web application developers are competent to build apps on the web to empower your business. They have immense experience and technical expertise in creating web applications for real estate, travel, eCommerce and social  media industries." },
     { icon: "bi bi-pc-display", title: "Gaming Website", description: "We develop ERP software for our global clients irrespective of what industry they belong to. Our web developers build Enterprise Resource Planning (ERP) systems to help businesses manage planning, inventory, human resource management and  finance management." },
@@ -80,16 +81,16 @@ export default function Eccomerce() {
   ];
   return (
     <>
-    <Navbar/>
-    <Webservicemain imgSrc={imgSrc} mainText={mainText.Text}  Secondtext={Secondtext.Text} textArray={textArray} />
-    <section className="section-services">
+      <Navbar />
+      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
+      <section className="section-services">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-md-10 col-lg-8">
               <div className="header-section">
                 <h2 className="title">Our Services for Developing E-Commerce Development</h2>
                 <p >
-                A good provider of E-Commerce Development Services is essential for managing customer relationships and an effective data gatherer. Reputable E-Commerce Development collects data from all business communication channels; long-term benefits come from working with Kotibox E-Commerce Development  company. It is an economical method of compiling and arranging customer data.                </p>
+                  A good provider of E-Commerce Development Services is essential for managing customer relationships and an effective data gatherer. Reputable E-Commerce Development collects data from all business communication channels; long-term benefits come from working with Kotibox E-Commerce Development  company. It is an economical method of compiling and arranging customer data.                </p>
 
               </div>
             </div>
@@ -108,7 +109,7 @@ export default function Eccomerce() {
                 </div>
                 <div className="part-2">
                   <p className="description">
-                  Our team of expert web designers and developers can create a strong back-end infrastructure and an amazing user experience for your eCommerce business.</p>                  <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5 "></i></Link>
+                    Our team of expert web designers and developers can create a strong back-end infrastructure and an amazing user experience for your eCommerce business.</p>                  <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5 "></i></Link>
                 </div>
               </div>
             </div>
@@ -124,7 +125,7 @@ export default function Eccomerce() {
                 </div>
                 <div className="part-2">
                   <p className="description">
-                  We can assist you in switching to a different eCommerce platform if you already operate one but are dissatisfied with it. Everything will be handled by us, including design and development as well as data migration.              </p>
+                    We can assist you in switching to a different eCommerce platform if you already operate one but are dissatisfied with it. Everything will be handled by us, including design and development as well as data migration.              </p>
                   <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
                 </div>
               </div>
@@ -142,7 +143,7 @@ export default function Eccomerce() {
                 <div className="part-2">
                   <p className="description">
 
-                  By automating and streamlining your company processes, we can assist you in integrating your eCommerce store with third-party systems like accounting software, CRM, ERP, and so forth             </p>
+                    By automating and streamlining your company processes, we can assist you in integrating your eCommerce store with third-party systems like accounting software, CRM, ERP, and so forth             </p>
                   <Link href="#"><i className="fas fa-arrow-circle-right"></i>Read More  <i class="bi bi-arrow-right ms-1 fs-5"></i></Link>
                 </div>
               </div>
@@ -156,6 +157,7 @@ export default function Eccomerce() {
       </section>
 
       <MainContent
+        png={png1}
         benefitTitle="Website Development Benefits"
         benefitDescription="Kotibox is a top development company with Moodle solutions..."
         services={services}
@@ -169,7 +171,7 @@ export default function Eccomerce() {
         additionalTextSize="1.5em"
         circelhead="A Variety of Services We Provide for Website Development"
         circelsub="We help various organizations with their unique difficulties by utilizing our skills in custom web development. Both startups and large corporations can use our products."
-        circeltext="As a prominent web development company across the world, JPLoft has highly experienced CakePHP developers that help you to create strong web apps. JPLoft builds websites that are more responsive and have elegant designs with extraordinary features. In this framework, you can improve your user interaction by developing a high-quality web app for your business."
+        circeltext="As a prominent web development company across the world, Kotibox has highly experienced CakePHP developers that help you to create strong web apps. Kotibox builds websites that are more responsive and have elegant designs with extraordinary features. In this framework, you can improve your user interaction by developing a high-quality web app for your business."
 
         services11="Do you want to create an online store that succeeds by providing the newest features and functionality in an eCommerce solution"
         servicesp="To assist you in thriving in the modern digital environment, we provide a comprehensive array of the newest eCommerce development solutions. These solutions are what we've created to give you a competitive advantage and help you grow your company. Our eCommerce solutions are scalable to expand along with your company, and they are customized to match the particular requirements of your enterprise."
@@ -267,7 +269,7 @@ We are a full-service web development business that adds value to our clients' p
           </div>
         </div>
       </section>
-    <Footer/>
+      <Footer />
     </>
   )
 }

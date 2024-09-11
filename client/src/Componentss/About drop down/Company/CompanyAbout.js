@@ -8,6 +8,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain';
 import imgSrc from "../../Kotibox img/Main img/Game development.jpg";
 import pngimg from '../../Kotibox img/png img/AIpng.jpg';
 import Client from '../../Clientsection/Client'
+import { Link } from 'react-router-dom';
 
 
 function CompanyAbout() {
@@ -53,7 +54,7 @@ function CompanyAbout() {
               Our expert team uses proven methodologies and business knowledge to deliver high-quality solutions to our renowned clients.
               We drive real innovation and help transform and grow organizations using trending technologies.
             </p>
-            <button className='btn btn-danger'>Learn More</button>
+            <Link  style={{textDecoration:"none"}} to='/contact'> <button className='btn btn-danger'>Learn More</button> </Link>
           </div>
         </div>
       </div>

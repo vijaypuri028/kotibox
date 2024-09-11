@@ -27,7 +27,7 @@ const companyLogos = [
 ];
 
 const companyLogo1 = [
-  { src: 'https://www.jploft.com/img/technologies-ic19.svg', name: 'Cordova' },
+  
   { src: Swift, name: 'Swift' },
   { src: Java, name: 'Java' },
 ];

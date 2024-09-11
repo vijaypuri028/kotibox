@@ -3,7 +3,7 @@ import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import Blog from '../../blog/blog'
 import Marquee from '../../Marquee/Marquee'
-import imgSrc from "../../Kotibox img/Main img/AI DEvelopment.jpg"; 
+import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 import Footer from '../../footer/footer'
 import Hirecardsection from '../hire card section/Hirecardsection'
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg"; 

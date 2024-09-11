@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './main.css';
 import video from '../Kotibox img/Koti box video.mp4';
+import { Link } from 'react-router-dom';
 
 export default function Main() {
   const [textIndex, setTextIndex] = useState(0);
@@ -20,7 +21,7 @@ export default function Main() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "7dab4af5-b3ff-424f-bc0a-26fd9cea0c70");
+    formData.append("access_key", "f9250c61-8870-405b-9aa2-db2e9a38a6d5");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -42,6 +43,7 @@ export default function Main() {
   };
 
   return (
+    
     <div className="main-container">
       <div className="video-container">
         <video className="background-video" autoPlay loop muted>
@@ -53,17 +55,17 @@ export default function Main() {
             <h1 className='text-main-h1'>
               YOUR TRUSTED  <br />  COLLABORATOR FOR
             </h1>
-            <div  className="animated-text text-main-div mt-2">
+            <div  className=" text-main-div mt-2">
               {textArray[textIndex]}
             </div>
-            <div style={{ marginTop: "100px", fontSize: "20px" }} className='btn btn-danger animated-text'>
+            <Link to='/contact'><div style={{marginTop:"50px"}} className=' btn btn-danger animated-text'>
               CONSULT OUR EXPERT
-            </div>
+            </div></Link>
           </div>
         </div>
       </div>
       <div className="form-container">
-        <h2>Let’s build something</h2>
+        <h2>Let's build something</h2>
         <h2 style={{ color: "#FFA500" }}>great together!</h2>
         <form onSubmit={onSubmit}>
           <div className="form-group">
@@ -82,6 +84,7 @@ export default function Main() {
         </form>
         <span>{result}</span>
       </div>
+      
     </div>
   );
 }
