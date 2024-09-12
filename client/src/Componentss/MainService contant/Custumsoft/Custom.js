@@ -4,7 +4,7 @@ import Footer from '../../footer/footer'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from '../../Kotibox img/Main img/Costum.jpg'
 import MainContent from '../../Main content/MainContent'
-import png1 from '../../Kotibox img/png img/Fullstack.jpg'
+import png1 from '../../Kotibox img/Main img/png img/Fullstack.jpg'
 
 
 

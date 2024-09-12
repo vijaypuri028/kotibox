@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './main.css';
-import video from '../Kotibox img/Koti box video.mp4';
+import video from '../Kotibox img/Main img/Koti box video.mp4';
 import { Link } from 'react-router-dom';
 
 export default function Main() {
   const [textIndex, setTextIndex] = useState(0);
-  const [result, setResult] = useState('');
-  const textArray = ["Website Development", "App Development", "Software Development", "Digital Marketing"];
+  const textArray = ["Website Development", "App Development", "Software Development", "Digital Marketing","Blockchain","Saas Applinction","Ecommerce Solutions","Full stack","CRM Development","Artificial Intelligence"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,34 +15,7 @@ export default function Main() {
     return () => clearInterval(interval);
   }, [textArray.length]);
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "f9250c61-8870-405b-9aa2-db2e9a38a6d5");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-      setTimeout(() => {
-        setResult("");
-      }, 5000);
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
-  };
-
   return (
-    
     <div className="main-container">
       <div className="video-container">
         <video className="background-video" autoPlay loop muted>
@@ -51,40 +23,17 @@ export default function Main() {
           Your browser does not support the video tag.
         </video>
         <div className="video-overlay">
-          <div>
-            <h1 className='text-main-h1'>
-              YOUR TRUSTED  <br />  COLLABORATOR FOR
-            </h1>
-            <div  className=" text-main-div mt-2">
-              {textArray[textIndex]}
-            </div>
-            <Link to='/contact'><div style={{marginTop:"50px"}} className=' btn btn-danger animated-text'>
-              CONSULT OUR EXPERT
-            </div></Link>
+          <h1 className="text-main-h1">
+            YOUR TRUSTED <br /> COLLABORATOR FOR
+          </h1>
+          <div className="text-main-div mt-2">
+            {textArray[textIndex]}
           </div>
+          <Link to="/contact">
+            <div className="btn btn-danger animated-text">CONSULT OUR EXPERT</div>
+          </Link>
         </div>
       </div>
-      <div className="form-container">
-        <h2>Let's build something</h2>
-        <h2 style={{ color: "#FFA500" }}>great together!</h2>
-        <form onSubmit={onSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button className='btn btn-danger' type="submit">Submit</button>
-        </form>
-        <span>{result}</span>
-      </div>
-      
     </div>
   );
 }

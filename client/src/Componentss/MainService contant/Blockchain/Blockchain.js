@@ -6,7 +6,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from '../../Kotibox img/Main img/Blockchain.jpg'
 import MainContent from '../../Main content/MainContent'
 
-import png1 from '../../Kotibox img/png img/crm.png'
+import png1 from '../../Kotibox img/Main img/png img/crm.png'
 import Technologies1img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies2img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies3img from '../../Kotibox img/icon/icons8-java-48.png'

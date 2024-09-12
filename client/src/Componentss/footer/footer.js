@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
 import './footer.css';
-import logo from '../Kotibox img/png img/Kotologo.png'
-import Company1 from '../Kotibox img/png img/Comapny2.jpg'
-import Company2 from '../Kotibox img/png img/Comapny3.jpg'
-import Company3 from '../Kotibox img/png img/Company1.jpg'
+import logo from '../Kotibox img/Main img/png img/Logo.png'
+import Company1 from '../Kotibox img/Main img/png img/Company1.jpg'
+import Company2 from '../Kotibox img/Main img/png img/Comapny2.jpg'
+import Company3 from '../Kotibox img/Main img/png img/Comapny3.jpg'
 import backgroundImage from '../Kotibox img/Main img/Footer1.jpg';
 
 

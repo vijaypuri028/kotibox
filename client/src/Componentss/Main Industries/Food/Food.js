@@ -4,12 +4,12 @@ import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
 import Blog from '../../blog/blog'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/Food.jpg"; 
+import imgSrc from "../../Kotibox img/Main img/Game development.jpg"; 
 import Company from '../../Company section/Company'
 import Marquee from '../../Marquee/Marquee'
 
-import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
-import png2 from '../../Kotibox img/png img/office 2.png';
+import png1 from '../../Kotibox img/Main img/png img/crm.png';
+import png2 from '../../Kotibox img/Main img/png img/crm.png';
 
 
 

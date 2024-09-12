@@ -6,7 +6,7 @@ import imgSrc from '../../Kotibox img/Main img/Game2.jpg'
 import Blog from '../../blog/blog'
 import MainContent from '../../Main content/MainContent'
 import Marquee from '../../Marquee/Marquee'
-import png1 from '../../Kotibox img/png img/Fullstack.jpg'
+import png1 from '../../Kotibox img/Main img/png img/Fullstack.jpg'
 
 import Technologies1img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies2img from '../../Kotibox img/icon/icons8-java-48.png'

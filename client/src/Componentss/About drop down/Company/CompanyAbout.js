@@ -6,7 +6,7 @@ import Button from '../../button/Button';
 import Blog from '../../blog/blog';
 import Webservicemain from '../../Webservicemain.js/Webservicemain';
 import imgSrc from "../../Kotibox img/Main img/Game development.jpg";
-import pngimg from '../../Kotibox img/png img/AIpng.jpg';
+import pngimg from '../../Kotibox img/Main img/png img/AIpng.jpg';
 import Client from '../../Clientsection/Client'
 import { Link } from 'react-router-dom';
 

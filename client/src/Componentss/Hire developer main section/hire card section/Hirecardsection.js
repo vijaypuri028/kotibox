@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hirecard.css'; // External CSS
+import './Hirecard.css'; 
 
 import Education from '../../Kotibox img/Idusteries/book.png';
 import ECommerce from '../../Kotibox img/Idusteries/Eccomerce.png';

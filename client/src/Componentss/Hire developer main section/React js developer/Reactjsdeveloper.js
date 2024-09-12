@@ -9,7 +9,7 @@ import Hirecardsection from '../hire card section/Hirecardsection'
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg"; 
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
-import imgSrc5 from "../../Kotibox img/png img/crm.png";
+import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
 
 export default function Reactjsdeveloper() {
   const mainText = { Text: "Hire React Js  Developers" }

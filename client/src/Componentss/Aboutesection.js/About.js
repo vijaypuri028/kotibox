@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
-import Aboutvideo from '../Kotibox img/About section.mp4'
+import Aboutvideo from '../Kotibox img/Main img/About section.mp4'
 
 export default function About() {
   const aboutMeImgRef = useRef(null);

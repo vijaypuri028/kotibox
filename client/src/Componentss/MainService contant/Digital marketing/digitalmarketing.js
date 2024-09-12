@@ -7,7 +7,7 @@ import MainContent from '../../Main content/MainContent'
 import Technologies1img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies2img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies3img from '../../Kotibox img/icon/icons8-java-48.png'
-import png1 from '../../Kotibox img/png img/DMpng.jpg'
+import png1 from '../../Kotibox img/Main img/png img/DMpng.jpg'
 
 import { Link } from 'react-router-dom'
 

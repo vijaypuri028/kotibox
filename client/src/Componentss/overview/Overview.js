@@ -1,7 +1,7 @@
 import React from 'react';
 import './overview.css';
 import { Link } from 'react-router-dom';
-import Overviewimg from '../Kotibox img/png img/webpng.png'
+import Overviewimg from '../Kotibox img/Main img/png img/webpng.png'
 
 function Overview() {
   return (

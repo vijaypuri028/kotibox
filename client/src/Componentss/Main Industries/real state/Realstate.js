@@ -5,8 +5,8 @@ import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
 import imgSrc from "../../Kotibox img/Main img/RealEste.jpg";
 
-import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
-import png2 from '../../Kotibox img/png img/office 2.png';
+import png1 from '../../Kotibox img/Main img/png img/crm.png';
+import png2 from '../../Kotibox img/Main img/png img/crm.png';
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
 export default function Realstate() {

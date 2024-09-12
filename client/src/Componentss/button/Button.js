@@ -7,17 +7,17 @@ export default function Button() {
     <>
       <div className="fixed-button1">
         <button>
-          <Link to="https://wa.me/7851876946"> 7851876946</Link>
+          <Link style={{textDecoration:"none"}} to="https://wa.me/7851876946"> 7851876946</Link>
         </button>
       </div>
       <div className="fixed-button2">
         <button>
-        <Link to="mailto:business@kotiboxglobaltech.com">E-mail</Link>
+        <Link style={{textDecoration:"none"}} to="mailto:business@kotiboxglobaltech.com">E-mail</Link>
         </button>
       </div>
       <div className="fixed-button3">
         <button>
-          <Link to="tel:7851876946"> 7851876946</Link>
+          <Link style={{textDecoration:"none"}} to="tel:7851876946"> 7851876946</Link>
         </button>
       </div>
 

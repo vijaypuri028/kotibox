@@ -2,12 +2,11 @@ import React from 'react'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import Navbar from '../../Navbars/Navbar'
 import Footer from '../../footer/footer'
-import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 import Hirecardsection from '../hire card section/Hirecardsection'
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
-import imgSrc5 from "../../Kotibox img/png img/crm.png";
+import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
 
 export default function Angular() {
   const mainText = { Text: "Hire Angular Developers" }
@@ -16,7 +15,7 @@ export default function Angular() {
   return (
     <>
       <Navbar />
-      <Webservicemain imgSrc={imgSrc} mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
+      <Webservicemain imgSrc='https://ibb.co/6nRm09k' mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
       <Hirecardsection
         imgSrc={imgSrc5}
         mainText1="Why Hire Angular Developer from Kotibox ?"

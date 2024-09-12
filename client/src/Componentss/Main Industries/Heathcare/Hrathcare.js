@@ -3,11 +3,11 @@ import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
-import imgSrc from "../../Kotibox img/Main img/Healthcare.jpg";
+import imgSrc from "../../Kotibox img/Main img/Healthcarein.jpg";
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
-import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
-import png2 from '../../Kotibox img/png img/office 2.png';
+import png1 from '../../Kotibox img/Main img/png img/crm.png';
+import png2 from '../../Kotibox img/Main img/png img/crm.png';
 
 import jpg1 from '../../Kotibox img/Main img/AI.jpg'
 import jpg2 from '../../Kotibox img/Main img/AI.jpg'

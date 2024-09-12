@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../../footer/footer'
 import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
+
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
-import imgSrc5 from "../../Kotibox img/png img/crm.png";
+import imgSrc5 from "../../Kotibox img/Main img/png img/crm.png";
 import Hirecardsection from '../hire card section/Hirecardsection'
 
 
@@ -21,7 +21,7 @@ export default function Android() {
     return (
         <>
             <Navbar />
-            <Webservicemain imgSrc={imgSrc} mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
+            <Webservicemain imgSrc='https://ibb.co/6nRm09k' mainText={mainText.Text} Secondtext={Secondtext.Text} textArray={textArray} />
             <Hirecardsection
                 imgSrc={imgSrc5}
                 mainText1="Why Hire Android App Developer from Kotibox ?"

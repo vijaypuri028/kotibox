@@ -10,7 +10,7 @@ import Technologies3img from '../../Kotibox img/service/AI3.png'
 import Technologies4img from '../../Kotibox img/service/AI5.png'
 import Technologies5img from '../../Kotibox img/service/AI10.png'
 import Technologies6img from '../../Kotibox img/service/AI11.png'
-import png1 from '../../Kotibox img/png img/AIpng.jpg'
+import png1 from '../../Kotibox img/Main img/png img/AIpng.jpg'
 import { Link } from 'react-router-dom'
 
 export default function AI() {

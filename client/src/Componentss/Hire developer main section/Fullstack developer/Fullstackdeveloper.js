@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg"; 
+
 import Footer from '../../footer/footer'
 import Hirecardsection from '../hire card section/Hirecardsection'
 import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg"; 
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
-import imgSrc5 from "../../Kotibox img/png img/crm.png";
+import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
+import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 
 export default function Fullstackdeveloper() {
   const mainText = { Text: "Hire Full stack  Developers" }

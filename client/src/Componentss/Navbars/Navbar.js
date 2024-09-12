@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
@@ -26,7 +26,7 @@ import CRM from '../Kotibox img/service/CRM.png'
 
 import Game from '../Kotibox img/service/game3.png'
 import Custom from '../Kotibox img/service/Custom.png'
-import logo from '../Kotibox img/png img/Logo.png'
+import logo from '../Kotibox img/Main img/png img/Kotologo.png'
 import Ecommerce from '../Kotibox img/service/icons8-crm-64 (1).png'
 
 
@@ -34,53 +34,41 @@ import Ecommerce from '../Kotibox img/service/icons8-crm-64 (1).png'
 
 
 export default function Navbar() {
-  const [captchaAnswer, setCaptchaAnswer] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
-      }
-    };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const navbar = document.querySelector('.navbar');
+  //     if (window.scrollY > 50) {
+  //       navbar.classList.add('navbar-scrolled');
+  //     } else {
+  //       navbar.classList.remove('navbar-scrolled');
+  //     }
+  //   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Validate the CAPTCHA
-    if (captchaAnswer !== '8') {
-      setErrorMessage('CAPTCHA is invalid.');
-      return;
-    }
-    setErrorMessage('');
-    // Proceed with form submission
-    console.log('Form submitted successfully!');
-    // You can add your form submission logic here
-  };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
+
 
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark  bg-tranprent fixed-top ">
+      <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "transparent" }}>
         <div className="container-fluid">
-          <Link className="navbar-brand fs-1" to="/"><img className='logo-kotibox' src={logo} alt=''/></Link>
-          <button style={{backgroundColor:"black"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <Link className="navbar-brand fs-1" to="/"><img className='logo-kotibox' src={logo} alt='' /></Link>
+          <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul className="navbar-nav mb-2 mb-lg-0">
+            <ul className="navbar-nav mb-2 mb-lg-0">
 
-              
-          <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
+
+              <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
                 <Link className="nav-link   " aria-current="page" to="/CompanyAbout" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > About </Link>
               </li>
 
@@ -91,7 +79,7 @@ export default function Navbar() {
                   Services
                 </Link>
                 <div className="dropdown-menu large-dropdown1 bg-dark" aria-labelledby="navbarDropdown">
-                  <h2 className='text-danger m-5'>OUR  SERVICES </h2>
+                
                   <div className="dropdown-container">
 
 
@@ -101,24 +89,24 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Digital Marketing </Link> <hr className='text-light' />
 
                       <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Artificial Intelligence </Link> <hr className='text-light' />
-                     
+
 
                     </div>
                     <div className="dropdown-row ">
-                    <Link className="dropdown-item2 " to="/Blockchain"><img className='icon-img' src={Blockchain} alt='' /> Blockchain</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Blockchain"><img className='icon-img' src={Blockchain} alt='' /> Blockchain</Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/Game"><img className='icon-img' src={Game} alt='' /> Saas Applinction</Link> <hr className='text-light' />
                       <Link className="dropdown-item2" to="/Custom"><img className='icon-img' src={Custom} alt='' /> Custom Software Development</Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/Eccomerce"> <img className='icon-img' src={Ecommerce} alt='' /> Ecommerce Solutions</Link> <hr className='text-light' />
                     </div>
                     <div className="dropdown-row ">
-                     
-                     <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
-                     <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> CRM Development</Link> <hr className='text-light' />
+
+                      <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> CRM Development</Link> <hr className='text-light' />
                     </div>
 
 
                     <div className="dropdown-row">
-                      <img style={{ height: "500px" }} className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
+                      {/*   <img  className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' /> */}
 
 
 
@@ -139,65 +127,65 @@ export default function Navbar() {
                 <div className="dropdown-menu large-dropdown3 bg-dark" aria-labelledby="navbarDropdown">
                   <div className="dropdown-container">
                     <div className="dropdown-row">
-                      <Link to='/Education'>
+                      <Link style={{textDecoration:"none"}} to='/Education'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px", textDecoration: "non" }} class="bi bi-book text-light "></i>
+                          <i style={{ fontSize: "40px"}} class="bi bi-book text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Education & E-learning</Link>
                         </div>
                       </Link>
 
-                      <Link to='/Food'>
+                      <Link  style={{textDecoration:"none"}} to='/Food'>
                         <div className='dropdown-item-icon '>
                           <i style={{ fontSize: "40px" }} class="bi bi-amazon text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Food & Restaurants</Link>
                         </div>
                       </Link>
 
-                     
+
 
                     </div>
 
                     <div className="dropdown-row">
-                      <Link to='/Tour'>
+                      <Link  style={{textDecoration:"none"}} to='/Tour'>
                         <div className='dropdown-item-icon '>
                           <i style={{ fontSize: "40px" }} class="bi bi-airplane-engines text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Tour & Travels</Link>
                         </div>
                       </Link>
-                      <Link to='/bankig'>
+                      <Link  style={{textDecoration:"none"}} to='/bankig'>
                         <div className='dropdown-item-icon '>
                           <i style={{ fontSize: "40px" }} class="bi bi-bank text-light"></i>
                           <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
                         </div>
                       </Link>
-                    
+
 
                     </div>
 
 
 
                     <div className="dropdown-row">
-                      <Link to='/Heathcare'>
+                      <Link  style={{textDecoration:"none"}} to='/Heathcare'>
                         <div className='dropdown-item-icon '>
                           <i style={{ fontSize: "40px" }} class="bi bi-hospital text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Healthcare</Link>
                         </div>
                       </Link>
-                      <Link to='/RealState'>
+                      <Link  style={{textDecoration:"none"}} to='/RealState'>
                         <div className='dropdown-item-icon '>
                           <i style={{ fontSize: "40px" }} class="bi bi-house-door text-light"></i>
                           <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
                         </div>
                       </Link>
-                  
+
 
                     </div>
 
 
 
                     <div className="dropdown-row">
-                      <img className='dropdown-img-1 mt-4' src='https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
-                      
+                      <img className='dropdown-img-1 mt-4' src='https://ibb.co/9qT2zyM' alt='' />
+
                     </div>
 
                   </div>
@@ -241,7 +229,7 @@ export default function Navbar() {
 
 
                     <div className="dropdown-row">
-                      <img className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
+                     
 
 
 
@@ -258,56 +246,8 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
-           
 
-              <li className="nav-button nav-item  dropdown btn btn-danger ms-5">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
-                  Get A Free Quote
-                </Link>
-                <div className="dropdown-menu large-dropdown6 bg-dark" aria-labelledby="navbarDropdown">
-                  <div className="dropdown-container">
-                    <div className="dropdown-row">
-                      <div className="form-container">
-                        <h4>We respond promptly, typically within 30 minutes</h4>
-                        <form onSubmit={handleSubmit}>
-                          <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder='Enter Full Name' />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder='Enter Email Address' />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="number">Phone Number</label>
-                            <input type="number" id="number" name="number" required placeholder='Enter Contact Number' />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="message">Message</label>
-                            <textarea id="message" name="message" required placeholder='Enter Message'></textarea>
-                          </div>
-                          <div className="form-group">
-                            <input type="file" id="file" name="file" required />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="captcha"> Are you human?* What is 5 + 3?</label>
-                            <input
-                              type="text"
-                              id="captcha"
-                              name="captcha"
-                              required
-                              value={captchaAnswer}
-                              onChange={(e) => setCaptchaAnswer(e.target.value)}
-                            />
-                            {errorMessage && <span className="text-danger">{errorMessage}</span>}
-                          </div>
-                          <button className='btn-danger' type="submit">Submit</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>

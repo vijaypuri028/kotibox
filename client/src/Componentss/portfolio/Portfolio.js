@@ -83,6 +83,6 @@ export default function Portfolio() {
             <Button />
             <Blog/>
             <Footer />
-        </>
-    );
+    </>
+ );
 }

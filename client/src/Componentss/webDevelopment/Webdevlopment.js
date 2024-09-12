@@ -7,7 +7,7 @@ import Webservicemain from '../Webservicemain.js/Webservicemain';
 import imgSrc from "../Kotibox img/Main img/Web10.jpg";
 import MainContent from '../Main content/MainContent';
 import { Link } from 'react-router-dom';
-import png1 from '../Kotibox img/png img/webpng.png'
+import png1 from '../Kotibox img/Main img/png img/Fullstack.jpg'
 import Technologies1img from '../Kotibox img/icon/icons8-react-100.png'
 import Technologies2img from '../Kotibox img/icon/Js.png'
 import Technologies3img from '../Kotibox img/icon/Php.png'

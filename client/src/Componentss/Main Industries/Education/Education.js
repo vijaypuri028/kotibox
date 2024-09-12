@@ -3,9 +3,9 @@ import Navbar from '../../Navbars/Navbar'
 import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
-import imgSrc from "../../Kotibox img/Main img/Education.jpg"; 
-import png1 from '../../Kotibox img/png img/good-advice-from-beautiful-woman.png';
-import png2 from '../../Kotibox img/png img/office 2.png';
+import imgSrc from "../../Kotibox img/Main img/Educationin.jpg"; 
+import png1 from '../../Kotibox img/Main img/png img/crm.png';
+import png2 from '../../Kotibox img/Main img/png img/crm.png';
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
 
 export default function Education() {

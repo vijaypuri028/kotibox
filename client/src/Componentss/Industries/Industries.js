@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import './Industries.css';
-import Education from '../Kotibox img/KotiIndustries/Education.jpg'
-import Food from '../Kotibox img/KotiIndustries/food.jpg'
-import Health from '../Kotibox img/KotiIndustries/Healthcare.jpg'
-import Tour from '../Kotibox img/KotiIndustries/Tour.jpg'
-import Real from '../Kotibox img/KotiIndustries/realestate.jpg'
-import Sports from '../Kotibox img/KotiIndustries/game.jpg'
-import Banking from '../Kotibox img/KotiIndustries/bank.jpg'
-import commerce from '../Kotibox img/KotiIndustries/E-coomerce.jpg'
-import Media from '../Kotibox img/KotiIndustries/Publication.jpg'
+
+import img1 from '../Kotibox img/Main img/Educationin.jpg'
+import img2 from '../Kotibox img/Main img/foodin.jpg'
+import img3 from '../Kotibox img/Main img/Healthcarein.jpg'
+import img4 from '../Kotibox img/Main img/Tourin.jpg'
+import img5 from '../Kotibox img/Main img/realestatein.jpg'
+import img6 from '../Kotibox img/Main img/gamein.jpg'
+import img7 from '../Kotibox img/Main img/bankin.jpg'
+import img8 from '../Kotibox img/Main img/E-coomercein.jpg'
+import img9 from '../Kotibox img/Main img/Publicationin.jpg'
+
 
 export default function Industries() {
   useEffect(() => {
@@ -28,47 +30,47 @@ export default function Industries() {
     {
       title: 'Education & E-learning',
       description: 'creating future-oriented web solutions and mobile apps with intelligent learning. and tailoring these services to transform the business and academic sectors.',
-      bgImage: Education,
+      bgImage: img1,
     },
     {
       title: 'Food & Restaurants',
       description: 'Investigate restaurant app development to take your company to new technological heights, increasing sales and gratifying patrons while streamlining operations.',
-      bgImage: Food,
+      bgImage: img2,
     },
     {
       title: 'Healthcare',
       description: 'Being a top provider of healthcare application development services, we take great pride in our developers ability to produce creative apps that meet the ever-changing needs of the modern health sector.',
-      bgImage: Health,
+      bgImage: img3,
     },
     {
       title: 'Tour & Travels',
       description: 'Use our specialists intelligent logistics software solutions to streamline your logistics processes. Our end-to-end solutions go above and beyond expectations in lowering operational expenses, facilitating smooth operations, and enhancing customer service.',
-      bgImage: Tour,
+      bgImage: img4,
     },
     {
         title: 'Real Estate ',
         description: 'The company specializes in creating cutting-edge mobile apps and web solutions for real estate, making the process of buying, selling, renting, and managing properties as simple as putting on pajamas.',
-        bgImage: Real,
+        bgImage: img5,
       },
       {
         title: 'Sports & Gaming',
         description: 'We are a top game development company that specializes in creating innovative online games for consoles, mobile devices, and PCs. Our talented development team works with a variety of game engines with expertise.',
-        bgImage: Sports,
+        bgImage: img6,
       },
       {
         title: 'Banking & Finance',
         description: 'Kotibox provides mobile banking app development services. Our experts create and build applications that allow customers to transfer funds, make payments, and make other financial transactions using mobile devices.',
-        bgImage: Banking,
+        bgImage: img7,
       },
       {
         title: 'E-Commerce',
         description: 'We are a scalable, user-friendly, and reliable e-commerce website development firm that can assist you in creating a variety of eCommerce solutions. We assist you in removing any obstacles posed by intricate sales procedures so that your clients may easily make purchases from you.',
-        bgImage: commerce,
+        bgImage: img8,
       },
       {
         title: 'Media & Publication',
         description: 'Our expertise lies in creating stable streaming platforms, engaging content management systems, and superior live video solutions that meet the constantly evolving digital demands of viewers across the globe. ',
-        bgImage: Media,
+        bgImage: img9,
       },
   ];
 
