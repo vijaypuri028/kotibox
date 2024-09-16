@@ -1,12 +1,13 @@
-/* Basic styles */
+Basic styles
 .navbar {
     padding: 1rem 1rem;
     /* transition: background-color 0.3s, box-shadow 0.3s; */
   
   }
-  .navbar{
+  .transparent-navbar {
     background-color: transparent;
   }
+ 
   .navbar-brand {
     font-size: 1rem;
     font-weight: bold;

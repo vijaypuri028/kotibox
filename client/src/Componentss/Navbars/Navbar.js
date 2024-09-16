@@ -246,6 +246,11 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
+              
+              <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
+                <Link className="nav-link   " aria-current="page" to="/Career" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Career </Link>
+              </li>
+
 
 
             </ul>
