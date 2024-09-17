@@ -55,6 +55,7 @@ import Pythondeveloper from './Componentss/Hire developer main section/python de
 import CompanyAbout from './Componentss/About drop down/Company/CompanyAbout';
 import Career from './Componentss/About drop down/Career/Career';
 import Portfolio from './Componentss/portfolio/Portfolio';
+import Blog from './Componentss/blog/blog';
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
              
               <Button />
               {/* <Marquee/> */}
+              <Blog/>
               <Footer />
             </>
           } />

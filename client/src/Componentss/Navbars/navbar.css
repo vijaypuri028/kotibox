@@ -1,7 +1,14 @@
-Basic styles
+
+
+.navbar {
+ top: 0;
+ left: 0;
+
+}
 .navbar {
     padding: 1rem 1rem;
-    /* transition: background-color 0.3s, box-shadow 0.3s; */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: absolute;
   
   }
   .transparent-navbar {

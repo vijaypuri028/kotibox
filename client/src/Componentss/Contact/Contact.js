@@ -83,24 +83,25 @@ function Contact() {
                 <h2 className="contact-title">CONTACT US</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" id="name" name="name" required />
+                    <label className='text-light' htmlFor="name">Name</label>
+                    <input className='text-light' type="text" id="name" name="name" required />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="number">Number</label>
-                    <input type="tel" id="number" name="number" required />
+                    <label className='text-light' htmlFor="number">Number</label>
+                    <input className='text-light' type="tel" id="number" name="number" required />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                    <label className='text-light' htmlFor="email">Email</label>
+                    <input className='text-light' type="email" id="email" name="email" required />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="message">Project Out Line</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label className='text-light' htmlFor="message">Project Out Line</label>
+                    <textarea className='text-light' id="message" name="message" rows="4" required></textarea>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="captcha">CAPTCHA: What is 3 + 5?</label>
+                    <label className='text-light' htmlFor="captcha">CAPTCHA: What is 3 + 5?</label>
                     <input
+                    className='text-light'
                       type="text"
                       id="captcha"
                       name="captcha"
@@ -110,7 +111,7 @@ function Contact() {
                     />
                     {errorMessage && <p className="error-message">{errorMessage}</p>}
                   </div>
-                  <button type="submit" className="contact-button">Submit</button>
+                  <button  type="submit" className="contact-button btn btn-danger">Submit</button>
                   {result && <p className="result-message">{result}</p>}
                 </form>
               </div>

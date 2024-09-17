@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
@@ -53,18 +53,25 @@ export default function Navbar() {
   //   };
   // }, []);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Function to toggle the menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  
 
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "transparent" }}>
+      <nav className="navbar navbar-expand-lg  " >
         <div className="container-fluid">
           <Link className="navbar-brand fs-1" to="/"><img className='logo-kotibox' src={logo} alt='' /></Link>
-          <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button  class="navbar-toggler" type="button" onClick={toggleMenu}  aria-expanded={isMenuOpen} aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <div className={`collapse navbar-collapse justify-content-center ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0">
 
 

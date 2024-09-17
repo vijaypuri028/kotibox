@@ -9,7 +9,7 @@
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-color: #f8f9fa;
+    background-color: #1a1a1b;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }

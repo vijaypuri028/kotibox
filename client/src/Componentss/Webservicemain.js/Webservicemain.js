@@ -86,9 +86,6 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
                 {result && <p className="result-message">{result}</p>}
               </form>
             </div>
-            <div className="modal-footer mt-2">
-              <button type="button" className="btn btn-secondary" onClick={handleModalToggle}>Close</button>
-            </div>
           </div>
         </div>
       )}
