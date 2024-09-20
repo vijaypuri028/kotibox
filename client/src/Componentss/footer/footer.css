@@ -6,7 +6,7 @@
 footer {
 
   width: 100%;
-  padding-top: 50px; /* Adjusted padding */
+  padding-top: 50px; 
 }
 
 footer .content {
@@ -217,7 +217,7 @@ footer .content .media-icons a:nth-child(5) {
 }
 
 .marquee-section img {
-  width: 100px; /* Adjust image size */
+  width: 50px; /* Adjust image size */
   margin: 0 10px; /* Add spacing between images */
 }
 .fotter-list ul li:hover{
@@ -564,4 +564,52 @@ footer .content .footer-logo img {
 
 .kotibox{
   background-image:url('https://getwallpapers.com/wallpaper/full/c/1/6/6346.jpg') ;
+}
+
+.footer-text p{
+  font-size: 16px;
+}
+
+
+
+.footer-form{
+  border-radius: 40px;
+  border: 10px solid white;
+}
+
+
+.contact-container {
+  padding: 20px;
+  width: 100%;
+
+}
+
+.footer-form-container {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(114, 113, 113);
+  
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-form-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-form-container {
+    padding: 15px;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }

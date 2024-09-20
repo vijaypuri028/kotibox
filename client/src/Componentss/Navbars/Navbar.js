@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
@@ -26,7 +26,7 @@ import CRM from '../Kotibox img/service/CRM.png'
 
 import Game from '../Kotibox img/service/game3.png'
 import Custom from '../Kotibox img/service/Custom.png'
-import logo from '../Kotibox img/Main img/png img/Kotologo.png'
+import logo from '../Kotibox img/Main img/png img/Logo.png'
 import Ecommerce from '../Kotibox img/service/icons8-crm-64 (1).png'
 
 
@@ -37,21 +37,21 @@ export default function Navbar() {
 
 
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const navbar = document.querySelector('.navbar');
-  //     if (window.scrollY > 50) {
-  //       navbar.classList.add('navbar-scrolled');
-  //     } else {
-  //       navbar.classList.remove('navbar-scrolled');
-  //     }
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    };
 
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -65,9 +65,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg  " >
+      <nav className="navbar navbar-expand-lg  fixed-top " >
         <div className="container-fluid">
-          <Link className="navbar-brand fs-1" to="/"><img className='logo-kotibox' src={logo} alt='' /></Link>
+          <Link className="navbar-brand ms-4 " to="/"><img className='logo-kotibox' src={logo} alt='' /></Link>
           <button  class="navbar-toggler" type="button" onClick={toggleMenu}  aria-expanded={isMenuOpen} aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-light"></span>
           </button>
@@ -75,13 +75,13 @@ export default function Navbar() {
             <ul className="navbar-nav mb-2 mb-lg-0">
 
 
-              <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
+              <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
                 <Link className="nav-link   " aria-current="page" to="/CompanyAbout" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > About </Link>
               </li>
 
 
 
-              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4"  >
+              <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4"  >
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Services
                 </Link>
@@ -127,7 +127,7 @@ export default function Navbar() {
 
 
 
-              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
+              <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Industries
                 </Link>
@@ -136,14 +136,14 @@ export default function Navbar() {
                     <div className="dropdown-row">
                       <Link style={{textDecoration:"none"}} to='/Education'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px"}} class="bi bi-book text-light "></i>
+                          <i  class="bi bi-book text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Education & E-learning</Link>
                         </div>
                       </Link>
 
                       <Link  style={{textDecoration:"none"}} to='/Food'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-amazon text-light "></i>
+                          <i  class="bi bi-amazon text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Food & Restaurants</Link>
                         </div>
                       </Link>
@@ -155,13 +155,13 @@ export default function Navbar() {
                     <div className="dropdown-row">
                       <Link  style={{textDecoration:"none"}} to='/Tour'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-airplane-engines text-light "></i>
+                          <i  class="bi bi-airplane-engines text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Tour & Travels</Link>
                         </div>
                       </Link>
                       <Link  style={{textDecoration:"none"}} to='/bankig'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-bank text-light"></i>
+                          <i  class="bi bi-bank text-light"></i>
                           <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
                         </div>
                       </Link>
@@ -174,13 +174,13 @@ export default function Navbar() {
                     <div className="dropdown-row">
                       <Link  style={{textDecoration:"none"}} to='/Heathcare'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-hospital text-light "></i>
+                          <i  class="bi bi-hospital text-light "></i>
                           <Link className="dropdown-item1 text-light" to="#"> Healthcare</Link>
                         </div>
                       </Link>
                       <Link  style={{textDecoration:"none"}} to='/RealState'>
                         <div className='dropdown-item-icon '>
-                          <i style={{ fontSize: "40px" }} class="bi bi-house-door text-light"></i>
+                          <i class="bi bi-house-door  text-light"></i>
                           <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
                         </div>
                       </Link>
@@ -199,7 +199,7 @@ export default function Navbar() {
                 </div>
               </li>
 
-              <li style={{ fontSize: "20px" }} className="nav-item dropdown ms-4">
+              <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Hire Developer
                 </Link>
@@ -249,13 +249,18 @@ export default function Navbar() {
 
 
 
-              <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
+              <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
                 <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
               
-              <li style={{ fontSize: "20px" }} className="nav-item ms-4 ">
+              <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
                 <Link className="nav-link   " aria-current="page" to="/Career" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Career </Link>
+              </li>
+
+
+                 <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
+                <Link className="nav-link btn btn-danger " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Book A Call Now </Link>
               </li>
 
 

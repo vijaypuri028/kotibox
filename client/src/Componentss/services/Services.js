@@ -20,6 +20,7 @@ function Services() {
           <div className="col-md-12">
             <div className="section_title text-center">
               <h2>Our Services</h2>
+              <p>Our cutting-edge, technology-driven web and mobile app development services will help your business build revenue and thrive.</p>
               <div className="brand_border">
                 <FaMinus aria-hidden="true" />
                 <FaHandHoldingUsd />
