@@ -81,10 +81,12 @@ export default function Footer() {
   return (
     <>
 
-      <div className="contact-container container mx-auto">
+
+
+      <div className="contact-container container mx-auto pb-5">
         <div className="row justify-content-center">
           <div className="col-lg-12 col-md-8 col-sm-10">
-            <div className="footer-form-container text-light bg-info p-5 mt-5 rounded">
+            <div className="footer-form-container text-light bg-dark p-5 mt-5 rounded">
               <h1 className="text-center">Let's build something great together!</h1>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group mb-3">
@@ -155,7 +157,7 @@ export default function Footer() {
 
 
 
-      <div className="kotibox" style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="kotibox " style={{ backgroundImage: `url(${backgroundImage})` }}>
         <footer className={scrolled ? 'scrolled' : ''}>
           <footer className={scrolled ? 'scrolled' : ''}>
             <div className=" container content  ">

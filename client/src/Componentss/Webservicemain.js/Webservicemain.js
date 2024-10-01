@@ -55,19 +55,19 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
               <form className="contact-form-modal" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
-                  <input className='text-light' type="text" id="name" name="name" required />
+                  <input className='bg-light' type="text" id="name" name="name" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="number">Number</label>
-                  <input className='text-light' type="number" id="number" name="number" required />
+                  <input className='bg-light' type="number" id="number" name="number" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
-                  <input className='text-light' type="email" id="email" name="email" required />
+                  <input className='bg-light' type="email" id="email" name="email" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">Project Outline</label>
-                  <textarea className='text-light' id="message" name="message" rows="4" required></textarea>
+                  <textarea className='bg-light' id="message" name="message" rows="4" required></textarea>
                 </div>
                 <div className="form-group">
                   <label htmlFor="captcha">CAPTCHA: What is 3 + 5?</label>
@@ -78,7 +78,7 @@ export default function Webservicemain({ imgSrc, mainText, Secondtext, textArray
                     value={captchaAnswer}
                     onChange={(e) => setCaptchaAnswer(e.target.value)}
                     required
-                    className='text-light'
+                    className='bg-light'
                   />
                   {errorMessage && <p className="error-message">{errorMessage}</p>}
                 </div>

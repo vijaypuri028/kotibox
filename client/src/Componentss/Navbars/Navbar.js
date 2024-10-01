@@ -79,7 +79,7 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/CompanyAbout" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > About </Link>
               </li>
 
-
+             
 
               <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4"  >
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
@@ -246,7 +246,41 @@ export default function Navbar() {
 
                 </div>
               </li>
+                
 
+              <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4"  >
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
+                  Product
+                </Link>
+                <div className="dropdown-menu large-dropdown10 bg-dark" aria-labelledby="navbarDropdown">
+                
+                  <div className="dropdown-container">
+
+
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2  " to="/webDevelopment"> <img className='icon-img' src={Website} alt='' />Stream Box (HRMS)</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/MobileApp"> <img className='icon-img' src={Mobile} alt='' />Mobile App Development </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Digital Marketing </Link> <hr className='text-light' />
+
+                      <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Artificial Intelligence </Link> <hr className='text-light' />
+
+
+                    </div>
+                  
+                
+
+
+                    <div className="dropdown-row">
+                    
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
 
 
               <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">

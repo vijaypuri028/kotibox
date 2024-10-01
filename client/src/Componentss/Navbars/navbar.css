@@ -132,7 +132,7 @@
   
   /* Flexbox styles for dropdown */
 /* Base Styles */
-.large-dropdown, .large-dropdown1, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
+.large-dropdown, .large-dropdown1,.large-dropdown10, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,25 +157,31 @@
 
 .large-dropdown1 {
   width: 75vw;
+  left: -250px;
+  height: 70vh;
+}
+
+.large-dropdown10 {
+  width: 55vw;
   left: -400px;
   height: 70vh;
 }
 
 .large-dropdown2 {
   width: 90vw;
-  left: -400px;
+  left: -200px;
   height: 600px;
 }
 
 .large-dropdown3 {
   width: 75vw;
-  left: -500px;
+  left: -300px;
   height: 400px;
 }
 
 .large-dropdown4 {
   width: 80vw;
-  left: -660px;
+  left: -450px;
   height: 600px;
 }
 
@@ -190,6 +196,7 @@
   left: -150px;
   height: 50%;
 }
+
 
 .dropdown-img-technologies {
   height: 450px;
@@ -216,7 +223,7 @@
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .large-dropdown, .large-dropdown1, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
+  .large-dropdown, .large-dropdown1,.large-dropdown10, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
     width: 80vw;
     left: 0;
   }
@@ -235,7 +242,7 @@
 }
 
 @media (max-width: 768px) {
-  .large-dropdown, .large-dropdown1, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
+  .large-dropdown, .large-dropdown1,.large-dropdown10, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
     width: 100vw;
     height: auto;
     left: 0;
@@ -256,7 +263,7 @@
 }
 
 @media (max-width: 480px) {
-  .large-dropdown, .large-dropdown1, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
+  .large-dropdown, .large-dropdown1,.large-dropdown10, .large-dropdown2, .large-dropdown3, .large-dropdown4, .large-dropdown5, .large-dropdown6 {
     width: 90vw;
     height: auto;
     left: 0;
@@ -439,6 +446,7 @@
 
   .large-dropdown,
   .large-dropdown1,
+  .large-dropdown10,
   .large-dropdown2,
   .large-dropdown3,
   .large-dropdown4,
@@ -519,6 +527,7 @@
 
   .large-dropdown,
   .large-dropdown1,
+  .large-dropdown10,
   .large-dropdown2,
   .large-dropdown3,
   .large-dropdown4,
