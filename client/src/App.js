@@ -56,6 +56,7 @@ import CompanyAbout from './Componentss/About drop down/Company/CompanyAbout';
 import Career from './Componentss/About drop down/Career/Career';
 import Portfolio from './Componentss/portfolio/Portfolio';
 import Blog from './Componentss/blog/blog';
+import HRMS from './Componentss/Projects HRMS/HRMS/HRMS';
 
 function App() {
   return (
@@ -133,6 +134,9 @@ function App() {
 
 
         <Route path='/Portfolio' element={<Portfolio/>} />
+
+
+        <Route path='/HRMS' element={<HRMS/>} />
         
         </Routes>
        

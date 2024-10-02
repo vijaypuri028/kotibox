@@ -60,7 +60,7 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  
+
 
 
   return (
@@ -68,7 +68,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg  fixed-top " >
         <div className="container-fluid">
           <Link className="navbar-brand ms-4 " to="/"><img className='logo-kotibox' src={logo} alt='' /></Link>
-          <button  class="navbar-toggler" type="button" onClick={toggleMenu}  aria-expanded={isMenuOpen} aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" onClick={toggleMenu} aria-expanded={isMenuOpen} aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-light"></span>
           </button>
           <div className={`collapse navbar-collapse justify-content-center ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
@@ -79,14 +79,14 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/CompanyAbout" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > About </Link>
               </li>
 
-             
+
 
               <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4"  >
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Services
                 </Link>
                 <div className="dropdown-menu large-dropdown1 bg-dark" aria-labelledby="navbarDropdown">
-                
+
                   <div className="dropdown-container">
 
 
@@ -96,6 +96,7 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Digital Marketing </Link> <hr className='text-light' />
 
                       <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Artificial Intelligence </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Content Marketing </Link> <hr className='text-light' />
 
 
                     </div>
@@ -104,19 +105,20 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/Game"><img className='icon-img' src={Game} alt='' /> Saas Applinction</Link> <hr className='text-light' />
                       <Link className="dropdown-item2" to="/Custom"><img className='icon-img' src={Custom} alt='' /> Custom Software Development</Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/Eccomerce"> <img className='icon-img' src={Ecommerce} alt='' /> Ecommerce Solutions</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Eccomerce"> <img className='icon-img' src={Ecommerce} alt='' /> ERP Development</Link> <hr className='text-light' />
                     </div>
                     <div className="dropdown-row ">
 
                       <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> CRM Development</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> UI/UX & Videography</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> Game Development</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> Project Management Services</Link> <hr className='text-light' />
                     </div>
 
 
                     <div className="dropdown-row">
-                      {/*   <img  className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' /> */}
-
-
-
+                      <img className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
                     </div>
 
                   </div>
@@ -133,65 +135,43 @@ export default function Navbar() {
                 </Link>
                 <div className="dropdown-menu large-dropdown3 bg-dark" aria-labelledby="navbarDropdown">
                   <div className="dropdown-container">
-                    <div className="dropdown-row">
-                      <Link style={{textDecoration:"none"}} to='/Education'>
-                        <div className='dropdown-item-icon '>
-                          <i  class="bi bi-book text-light "></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Education & E-learning</Link>
-                        </div>
-                      </Link>
 
-                      <Link  style={{textDecoration:"none"}} to='/Food'>
-                        <div className='dropdown-item-icon '>
-                          <i  class="bi bi-amazon text-light "></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Food & Restaurants</Link>
-                        </div>
-                      </Link>
+                    <div className="dropdown-row  ">
 
-
+                      <Link className="dropdown-item2 " to="/Education"><img className='icon-img' src={Fullstack} alt='' />  Education & E-learning </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Food"><img className='icon-img' src={CRM} alt='' /> Food & Restaurants</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={CRM} alt='' />  Media & Publication</Link> <hr className='text-light' />
 
                     </div>
 
-                    <div className="dropdown-row">
-                      <Link  style={{textDecoration:"none"}} to='/Tour'>
-                        <div className='dropdown-item-icon '>
-                          <i  class="bi bi-airplane-engines text-light "></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Tour & Travels</Link>
-                        </div>
-                      </Link>
-                      <Link  style={{textDecoration:"none"}} to='/bankig'>
-                        <div className='dropdown-item-icon '>
-                          <i  class="bi bi-bank text-light"></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Banking & Finance</Link>
-                        </div>
-                      </Link>
+                    <div className="dropdown-row ">
 
+                      <Link className="dropdown-item2 " to="/Tour"><img className='icon-img' src={Fullstack} alt='' />  Tour & Travels </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/bankig"><img className='icon-img' src={CRM} alt='' /> Banking & Finance</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="/Heathcare"><img className='icon-img' src={CRM} alt='' />  Healthcare</Link> <hr className='text-light' />
 
                     </div>
 
 
 
-                    <div className="dropdown-row">
-                      <Link  style={{textDecoration:"none"}} to='/Heathcare'>
-                        <div className='dropdown-item-icon '>
-                          <i  class="bi bi-hospital text-light "></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Healthcare</Link>
-                        </div>
-                      </Link>
-                      <Link  style={{textDecoration:"none"}} to='/RealState'>
-                        <div className='dropdown-item-icon '>
-                          <i class="bi bi-house-door  text-light"></i>
-                          <Link className="dropdown-item1 text-light" to="#"> Real Estate</Link>
-                        </div>
-                      </Link>
+                    <div className="dropdown-row ">
 
+                      <Link className="dropdown-item2 " to="/RealState"><img className='icon-img' src={Fullstack} alt='' />  Real Estate </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={CRM} alt='' /> Game</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={CRM} alt='' /> Startups </Link> <hr className='text-light' />
 
                     </div>
 
 
 
+
+
+
+
+
+
                     <div className="dropdown-row">
-                      <img className='dropdown-img-1 mt-4' src='https://ibb.co/9qT2zyM' alt='' />
+                      <img className='dropdown-img-1 mt-4' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
 
                     </div>
 
@@ -235,8 +215,9 @@ export default function Navbar() {
                     </div>
 
 
+
                     <div className="dropdown-row">
-                     
+                      <img className='dropdown-img-hire' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
 
 
 
@@ -246,34 +227,42 @@ export default function Navbar() {
 
                 </div>
               </li>
-                
+
 
               <li style={{ fontSize: "17px" }} className="nav-item dropdown ms-4"  >
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} >
                   Product
                 </Link>
                 <div className="dropdown-menu large-dropdown10 bg-dark" aria-labelledby="navbarDropdown">
-                
+
                   <div className="dropdown-container">
 
 
                     <div className="dropdown-row ">
-                      <Link className="dropdown-item2  " to="/webDevelopment"> <img className='icon-img' src={Website} alt='' />Stream Box (HRMS)</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/MobileApp"> <img className='icon-img' src={Mobile} alt='' />Mobile App Development </Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Digital Marketing </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2  " to="/HRMS"> <img className='icon-img' src={Website} alt='' />Stream Box (HRMS)</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"> <img className='icon-img' src={Mobile} alt='' /> Hospital Management</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Digital} alt='' /> Club Management </Link> <hr className='text-light' />
 
-                      <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Artificial Intelligence </Link> <hr className='text-light' />
 
 
                     </div>
-                  
-                
+
+                    <div className="dropdown-row ">
+                      <Link className="dropdown-item2  " to="#"> <img className='icon-img' src={Website} alt='' />School Management</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"> <img className='icon-img' src={Mobile} alt='' /> Restaurants Ordering App  </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Digital} alt='' /> Gym Management </Link> <hr className='text-light' />
+
+
+
+                    </div>
+
+
+
+
 
 
                     <div className="dropdown-row">
-                    
-
-
+                      <img className='dropdown-img-1 mt-2' src='https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='' />
 
                     </div>
 
@@ -287,13 +276,13 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Contact Us </Link>
               </li>
 
-              
+
               <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
                 <Link className="nav-link   " aria-current="page" to="/Career" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Career </Link>
               </li>
 
 
-                 <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
+              <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
                 <Link className="nav-link btn btn-danger " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Book A Call Now </Link>
               </li>
 

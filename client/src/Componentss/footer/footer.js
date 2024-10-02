@@ -7,6 +7,8 @@ import Company1 from '../Kotibox img/Main img/png img/Company1.jpg'
 import Company2 from '../Kotibox img/Main img/png img/Comapny2.jpg'
 import Company3 from '../Kotibox img/Main img/png img/Comapny3.jpg'
 import backgroundImage from '../Kotibox img/Main img/Footer1.jpg';
+import hadderimg from '../Kotibox img/A Img/hadderimg.png'
+
 
 const MarqueeImages = () => {
   return (
@@ -82,77 +84,35 @@ export default function Footer() {
     <>
 
 
-
-      <div className="contact-container container mx-auto pb-5">
-        <div className="row justify-content-center">
-          <div className="col-lg-12 col-md-8 col-sm-10">
-            <div className="footer-form-container text-light bg-dark p-5 mt-5 rounded">
-              <h1 className="text-center">Let's build something great together!</h1>
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="form-group mb-3">
-                  <label className='text-light' htmlFor="name">Name</label>
-                  <input
-                    className="form-control bg-light"
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div className="form-group mb-3">
-                  <label className='text-light' htmlFor="number">Number</label>
-                  <input
-                    className="form-control bg-light"
-                    type="tel"
-                    id="number"
-                    name="number"
-                    required
-                    placeholder="Enter your number"
-                  />
-                </div>
-                <div className="form-group mb-3">
-                  <label className='text-light' htmlFor="email">Email</label>
-                  <input
-                    className="form-control bg-light"
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div className="form-group mb-3">
-                  <label className='text-light' htmlFor="message">Project Outline</label>
-                  <textarea
-                    className="form-control bg-light"
-                    id="message"
-                    name="message"
-                    rows="4"
-                    required
-                    placeholder="Describe your project"
-                  ></textarea>
-                </div>
-                <div className="form-group mb-3">
-                  <label className='text-light' htmlFor="captcha">CAPTCHA: What is 3 + 5?</label>
-                  <input
-                    className="form-control bg-light"
-                    type="text"
-                    id="captcha"
-                    name="captcha"
-                    value={captchaAnswer}
-                    onChange={(e) => setCaptchaAnswer(e.target.value)}
-                    required
-                    placeholder="Enter your answer"
-                  />
-                  {errorMessage && <p className="text-danger mt-2">{errorMessage}</p>}
-                </div>
-                <button type="submit" className="btn  btn-danger w-100 ">Submit</button>
-                {result && <p className="text-success mt-3">{result}</p>}
-              </form>
-            </div>
-          </div>
+      <div className="contact10-form-container text-light ">
+        <div className="image-section">
+          <img src={hadderimg} alt="Contact" />
         </div>
+        <form className="form10-section">
+          <h2>500+ Companies Trust Stream Box</h2>
+          <div className="form-group">
+
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+          <div className="form-group">
+
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required />
+          </div>
+          <div className="form-group">
+
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+          </div>
+
+          <div className="form-group">
+
+            <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+          </div>
+          <div className="form-group">
+
+            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+          </div>
+          <button type="submit" className="submit-button btn btn-danger ">Submit</button>
+        </form>
       </div>
 
 
