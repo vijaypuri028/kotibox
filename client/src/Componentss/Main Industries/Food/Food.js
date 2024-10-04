@@ -6,10 +6,11 @@ import Blog from '../../blog/blog'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from "../../Kotibox img/Main img/Game development.jpg"; 
 import Company from '../../Company section/Company'
-import Marquee from '../../Marquee/Marquee'
+
 
 import png1 from '../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../Kotibox img/Main img/png img/crm.png';
+import From from '../../FooterFrom/From';
 
 
 
@@ -92,7 +93,7 @@ export default function Food() {
    
    <Company/>
    <Blog/>
-   <Marquee/>
+   <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
    <Footer />
    </>
   )

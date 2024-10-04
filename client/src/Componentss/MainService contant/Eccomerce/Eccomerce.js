@@ -12,6 +12,7 @@ import Technologies5img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies6img from '../../Kotibox img/icon/icons8-java-48.png'
 import { Link } from 'react-router-dom'
 import png1 from '../../Kotibox img/Main img/png img/Fullstack.jpg'
+import From from '../../FooterFrom/From';
 
 export default function Eccomerce() {
   const mainText = { Text: " E-COMMERCE  DEVELOPMENT" }
@@ -269,6 +270,7 @@ We are a full-service web development business that adds value to our clients' p
           </div>
         </div>
       </section>
+      <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
       <Footer />
     </>
   )

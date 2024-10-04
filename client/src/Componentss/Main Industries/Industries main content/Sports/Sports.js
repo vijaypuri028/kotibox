@@ -5,6 +5,7 @@ import Industriesmain from '../industriesmain';
 
 import Footer from '../../../footer/footer';
 import imgSrc from "../../../Kotibox img/Main img/Bitcon.jpg";
+import From from '../../../FooterFrom/From';
 
 import png1 from '../../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../../Kotibox img/Main img/png img/crm.png';
@@ -94,6 +95,8 @@ export default function Sports() {
         sectionp5="Prior to releasing the completed product, the group conducts thorough quality assurance and testing. When the project is finished, we start the eLearning program and continue to help and support it to ensure optimal results"
       />
 
+
+<From heading="500+ Companies Trust Stream Box" />
       <Footer />
     </>
   );

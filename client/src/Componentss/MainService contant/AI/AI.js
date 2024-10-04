@@ -11,6 +11,7 @@ import Technologies4img from '../../Kotibox img/service/AI5.png'
 import Technologies5img from '../../Kotibox img/service/AI10.png'
 import Technologies6img from '../../Kotibox img/service/AI11.png'
 import png1 from '../../Kotibox img/Main img/png img/AIpng.jpg'
+import From from '../../FooterFrom/From';
 import { Link } from 'react-router-dom'
 
 export default function AI() {
@@ -245,7 +246,7 @@ export default function AI() {
           </div>
         </div>
       </section>
-
+      <From heading="500+ Companies Trust Stream Box"  uptext="Let's Discuss" />
       <Footer />
     </>
   )

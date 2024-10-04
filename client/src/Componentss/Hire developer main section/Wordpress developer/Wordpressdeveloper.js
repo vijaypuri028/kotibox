@@ -8,6 +8,7 @@ import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
+import From from '../../FooterFrom/From';
 
 export default function Wordpressdeveloper() {
   const mainText = { Text: "Hire Wordpress  Developers" }
@@ -53,7 +54,7 @@ export default function Wordpressdeveloper() {
       />
    
 
-
+   <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
    <Footer/>
    
    

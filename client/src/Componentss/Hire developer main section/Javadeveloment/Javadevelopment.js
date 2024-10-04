@@ -10,6 +10,7 @@ import imgSrc1 from "../../Kotibox img/Main img/png img/crm.png";
 import imgSrc2 from "../../Kotibox img/Main img/png img/crm.png";
 import imgSrc3 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/crm.png";
+import From from '../../FooterFrom/From';
 
 export default function Javadevelopment() {
   const mainText = { Text: "Hire Java  Developers" }
@@ -59,6 +60,7 @@ export default function Javadevelopment() {
    
    <Blog/>
    <Marquee/>
+   <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
    <Footer/>
    </>
    

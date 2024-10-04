@@ -57,6 +57,8 @@ import Career from './Componentss/About drop down/Career/Career';
 import Portfolio from './Componentss/portfolio/Portfolio';
 import Blog from './Componentss/blog/blog';
 import HRMS from './Componentss/Projects HRMS/HRMS/HRMS';
+import BookCall from './Componentss/Calendly/Calendly';
+import From from './Componentss/FooterFrom/From';
 
 function App() {
   return (
@@ -77,8 +79,9 @@ function App() {
               {/* <Hiredeveloper /> */}
              
               <Button />
-              {/* <Marquee/> */}
+           
               <Blog/>
+              <From heading="500+ Companies Trust Kotibox" uptext="Let's Discuss" />
               <Footer />
             </>
           } />
@@ -137,6 +140,9 @@ function App() {
 
 
         <Route path='/HRMS' element={<HRMS/>} />
+
+
+        <Route path='/book-call' element={<BookCall/>} />
         
         </Routes>
        

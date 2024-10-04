@@ -4,6 +4,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain'
 
 
 import Footer from '../../footer/footer'
+import From from '../../FooterFrom/From';
 
 import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 import Hirecardsection from '../hire card section/Hirecardsection'
@@ -56,7 +57,7 @@ export default function Laraveldeveloper() {
         accordionpra="To produce a development result that exceeds the client's expectations, collaboration throughout the process is essential. When a customer is prepared to engage an Laravel developer, our team of professionals first concentrates on the development phase by"
       />
    
-
+   <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss"/>
    <Footer/>
 
 

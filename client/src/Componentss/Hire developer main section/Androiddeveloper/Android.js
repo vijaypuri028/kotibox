@@ -9,6 +9,7 @@ import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/crm.png";
 import Hirecardsection from '../hire card section/Hirecardsection'
+import From from '../../FooterFrom/From';
 
 
 
@@ -61,7 +62,7 @@ Because of its Linux-based free and open-source platform, Android applications a
             />
 
         
-
+<From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
             <Footer />
         </>
     )

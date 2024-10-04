@@ -8,6 +8,7 @@ import imgSrc from "../../../Kotibox img/Main img/AI DEvelopment.jpg";
 import Hiredevelopemntmain from '../../../Hire developer main section/Hire main/Hiredevelopemntmain';
 import png1 from '../../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../../Kotibox img/Main img/png img/crm.png';
+import From from '../../../FooterFrom/From';
 
 
 
@@ -100,7 +101,7 @@ export default function ECommerceid() {
       />
 
 
-
+<From heading="500+ Companies Trust Stream Box" />
 
       <Footer />
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../Navbars/Navbar'
 import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import Blog from '../../blog/blog'
-import Marquee from '../../Marquee/Marquee'
+
 import imgSrc from "../../Kotibox img/Main img/Fullstack.jpg";
 import Footer from '../../footer/footer'
 import Hirecardsection from '../hire card section/Hirecardsection'
@@ -10,6 +10,7 @@ import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
+import From from '../../FooterFrom/From';
 
 export default function Reactjsdeveloper() {
   const mainText = { Text: "Hire React Js  Developers" }
@@ -58,7 +59,7 @@ export default function Reactjsdeveloper() {
    
    
    <Blog/>
-   <Marquee/>
+   <From heading="500+ Companies Trust Stream Box"  uptext="Let's Discuss" />
    <Footer/>
 
    

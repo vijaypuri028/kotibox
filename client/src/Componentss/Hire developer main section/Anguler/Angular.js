@@ -7,6 +7,7 @@ import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
+import From from '../../FooterFrom/From';
 
 export default function Angular() {
   const mainText = { Text: "Hire Angular Developers" }
@@ -57,7 +58,7 @@ Because of its Linux-based free and open-source platform, Angularlications are w
 
 
 
-
+<From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
 
       <Footer />
 

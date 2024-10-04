@@ -15,6 +15,7 @@ import Technologies4img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies5img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies6img from '../../Kotibox img/icon/icons8-java-48.png'
 import { Link } from 'react-router-dom'
+import From from '../../FooterFrom/From';
 
 export default function Game() {
   const mainText = { Text: "SAAS APPLICATION" }
@@ -297,6 +298,7 @@ We are a full-service web development business that adds value to our clients' p
 
       <Blog />
       <Marquee />
+      <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
       <Footer />
     </>
   )

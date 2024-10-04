@@ -7,6 +7,7 @@ import imgSrc from "../../Kotibox img/Main img/Banking.jpg";
 import png1 from '../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../Kotibox img/Main img/png img/crm.png';
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
+import From from '../../FooterFrom/From';
 export default function Banking() {
   const mainText = { Text: "Banking App development Company " }
   const Secondtext = { Text: "Kotibox offers assistance for developing mobile banking apps. Our professionals design and develop mobile applications that let users transfer money, send money, and perform other financial operations. In addition to developing unique mobile banking app services, we offer banking app development services for a range of platforms, including native apps for iOS, Android, and Windows and cross-platform hybrid apps" }
@@ -75,7 +76,7 @@ export default function Banking() {
         sectionp5="Prior to releasing the completed product, the group conducts thorough quality assurance and testing. When the project is finished, we start the eLearning program and continue to help and support it to ensure optimal results"
       />
 
-
+<From heading="500+ Companies Trust Stream Box"   uptext="Let's Discuss" />
       <Footer />
 
     </>

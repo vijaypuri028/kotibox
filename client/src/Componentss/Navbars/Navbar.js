@@ -35,6 +35,38 @@ import Ecommerce from '../Kotibox img/service/icons8-crm-64 (1).png'
 
 export default function Navbar() {
 
+  const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    date: '',
+    time: ''
+  });
+
+  // Modal open and close functions
+  const handleModalOpen = () => {
+    setShowModal(true);
+  };
+
+  const handleModalClose = () => {
+    setShowModal(false);
+  };
+
+  // Handle form input change
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Handle form submission
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission logic here
+    console.log(formData);
+    // For example, you might want to send this data to an API
+    handleModalClose(); // Close modal after form submission
+  };
 
 
   useEffect(() => {
@@ -96,7 +128,7 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/digitalmarketing"><img className='icon-img' src={Digital} alt='' /> Digital Marketing </Link> <hr className='text-light' />
 
                       <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Artificial Intelligence </Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/AI"><img className='icon-img' src={Artificial} alt='' /> Content Marketing </Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={Artificial} alt='' /> Content Marketing </Link> <hr className='text-light' />
 
 
                     </div>
@@ -105,15 +137,15 @@ export default function Navbar() {
                       <Link className="dropdown-item2 " to="/Game"><img className='icon-img' src={Game} alt='' /> Saas Applinction</Link> <hr className='text-light' />
                       <Link className="dropdown-item2" to="/Custom"><img className='icon-img' src={Custom} alt='' /> Custom Software Development</Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/Eccomerce"> <img className='icon-img' src={Ecommerce} alt='' /> Ecommerce Solutions</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/Eccomerce"> <img className='icon-img' src={Ecommerce} alt='' /> ERP Development</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"> <img className='icon-img' src={Ecommerce} alt='' /> ERP Development</Link> <hr className='text-light' />
                     </div>
                     <div className="dropdown-row ">
 
                       <Link className="dropdown-item2 " to="/Fullstack"><img className='icon-img' src={Fullstack} alt='' /> Full stack </Link> <hr className='text-light' />
                       <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> CRM Development</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> UI/UX & Videography</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> Game Development</Link> <hr className='text-light' />
-                      <Link className="dropdown-item2 " to="/CRM"><img className='icon-img' src={CRM} alt='' /> Project Management Services</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={CRM} alt='' /> UI/UX & Videography</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={CRM} alt='' /> Game Development</Link> <hr className='text-light' />
+                      <Link className="dropdown-item2 " to="#"><img className='icon-img' src={CRM} alt='' /> Project Management Services</Link> <hr className='text-light' />
                     </div>
 
 
@@ -281,17 +313,119 @@ export default function Navbar() {
                 <Link className="nav-link   " aria-current="page" to="/Career" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Career </Link>
               </li>
 
-
               <li style={{ fontSize: "17px" }} className="nav-item ms-4 ">
-                <Link className="nav-link btn btn-danger " aria-current="page" to="/contact" style={{ color: "#fff", fontWeight: "bold", transition: "color 0.3s ease" }} > Book A Call Now </Link>
-              </li>
+        <button
+          className="nav-link btn btn-danger"
+          aria-current="page"
+          onClick={handleModalOpen}
+          style={{
+            color: "#fff",
+            fontWeight: "bold",
+            transition: "color 0.3s ease",
+          }}
+        >
+          Book A Call Now
+        </button>
+      </li>
+
 
 
 
             </ul>
           </div>
         </div>
+
       </nav>
+    {/* Modal */}
+    {showModal && (
+        <div className="modal show" style={{ display: 'block' }}>
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Book an Appointment</h5>
+                <button type="button" className="close" onClick={handleModalClose}>
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <form onSubmit={handleFormSubmit}>
+                  <div className="form-group mb-3">
+                    <label htmlFor="name">Name</label>
+                    <input
+                      type="text"
+                      className="form-control bg-light "
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label htmlFor="email">Email</label>
+                    <input
+                      type="email"
+                      className="form-control bg-light"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label htmlFor="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      className="form-control bg-light"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label htmlFor="date">Select Date</label>
+                    <input
+                      type="date"
+                      className="form-control bg-light"
+                      id="date"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label htmlFor="time">Select Time</label>
+                    <input
+                      type="time"
+                      className="form-control bg-light"
+                      id="time"
+                      name="time"
+                      value={formData.time}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" onClick={handleModalClose}>
+                      Close
+                    </button>
+                    <button type="submit" className="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+ 
+ 
+
     </>
   );
 }

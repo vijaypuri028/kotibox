@@ -8,6 +8,7 @@ import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
+import From from '../../FooterFrom/From';
 
 export default function Magento() {
   const mainText = { Text: "Hire magento  Developers" }
@@ -52,8 +53,8 @@ export default function Magento() {
         accordionpra="To produce a development result that exceeds the client's expectations, collaboration throughout the process is essential. When a customer is prepared to engage an Magento developer, our team of professionals first concentrates on the development phase by"
       />
    
-   
-
+    
+   <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
    <Footer/>
     
     

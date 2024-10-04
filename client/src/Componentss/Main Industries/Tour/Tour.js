@@ -10,6 +10,7 @@ import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hir
 
 import png1 from '../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../Kotibox img/Main img/png img/crm.png';
+import From from '../../FooterFrom/From';
 
 
 
@@ -95,7 +96,7 @@ export default function Tour() {
                 section5="Deployment & Assistance"
                 sectionp5="Prior to releasing the completed product, the group conducts thorough quality assurance and testing. When the project is finished, we start the eLearning program and continue to help and support it to ensure optimal results"
             />
-
+          <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss"/>
             <Footer />
         </>
     );

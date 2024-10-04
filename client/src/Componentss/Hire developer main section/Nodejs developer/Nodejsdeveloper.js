@@ -10,7 +10,7 @@ import imgSrc1 from "../../Kotibox img/Main img/Game2.jpg";
 import imgSrc2 from "../../Kotibox img/Main img/pexels-athena-2582938.jpg";
 import imgSrc3 from "../../Kotibox img/Main img/Eccomerce2.jpg";
 import imgSrc5 from "../../Kotibox img/Main img/png img/Fullstack.jpg";
-
+import From from '../../FooterFrom/From';
 export default function Nodejsdeveloper() {
   const mainText = { Text: "Hire Node js  Developers" }
   const Secondtext = { Text: "Our knowledge at MindInventory is that a development team is its most important asset. Engage with our team of passionate Node js developers to transform your app idea into a flawless, user-friendly solution. We have a wealth of expertise handling these projects. " }
@@ -55,7 +55,7 @@ export default function Nodejsdeveloper() {
       />
    
    
-
+   <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
    <Footer/>
    
    

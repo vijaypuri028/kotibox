@@ -14,6 +14,7 @@ import Technologies4img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies5img from '../../Kotibox img/icon/react netive.png'
 import Technologies6img from '../../Kotibox img/icon/c.png'
 import png1 from '../../Kotibox img/Main img/png img/mobile.png1.jpg'
+import From from '../../FooterFrom/From';
 
 export default function MobileApp() {
   const mainText = { Text: "Mobile AppDevelopment Company" }
@@ -293,6 +294,7 @@ export default function MobileApp() {
 
 
       <Button />
+      <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
 
       <Footer />
     </>

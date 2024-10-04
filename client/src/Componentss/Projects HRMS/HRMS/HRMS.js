@@ -10,6 +10,7 @@ import arrow2 from '../../Kotibox img/A Img/arrow2.png';
 import hadderimg from '../../Kotibox img/A Img/hadderimg.png';
 import Navbar from '../../Navbars/Navbar';
 import Footer from '../../footer/footer';
+import From from '../../FooterFrom/From';
 
 function HRMS() {
 
@@ -189,6 +190,7 @@ function HRMS() {
 
       </div>
 
+      <From heading="500+ Companies Trust Stream Box" uptext="Schedule A Demo" />
 
       <Footer />
 

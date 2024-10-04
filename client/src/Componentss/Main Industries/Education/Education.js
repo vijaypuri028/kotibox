@@ -7,6 +7,7 @@ import imgSrc from "../../Kotibox img/Main img/Educationin.jpg";
 import png1 from '../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../Kotibox img/Main img/png img/crm.png';
 import Hiredevelopemntmain from '../../Hire developer main section/Hire main/Hiredevelopemntmain';
+import From from '../../FooterFrom/From';
 
 export default function Education() {
   const mainText = { Text: "Education App development Company " }
@@ -85,7 +86,7 @@ export default function Education() {
 
 
   
-
+<From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
   
    <Footer />
    </>

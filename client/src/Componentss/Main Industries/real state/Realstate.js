@@ -4,6 +4,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import Industriesmain from '../Industries main content/industriesmain'
 import Footer from '../../footer/footer'
 import imgSrc from "../../Kotibox img/Main img/RealEste.jpg";
+import From from '../../FooterFrom/From';
 
 import png1 from '../../Kotibox img/Main img/png img/crm.png';
 import png2 from '../../Kotibox img/Main img/png img/crm.png';
@@ -79,6 +80,7 @@ For this reason, we provide our solutions to any real estate company for both re
 
 
 
+<From heading="500+ Companies Trust Stream Box"  uptext="Let's Discuss" />
 
       <Footer />
 

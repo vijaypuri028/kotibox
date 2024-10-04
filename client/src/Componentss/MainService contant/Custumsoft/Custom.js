@@ -5,7 +5,7 @@ import Webservicemain from '../../Webservicemain.js/Webservicemain'
 import imgSrc from '../../Kotibox img/Main img/Costum.jpg'
 import MainContent from '../../Main content/MainContent'
 import png1 from '../../Kotibox img/Main img/png img/Fullstack.jpg'
-
+import From from '../../FooterFrom/From';
 
 
 import Technologies1img from '../../Kotibox img/icon/icons8-java-48.png'
@@ -309,7 +309,7 @@ guarantees efficient software handling."
 
 
 
-
+      <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
  
       <Footer />
     </>

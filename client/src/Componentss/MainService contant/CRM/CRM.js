@@ -13,6 +13,8 @@ import Technologies3img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies4img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies5img from '../../Kotibox img/icon/icons8-java-48.png'
 import Technologies6img from '../../Kotibox img/icon/icons8-java-48.png'
+import From from '../../FooterFrom/From';
+
 import { Link } from 'react-router-dom'
 
 export default function CRM() {
@@ -270,7 +272,7 @@ We are a full-service web development business that adds value to our clients' p
 
 
 
-
+      <From heading="500+ Companies Trust Stream Box" uptext="Let's Discuss" />
       <Footer />
     </>
 
